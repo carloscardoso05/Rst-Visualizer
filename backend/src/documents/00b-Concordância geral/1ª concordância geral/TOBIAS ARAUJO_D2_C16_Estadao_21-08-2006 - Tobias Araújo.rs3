@@ -1,0 +1,269 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis-e" type="rst"/>
+			<rel name="antithesis" type="rst"/>
+			<rel name="attribution-e" type="rst"/>
+			<rel name="attribution" type="rst"/>
+			<rel name="background-e" type="rst"/>
+			<rel name="background" type="rst"/>
+			<rel name="circumstance-e" type="rst"/>
+			<rel name="circumstance" type="rst"/>
+			<rel name="comparison-e" type="rst"/>
+			<rel name="comparison" type="rst"/>
+			<rel name="concession-e" type="rst"/>
+			<rel name="concession" type="rst"/>
+			<rel name="conclusion-e" type="rst"/>
+			<rel name="conclusion" type="rst"/>
+			<rel name="condition-e" type="rst"/>
+			<rel name="condition" type="rst"/>
+			<rel name="contrast" type="multinuc"/>
+			<rel name="elaboration-e" type="rst"/>
+			<rel name="elaboration" type="rst"/>
+			<rel name="enablement-e" type="rst"/>
+			<rel name="enablement" type="rst"/>
+			<rel name="evaluation-e" type="rst"/>
+			<rel name="evaluation" type="rst"/>
+			<rel name="evidence-e" type="rst"/>
+			<rel name="evidence" type="rst"/>
+			<rel name="explanation-e" type="rst"/>
+			<rel name="explanation" type="rst"/>
+			<rel name="interpretation-e" type="rst"/>
+			<rel name="interpretation" type="rst"/>
+			<rel name="joint" type="multinuc"/>
+			<rel name="justify-e" type="rst"/>
+			<rel name="justify" type="rst"/>
+			<rel name="list" type="multinuc"/>
+			<rel name="means-e" type="rst"/>
+			<rel name="means" type="rst"/>
+			<rel name="motivation-e" type="rst"/>
+			<rel name="motivation" type="rst"/>
+			<rel name="non-volitional-cause-e" type="rst"/>
+			<rel name="non-volitional-cause" type="rst"/>
+			<rel name="non-volitional-result-e" type="rst"/>
+			<rel name="non-volitional-result" type="rst"/>
+			<rel name="other-rel-e" type="rst"/>
+			<rel name="other-rel" type="multinuc"/>
+			<rel name="other-rel" type="rst"/>
+			<rel name="otherwise-e" type="rst"/>
+			<rel name="otherwise" type="rst"/>
+			<rel name="parenthetical" type="rst"/>
+			<rel name="purpose-e" type="rst"/>
+			<rel name="purpose" type="rst"/>
+			<rel name="restatement-e" type="rst"/>
+			<rel name="restatement" type="rst"/>
+			<rel name="same-unit" type="multinuc"/>
+			<rel name="sequence" type="multinuc"/>
+			<rel name="solutionhood-e" type="rst"/>
+			<rel name="solutionhood" type="rst"/>
+			<rel name="summary-e" type="rst"/>
+			<rel name="summary" type="rst"/>
+			<rel name="volitional-cause-e" type="rst"/>
+			<rel name="volitional-cause" type="rst"/>
+			<rel name="volitional-result-e" type="rst"/>
+			<rel name="volitional-result" type="rst"/>
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="79" relname="span">Termina hoje ,  às 20 horas ,  o prazo para que os deputados acusados de participar do esquema dos sanguessugas renunciem</segment>
+		<segment id="2" parent="1" relname="purpose">para escapar da abertura de processo por quebra de decoro parlamentar .</segment>
+		<segment id="3" parent="101" relname="span">A expectativa de lideranças da Câmara e do Conselho de Ética é que pouco mais de 10 %  dos 69 deputados denunciados no relatório parcial da CPI dos Sanguessugas abrirão mão de seus mandatos .</segment>
+		<segment id="4" parent="81" relname="span">Integrante da cúpula da Câmara</segment>
+		<segment id="5" parent="4" relname="elaboration">que ,  nos últimos dias ,  conversou com ao menos 30 parlamentares acusados no caso</segment>
+		<segment id="6" parent="82" relname="same-unit">calcula que sete podem renunciar</segment>
+		<segment id="7" parent="83" relname="span">- Nilton Capixaba</segment>
+		<segment id="8" parent="7" relname="parenthetical">( PTB-RO )  ,</segment>
+		<segment id="9" parent="84" relname="span">Marcelino Fraga</segment>
+		<segment id="10" parent="9" relname="parenthetical">( PMDB-ES )  ,</segment>
+		<segment id="11" parent="85" relname="span">César Bandeira</segment>
+		<segment id="12" parent="11" relname="parenthetical">( PFL-MA )  ,</segment>
+		<segment id="13" parent="86" relname="span">Benedito Dias</segment>
+		<segment id="14" parent="13" relname="parenthetical">( PP-AP )  ,</segment>
+		<segment id="15" parent="87" relname="span">Carlos Nader</segment>
+		<segment id="16" parent="15" relname="parenthetical">( PL-RJ )  ,</segment>
+		<segment id="17" parent="88" relname="span">João Caldas</segment>
+		<segment id="18" parent="17" relname="parenthetical">( PL-AL )</segment>
+		<segment id="19" parent="89" relname="span">e Reginaldo Germano</segment>
+		<segment id="20" parent="19" relname="parenthetical">( PP-BA )  .</segment>
+		<segment id="21" parent="92" relname="span">Ex-líder do PP ,  Pedro Henry</segment>
+		<segment id="22" parent="21" relname="parenthetical">( MT )</segment>
+		<segment id="23" parent="93" relname="same-unit">cogitou sair da função ,</segment>
+		<segment id="24" parent="94" relname="span">mas teria desistido da idéia .</segment>
+		<segment id="25" parent="96" relname="circumstance">Até ontem ,</segment>
+		<segment id="26" parent="95" relname="span">só Coriolano Sales</segment>
+		<segment id="27" parent="26" relname="parenthetical">( PFL-BA )</segment>
+		<segment id="28" parent="96" relname="same-unit">havia apresentado renúncia .</segment>
+		<segment id="29" parent="99" relname="span">Ele não quis arriscar a chance de assumir a prefeitura de Vitória da Conquista .</segment>
+		<segment id="30" parent="29" relname="elaboration">Segundo colocado em 2004 ,  Sales processou seu adversário por abuso do poder econômico e aguarda resultado .</segment>
+		<segment id="31" parent="103" relname="span">" Não dá para avaliar quantos vão renunciar "  ,</segment>
+		<segment id="32" parent="102" relname="span">disse ontem o presidente do Conselho de Ética ,  Ricardo Izar</segment>
+		<segment id="33" parent="32" relname="parenthetical">( PTB-SP )  .</segment>
+		<segment id="34" parent="105" relname="list">Ele vai instaurar o processo contra os deputados envolvidos com a máfia dos sanguessugas amanhã ,  às 10h30 .</segment>
+		<segment id="35" parent="36" relname="condition">Formalizada antes da abertura ,</segment>
+		<segment id="36" parent="104" relname="span">a renúncia cessa o procedimento .</segment>
+		<segment id="37" parent="106" relname="span">Izar pretende que os casos dos 15 parlamentares</segment>
+		<segment id="38" parent="37" relname="elaboration">que receberam depósito na própria conta bancária ou na de parentes</segment>
+		<segment id="39" parent="107" relname="same-unit">sejam os primeiros julgados pelo Conselho .</segment>
+		<segment id="40" parent="110" relname="contrast">" Vou instaurar todos os processos juntos ,</segment>
+		<segment id="41" parent="108" relname="span">mas a idéia é que os 15 casos mais graves ,</segment>
+		<segment id="42" parent="41" relname="elaboration">que têm provas contundentes ,</segment>
+		<segment id="43" parent="109" relname="same-unit">sejam julgados na frente "  ,</segment>
+		<segment id="44" parent="110" relname="attribution">afirmou Izar .</segment>
+		<segment id="45" parent="115" relname="span">O horário-limite</segment>
+		<segment id="46" parent="45" relname="elaboration">para que o parlamentar renuncie</segment>
+		<segment id="47" parent="115" relname="parenthetical">- 20 horas -</segment>
+		<segment id="48" parent="117" relname="same-unit">foi estabelecido pela direção da Câmara</segment>
+		<segment id="49" parent="117" relname="purpose">a fim de que o ato seja oficializado com a sua publicação já no Diário Oficial do Congresso de amanhã .</segment>
+		<segment id="50" parent="119" relname="list">A maioria dos 69 deputados acusados de envolvimento com a máfia dos sanguessugas é candidato à reeleição</segment>
+		<segment id="51" parent="119" relname="list">e ,  com a renúncia ,  tentará escapar do risco de cassação e da perda dos direitos políticos por oito anos .</segment>
+		<segment id="52" parent="120" relname="span">Outros parlamentares resistem à renúncia</segment>
+		<segment id="53" parent="52" relname="explanation">por considerarem ter chance de não sofrer punição .</segment>
+		<segment id="54" parent="122" relname="span">Segundo investigações iniciadas pela Polícia Federal ,  o esquema consistia no desvio de recursos públicos</segment>
+		<segment id="55" parent="54" relname="means">por meio da apresentação de emendas parlamentares para a compra superfaturada de ambulâncias .</segment>
+		<segment id="56" parent="126" relname="contrast">Dois dos 69 deputados acusados são da Mesa Diretora ,</segment>
+		<segment id="57" parent="126" relname="contrast">mas se afastaram das funções .</segment>
+		<segment id="58" parent="127" relname="span">Contra João Caldas ,  por exemplo ,  pesam 12 pagamentos no total de R$ 136 mil ,</segment>
+		<segment id="59" parent="58" relname="elaboration">alguns dos quais em sua própria conta .</segment>
+		<segment id="60" parent="128" relname="span">Ele ,  porém ,  resiste à idéia de abrir mão do mandato .</segment>
+		<segment id="61" parent="129" relname="span">Já Capixaba ,</segment>
+		<segment id="62" parent="61" relname="elaboration">acusado de ter recebido R$ 646 mil ,</segment>
+		<segment id="63" parent="130" relname="same-unit">considera seriamente a hipótese de renunciar .</segment>
+		<segment id="64" parent="136" relname="span">No caso dos integrantes da Igreja Universal ,  a possibilidade de saída do cargo está afastada ,</segment>
+		<segment id="65" parent="134" relname="span">pois os envolvidos ,</segment>
+		<segment id="66" parent="133" relname="span">entre eles Edna Macedo</segment>
+		<segment id="67" parent="66" relname="parenthetical">( PTB-SP )  ,</segment>
+		<segment id="68" parent="135" relname="same-unit">foram proibidos pela direção da instituição de concorrer à reeleição .</segment>
+		<segment id="69" parent="137" relname="span">Eleitos na esteira do deputado Enéas Carneiro</segment>
+		<segment id="70" parent="69" relname="parenthetical">( Prona-SP )  ,</segment>
+		<segment id="71" parent="141" relname="span">ex-integrantes do partido suspeitos ,</segment>
+		<segment id="72" parent="138" relname="span">como Irapuan Teixeira</segment>
+		<segment id="73" parent="72" relname="parenthetical">( PTB-PR )</segment>
+		<segment id="74" parent="139" relname="span">e Ildeu Araújo</segment>
+		<segment id="75" parent="74" relname="parenthetical">( PP-SP )  ,</segment>
+		<segment id="76" parent="143" relname="same-unit">tiveram votação insignificante em 2002</segment>
+		<segment id="77" parent="143" relname="conclusion">e não têm chance de reeleição .</segment>
+		<segment id="78" parent="145" relname="span">Devem preferir manter o resto do mandato .</segment>
+		<group id="79" type="span" parent="80" relname="span"/>
+		<group id="80" type="span" parent="123" relname="span"/>
+		<group id="81" type="span" parent="82" relname="same-unit"/>
+		<group id="82" type="multinuc" parent="91" relname="span"/>
+		<group id="83" type="span" parent="90" relname="same-unit"/>
+		<group id="84" type="span" parent="90" relname="same-unit"/>
+		<group id="85" type="span" parent="90" relname="same-unit"/>
+		<group id="86" type="span" parent="90" relname="same-unit"/>
+		<group id="87" type="span" parent="90" relname="same-unit"/>
+		<group id="88" type="span" parent="90" relname="same-unit"/>
+		<group id="89" type="span" parent="90" relname="same-unit"/>
+		<group id="90" type="multinuc" parent="82" relname="parenthetical"/>
+		<group id="91" type="span" parent="100" relname="list"/>
+		<group id="92" type="span" parent="93" relname="same-unit"/>
+		<group id="93" type="multinuc" parent="24" relname="concession"/>
+		<group id="94" type="span" parent="100" relname="list"/>
+		<group id="95" type="span" parent="96" relname="same-unit"/>
+		<group id="96" type="multinuc" parent="97" relname="span"/>
+		<group id="97" type="span" parent="98" relname="span"/>
+		<group id="98" type="span" parent="100" relname="list"/>
+		<group id="99" type="span" parent="97" relname="explanation"/>
+		<group id="100" type="multinuc" parent="3" relname="elaboration"/>
+		<group id="101" type="span" parent="112" relname="span"/>
+		<group id="102" type="span" parent="31" relname="attribution"/>
+		<group id="103" type="span" parent="101" relname="elaboration"/>
+		<group id="104" type="span" parent="105" relname="list"/>
+		<group id="105" type="multinuc" parent="114" relname="span"/>
+		<group id="106" type="span" parent="107" relname="same-unit"/>
+		<group id="107" type="multinuc" parent="113" relname="span"/>
+		<group id="108" type="span" parent="109" relname="same-unit"/>
+		<group id="109" type="multinuc" parent="110" relname="contrast"/>
+		<group id="110" type="multinuc" parent="111" relname="span"/>
+		<group id="111" type="span" parent="107" relname="restatement"/>
+		<group id="112" type="span" parent="79" relname="elaboration"/>
+		<group id="113" type="span" parent="105" relname="elaboration"/>
+		<group id="114" type="span" parent="80" relname="elaboration"/>
+		<group id="115" type="span" parent="116" relname="span"/>
+		<group id="116" type="span" parent="117" relname="same-unit"/>
+		<group id="117" type="multinuc" parent="118" relname="span"/>
+		<group id="118" type="span" parent="124" relname="span"/>
+		<group id="119" type="multinuc" parent="121" relname="list"/>
+		<group id="120" type="span" parent="121" relname="list"/>
+		<group id="121" type="multinuc" parent="118" relname="elaboration"/>
+		<group id="122" type="span" parent="123" relname="elaboration"/>
+		<group id="123" type="span" parent="125" relname="span"/>
+		<group id="124" type="span" parent="123" relname="elaboration"/>
+		<group id="125" type="span" parent="147" relname="span"/>
+		<group id="126" type="multinuc" parent="132" relname="span"/>
+		<group id="127" type="span" parent="60" relname="concession"/>
+		<group id="128" type="span" parent="131" relname="list"/>
+		<group id="129" type="span" parent="130" relname="same-unit"/>
+		<group id="130" type="multinuc" parent="131" relname="list"/>
+		<group id="131" type="multinuc" parent="126" relname="elaboration"/>
+		<group id="132" type="span" parent="146" relname="list"/>
+		<group id="133" type="span" parent="65" relname="elaboration"/>
+		<group id="134" type="span" parent="135" relname="same-unit"/>
+		<group id="135" type="multinuc" parent="64" relname="explanation"/>
+		<group id="136" type="span" parent="146" relname="list"/>
+		<group id="137" type="span" parent="142" relname="span"/>
+		<group id="138" type="span" parent="140" relname="same-unit"/>
+		<group id="139" type="span" parent="140" relname="same-unit"/>
+		<group id="140" type="multinuc" parent="71" relname="elaboration"/>
+		<group id="141" type="span" parent="137" relname="elaboration"/>
+		<group id="142" type="span" parent="143" relname="same-unit"/>
+		<group id="143" type="multinuc" parent="144" relname="span"/>
+		<group id="144" type="span" parent="78" relname="explanation"/>
+		<group id="145" type="span" parent="146" relname="list"/>
+		<group id="146" type="multinuc" parent="125" relname="elaboration"/>
+		<group id="147" type="span" />
+		<signals>
+			<signal source="2" type="MD" subtype="PREP" tokens="24"/>
+			<signal source="5" type="SINT" subtype="PRO-REL" tokens="77"/>
+			<signal source="5" type="SINT" subtype="ORA-REL" tokens="85,87,89,88,86,90,91,93,92"/>
+			<signal source="8" type="GRAF" subtype="PARENT" tokens="102,104"/>
+			<signal source="8" type="SEMA" subtype="ACRO" tokens="103"/>
+			<signal source="10" type="GRAF" subtype="PARENT" tokens="109,111"/>
+			<signal source="10" type="SEMA" subtype="FONTE" tokens="110"/>
+			<signal source="12" type="GRAF" subtype="PARENT" tokens="116,118"/>
+			<signal source="12" type="SEMA" subtype="ACRO" tokens="117"/>
+			<signal source="14" type="GRAF" subtype="PARENT" tokens="123,125"/>
+			<signal source="14" type="SEMA" subtype="ACRO" tokens="124"/>
+			<signal source="16" type="GRAF" subtype="PARENT" tokens="130,132"/>
+			<signal source="16" type="SEMA" subtype="ACRO" tokens="131"/>
+			<signal source="18" type="GRAF" subtype="PARENT" tokens="143,145"/>
+			<signal source="18" type="SEMA" subtype="ACRO" tokens="144"/>
+			<signal source="22" type="GRAF" subtype="PARENT" tokens="155,157"/>
+			<signal source="22" type="SEMA" subtype="ACRO" tokens="156"/>
+			<signal source="27" type="GRAF" subtype="PARENT" tokens="175,177"/>
+			<signal source="27" type="SEMA" subtype="ACRO" tokens="176"/>
+			<signal source="33" type="GRAF" subtype="PARENT" tokens="239,241,242"/>
+			<signal source="33" type="SEMA" subtype="ACRO" tokens="240"/>
+			<signal source="35" type="SINT" subtype="ORA-CIRCUNS" tokens="264,265,266,267"/>
+			<signal source="38" type="SINT" subtype="PRO-REL" tokens="283"/>
+			<signal source="38" type="SINT" subtype="ORA-REL" tokens="284,285,287,286,288,289,291,292,290,293"/>
+			<signal source="42" type="GRAF" subtype="PONT" tokens="319,324"/>
+			<signal source="42" type="SINT" subtype="PRO-REL" tokens="320"/>
+			<signal source="42" type="SINT" subtype="ORA-REL" tokens="321,322,323"/>
+			<signal source="46" type="SINT" subtype="PRO-REL" tokens="338"/>
+			<signal source="47" type="GRAF" subtype="TRAVES" tokens="342,345"/>
+			<signal source="51" type="MD" subtype="CONJ" tokens="390"/>
+			<signal source="51" type="GRAF" subtype="PONT" tokens="391"/>
+			<signal source="53" type="MD" subtype="PREP" tokens="419"/>
+			<signal source="55" type="MD" subtype="ADV" tokens="444,445"/>
+			<signal source="57" type="MD" subtype="CONJ" tokens="468"/>
+			<signal source="59" type="GRAF" subtype="PONT" tokens="492"/>
+			<signal source="62" type="GRAF" subtype="PONT" tokens="518,526"/>
+			<signal source="67" type="GRAF" subtype="PARENT" tokens="560,562"/>
+			<signal source="67" type="SEMA" subtype="ACRO" tokens="561"/>
+			<signal source="70" type="GRAF" subtype="PARENT" tokens="583,585"/>
+			<signal source="70" type="SEMA" subtype="ACRO" tokens="584"/>
+			<signal source="73" type="GRAF" subtype="PARENT" tokens="596,598"/>
+			<signal source="73" type="SEMA" subtype="ACRO" tokens="597"/>
+			<signal source="75" type="GRAF" subtype="PARENT" tokens="602,604"/>
+			<signal source="75" type="SEMA" subtype="ACRO" tokens="603"/>
+			<signal source="81" type="SINT" subtype="VALE-VERB" tokens="72,73,74,75,76,94"/>
+			<signal source="92" type="SINT" subtype="VALE-VERB" tokens="148,149,150,153,154,158"/>
+			<signal source="95" type="SINT" subtype="VALE-VERB" tokens="173,174,178,179"/>
+			<signal source="106" type="SINT" subtype="VALE-VERB" tokens="278,279,294"/>
+			<signal source="108" type="SINT" subtype="VALE-VERB" tokens="314,315,316,325"/>
+			<signal source="129" type="SINT" subtype="VALE-VERB" tokens="516,517,527"/>
+			<signal source="139" type="MD" subtype="CONJ" tokens="599"/>
+		</signals>
+	</body>
+</rst>

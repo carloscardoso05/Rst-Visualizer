@@ -1,0 +1,185 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="" type="rst"/>
+			<rel name="antithesis-e" type="rst"/>
+			<rel name="antithesis" type="rst"/>
+			<rel name="attribution-e" type="rst"/>
+			<rel name="attribution" type="rst"/>
+			<rel name="background-e" type="rst"/>
+			<rel name="background" type="rst"/>
+			<rel name="circumstance-e" type="rst"/>
+			<rel name="circumstance" type="rst"/>
+			<rel name="comparison-e" type="rst"/>
+			<rel name="comparison" type="rst"/>
+			<rel name="concession-e" type="rst"/>
+			<rel name="concession" type="rst"/>
+			<rel name="conclusion-e" type="rst"/>
+			<rel name="conclusion" type="rst"/>
+			<rel name="condition-e" type="rst"/>
+			<rel name="condition" type="rst"/>
+			<rel name="contrast" type="multinuc"/>
+			<rel name="elaboration-e" type="rst"/>
+			<rel name="elaboration" type="rst"/>
+			<rel name="enablement-e" type="rst"/>
+			<rel name="enablement" type="rst"/>
+			<rel name="evaluation-e" type="rst"/>
+			<rel name="evaluation" type="rst"/>
+			<rel name="evidence-e" type="rst"/>
+			<rel name="evidence" type="rst"/>
+			<rel name="explanation-e" type="rst"/>
+			<rel name="explanation" type="rst"/>
+			<rel name="interpretation-e" type="rst"/>
+			<rel name="interpretation" type="rst"/>
+			<rel name="joint" type="multinuc"/>
+			<rel name="justify-e" type="rst"/>
+			<rel name="justify" type="rst"/>
+			<rel name="list" type="multinuc"/>
+			<rel name="means-e" type="rst"/>
+			<rel name="means" type="rst"/>
+			<rel name="motivation-e" type="rst"/>
+			<rel name="motivation" type="rst"/>
+			<rel name="non-volitional-cause-e" type="rst"/>
+			<rel name="non-volitional-cause" type="rst"/>
+			<rel name="non-volitional-result-e" type="rst"/>
+			<rel name="non-volitional-result" type="rst"/>
+			<rel name="other-rel-e" type="rst"/>
+			<rel name="other-rel" type="multinuc"/>
+			<rel name="other-rel" type="rst"/>
+			<rel name="otherwise-e" type="rst"/>
+			<rel name="otherwise" type="rst"/>
+			<rel name="parenthetical" type="rst"/>
+			<rel name="purpose-e" type="rst"/>
+			<rel name="purpose" type="rst"/>
+			<rel name="restatement-e" type="rst"/>
+			<rel name="restatement" type="rst"/>
+			<rel name="same-unit" type="multinuc"/>
+			<rel name="sequence" type="multinuc"/>
+			<rel name="solutionhood-e" type="rst"/>
+			<rel name="solutionhood" type="rst"/>
+			<rel name="summary-e" type="rst"/>
+			<rel name="summary" type="rst"/>
+			<rel name="volitional-cause-e" type="rst"/>
+			<rel name="volitional-cause" type="rst"/>
+			<rel name="volitional-result-e" type="rst"/>
+			<rel name="volitional-result" type="rst"/>
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="46" relname="attribution">O ministro da Defesa ,  Nelson Jobim ,  informou no fim da noite desta terça-feira que</segment>
+		<segment id="2" parent="46" relname="span">a economista Solange Vieira ,  de 38 anos ,  será a nova presidente da Agência Nacional de Aviação Civil</segment>
+		<segment id="3" parent="2" relname="parenthetical">( Anac )  .</segment>
+		<segment id="4" parent="48" relname="list">Braço direito do peemedebista desde sua posse ,  ela é funcionária de carreira do BNDES</segment>
+		<segment id="5" parent="48" relname="list">e comandou a Secretaria de Previdência Complementar no governo Fernando Henrique Cardoso .</segment>
+		<segment id="6" parent="50" relname="span">-  A Solange vai ser a nova presidente da Anac</segment>
+		<segment id="7" parent="6" relname="attribution">- disse Jobim ,  em jantar que celebrou os 50 anos da Rede RBS em Brasília .</segment>
+		<segment id="8" parent="54" relname="sequence">Alvo de críticas incisivas da oposição desde o acidente com o Airbus da TAM ,  o atual presidente da Anac ,  Milton Zuanazzi ,  já teria concordado em renunciar</segment>
+		<segment id="9" parent="54" relname="sequence">e deve entregar o cargo nos próximos dias .</segment>
+		<segment id="10" parent="52" relname="circumstance">Porém ,  procurado pela GloboNews TV na noite desta terça-feira ,</segment>
+		<segment id="11" parent="12" relname="attribution">ele disse que</segment>
+		<segment id="12" parent="52" relname="span">não pretende deixar a função .</segment>
+		<segment id="13" parent="14" relname="non-volitional-cause">Como os diretores de agências têm mandato de cinco anos ,</segment>
+		<segment id="14" parent="56" relname="span">só podem sair por renúncia ,  decisão judicial ou acusação de improbidade administrativa .</segment>
+		<segment id="15" parent="57" relname="span">Os dois ministros</segment>
+		<segment id="16" parent="15" relname="elaboration">que davam sustentação a Zuanazzi no cargo ,  Dilma Rousseff e Walfrido dos Mares Guia ,</segment>
+		<segment id="17" parent="18" relname="attribution">avaliam nesta quarta-feira que</segment>
+		<segment id="18" parent="58" relname="span">ele se tornou uma figura muito vinculada à crise aérea</segment>
+		<segment id="19" parent="59" relname="span">e passaram a defender sua substituição .</segment>
+		<segment id="20" parent="61" relname="list">O último remanescente da diretoria da Anac à época do acidente ,  Josef Barat ,  diretor de Relações Internacionais ,  Pesquisas e Capacitação da Anac ,  também deve sair .</segment>
+		<segment id="21" parent="61" relname="list">Outros três diretores já entregaram os cargos .</segment>
+		<segment id="22" parent="63" relname="span">Em 2001 ,  por cerca de oito meses ,  Solange comandou com mão-de-ferro os fundos de pensão do país ,  como titular da Secretaria de Previdência Complementar</segment>
+		<segment id="23" parent="22" relname="parenthetical">( SPC )</segment>
+		<segment id="24" parent="62" relname="same-unit">do Ministério da Previdência .</segment>
+		<segment id="25" parent="26" relname="volitional-cause">Após vários desentendimentos com o então ministro da pasta ,  Roberto Brant ,</segment>
+		<segment id="26" parent="64" relname="span">foi demitida .</segment>
+		<segment id="27" parent="65" relname="span">Durante aquele período ,  comandou a maior reforma dos últimos anos na legislação</segment>
+		<segment id="28" parent="27" relname="elaboration">que regulamenta os fundos de pensão ,</segment>
+		<segment id="29" parent="66" relname="span">aumentando a transparência do setor .</segment>
+		<segment id="30" parent="68" relname="span">Mas também conquistou muito inimigos ,  principalmente entre os dirigentes de fundos de pensão ,</segment>
+		<segment id="31" parent="67" relname="list">que a acusavam de ser muito vaidosa</segment>
+		<segment id="32" parent="67" relname="list">e de não ter cuidado ao divulgar informações sobre o sistema .</segment>
+		<segment id="33" parent="71" relname="span">O relatório final da CPI do Apagão da Câmara ,</segment>
+		<segment id="34" parent="33" relname="elaboration">que começou a ser lido nesta terça-feira ,</segment>
+		<segment id="35" parent="70" relname="same-unit">recomenda o ingresso da iniciativa privada na administração da infra-estrutura dos aeroportos ,  hoje sob o comando de uma estatal ,  a Infraero .</segment>
+		<segment id="36" parent="73" relname="span">O relator ,  deputado Marco Maia</segment>
+		<segment id="37" parent="36" relname="parenthetical">( PT-RS )  ,</segment>
+		<segment id="38" parent="72" relname="same-unit">só deve apontar conclusões nesta quinta-feira .</segment>
+		<segment id="39" parent="40" relname="circumstance">Cobrado por familiares de vítimas do acidente da TAM e pela oposição ,</segment>
+		<segment id="40" parent="74" relname="span">dificilmente o relator irá sugerir o indiciamento de Zuanazzi .</segment>
+		<segment id="41" parent="42" relname="attribution">Ele disse que</segment>
+		<segment id="42" parent="76" relname="span">não está convencido da  " participação objetiva "  de Zuanazzi nas denúncias contra a agência :</segment>
+		<segment id="43" parent="75" relname="span">-  Não podemos indiciar</segment>
+		<segment id="44" parent="43" relname="purpose">para agradar à oposição ,  ao governo ou a quem quer que seja</segment>
+		<segment id="45" parent="75" relname="attribution">-  disse Maia .</segment>
+		<group id="46" type="span" parent="47" relname="span"/>
+		<group id="47" type="span" parent="49" relname="span"/>
+		<group id="48" type="multinuc" parent="47" relname="elaboration"/>
+		<group id="49" type="span" parent="51" relname="span"/>
+		<group id="50" type="span" parent="49" relname="restatement"/>
+		<group id="51" type="span" parent="81" relname="span"/>
+		<group id="52" type="span" parent="53" relname="span"/>
+		<group id="53" type="span" parent="54" relname="antithesis"/>
+		<group id="54" type="multinuc" parent="55" relname="span"/>
+		<group id="55" type="span" parent="78" relname="span"/>
+		<group id="56" type="span" parent="55" relname="elaboration"/>
+		<group id="57" type="span" parent="60" relname="same-unit"/>
+		<group id="58" type="span" parent="19" relname="volitional-cause"/>
+		<group id="59" type="span" parent="60" relname="same-unit"/>
+		<group id="60" type="multinuc" parent="78" relname="elaboration"/>
+		<group id="61" type="multinuc" parent="80" relname="list"/>
+		<group id="62" type="multinuc" parent="82" relname="sequence"/>
+		<group id="63" type="span" parent="62" relname="same-unit"/>
+		<group id="64" type="span" parent="82" relname="sequence"/>
+		<group id="65" type="span" parent="29" relname="non-volitional-cause"/>
+		<group id="66" type="span" parent="69" relname="span"/>
+		<group id="67" type="multinuc" parent="30" relname="elaboration"/>
+		<group id="68" type="span" parent="66" relname="concession"/>
+		<group id="69" type="span" parent="83" relname="span"/>
+		<group id="70" type="multinuc" parent="85" relname="sequence"/>
+		<group id="71" type="span" parent="70" relname="same-unit"/>
+		<group id="72" type="multinuc" parent="85" relname="sequence"/>
+		<group id="73" type="span" parent="72" relname="same-unit"/>
+		<group id="74" type="span" parent="86" relname="span"/>
+		<group id="75" type="span" parent="77" relname="span"/>
+		<group id="76" type="span" parent="75" relname="volitional-cause"/>
+		<group id="77" type="span" parent="74" relname="motivation"/>
+		<group id="78" type="span" parent="79" relname="span"/>
+		<group id="79" type="span" parent="80" relname="list"/>
+		<group id="80" type="multinuc" parent="51" relname="non-volitional-result"/>
+		<group id="81" type="span" parent="84" relname="span"/>
+		<group id="82" type="multinuc" parent="69" relname="background"/>
+		<group id="83" type="span" parent="81" relname="volitional-result"/>
+		<group id="84" type="span" parent="88" relname="span"/>
+		<group id="85" type="multinuc" parent="87" relname="span"/>
+		<group id="86" type="span" parent="85" relname="elaboration"/>
+		<group id="87" type="span" parent="84" relname="elaboration"/>
+		<group id="88" type="span" />
+		<signals>
+			<signal source="1" type="MD" subtype="CONJ" tokens="18"/>
+			<signal source="1" type="MORF" subtype="SENT-VERBAL" tokens="11"/>
+			<signal source="3" type="GRAF" subtype="PARENT" tokens="41,42,40"/>
+			<signal source="5" type="MD" subtype="CONJ" tokens="61"/>
+			<signal source="7" type="SINT" subtype="ORA-REL" tokens="86,87"/>
+			<signal source="9" type="MD" subtype="CONJ" tokens="135"/>
+			<signal source="11" type="MD" subtype="CONJ" tokens="158"/>
+			<signal source="13" type="SINT" subtype="ORA-CIRCUNS" tokens="165,166,167,168,169,170,171,173,174,172"/>
+			<signal source="16" type="SEMA" subtype="CONHE-MUND" tokens="203,204,205,206,207,208,209"/>
+			<signal source="17" type="MD" subtype="CONJ" tokens="214"/>
+			<signal source="23" type="GRAF" subtype="PARENT" tokens="304,306"/>
+			<signal source="25" type="SEMA" subtype="CAMPO-SEM" tokens="312,313,314,315,316,317,318,319,320"/>
+			<signal source="28" type="MD" subtype="CONJ" tokens="343"/>
+			<signal source="32" type="MD" subtype="CONJ" tokens="379"/>
+			<signal source="34" type="SINT" subtype="ORA-REL" tokens="401,403,402,404,405,406,407"/>
+			<signal source="37" type="GRAF" subtype="PARENT" tokens="442,444,443"/>
+			<signal source="39" type="SEMA" subtype="CAMPO-SEM" tokens="454,455,457,456,458,459,460,461,462,463,464,465"/>
+			<signal source="41" type="MD" subtype="CONJ" tokens="479"/>
+			<signal source="44" type="SINT" subtype="ORA-CIRCUNS" tokens="503,504,505,506,508,509,510,511,512,513,514,515,516"/>
+			<signal source="45" type="GRAF" subtype="TRAVES" tokens="517"/>
+			<signal source="45" type="MORF" subtype="SENT-VERBAL" tokens="519"/>
+			<signal source="58" type="SINT" subtype="ORA-CIRCUNS" tokens="216,217,218,219,221,222,223,224,220"/>
+			<signal source="58" type="MORF" subtype="SENT-VERBAL" tokens="211"/>
+			<signal source="65" type="SINT" subtype="ORA-CIRCUNS" tokens="334,336,335,337,339,338,340,341,342"/>
+			<signal source="67" type="SINT" subtype="ORA-REL" tokens="373,374,376,375,377,378,372"/>
+		</signals>
+	</body>
+</rst>

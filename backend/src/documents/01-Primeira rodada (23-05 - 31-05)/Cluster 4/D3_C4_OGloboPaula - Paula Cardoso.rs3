@@ -1,0 +1,180 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="" type="rst"/>
+			<rel name="antithesis-e" type="rst"/>
+			<rel name="antithesis" type="rst"/>
+			<rel name="attribution-e" type="rst"/>
+			<rel name="attribution" type="rst"/>
+			<rel name="background-e" type="rst"/>
+			<rel name="background" type="rst"/>
+			<rel name="circumstance-e" type="rst"/>
+			<rel name="circumstance" type="rst"/>
+			<rel name="comparison-e" type="rst"/>
+			<rel name="comparison" type="rst"/>
+			<rel name="concession-e" type="rst"/>
+			<rel name="concession" type="rst"/>
+			<rel name="conclusion-e" type="rst"/>
+			<rel name="conclusion" type="rst"/>
+			<rel name="condition-e" type="rst"/>
+			<rel name="condition" type="rst"/>
+			<rel name="contrast" type="multinuc"/>
+			<rel name="elaboration-e" type="rst"/>
+			<rel name="elaboration" type="rst"/>
+			<rel name="enablement-e" type="rst"/>
+			<rel name="enablement" type="rst"/>
+			<rel name="evaluation-e" type="rst"/>
+			<rel name="evaluation" type="rst"/>
+			<rel name="evidence-e" type="rst"/>
+			<rel name="evidence" type="rst"/>
+			<rel name="explanation-e" type="rst"/>
+			<rel name="explanation" type="rst"/>
+			<rel name="interpretation-e" type="rst"/>
+			<rel name="interpretation" type="rst"/>
+			<rel name="joint" type="multinuc"/>
+			<rel name="justify-e" type="rst"/>
+			<rel name="justify" type="rst"/>
+			<rel name="list" type="multinuc"/>
+			<rel name="means-e" type="rst"/>
+			<rel name="means" type="rst"/>
+			<rel name="motivation-e" type="rst"/>
+			<rel name="motivation" type="rst"/>
+			<rel name="non-volitional-cause-e" type="rst"/>
+			<rel name="non-volitional-cause" type="rst"/>
+			<rel name="non-volitional-result-e" type="rst"/>
+			<rel name="non-volitional-result" type="rst"/>
+			<rel name="other-rel-e" type="rst"/>
+			<rel name="other-rel" type="multinuc"/>
+			<rel name="other-rel" type="rst"/>
+			<rel name="otherwise-e" type="rst"/>
+			<rel name="otherwise" type="rst"/>
+			<rel name="parenthetical" type="rst"/>
+			<rel name="purpose-e" type="rst"/>
+			<rel name="purpose" type="rst"/>
+			<rel name="restatement-e" type="rst"/>
+			<rel name="restatement" type="rst"/>
+			<rel name="same-unit" type="multinuc"/>
+			<rel name="sequence" type="multinuc"/>
+			<rel name="solutionhood-e" type="rst"/>
+			<rel name="solutionhood" type="rst"/>
+			<rel name="summary-e" type="rst"/>
+			<rel name="summary" type="rst"/>
+			<rel name="volitional-cause-e" type="rst"/>
+			<rel name="volitional-cause" type="rst"/>
+			<rel name="volitional-result-e" type="rst"/>
+			<rel name="volitional-result" type="rst"/>
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="2" relname="circumstance">Depois de 20 dias de tempo seco ,</segment>
+		<segment id="2" parent="41" relname="span">voltou a chover na capital paulista .</segment>
+		<segment id="3" parent="38" relname="span">Segundo o Centro de Gerenciamento de Emergências</segment>
+		<segment id="4" parent="3" relname="parenthetical">( CGE )</segment>
+		<segment id="5" parent="39" relname="span">,  a última chuva havia ocorrido no dia 29 de junho ,  em intensidade menor</segment>
+		<segment id="6" parent="5" relname="comparison">do que a que cai sobre a cidade desde a noite de domingo .</segment>
+		<segment id="7" parent="48" relname="list">A previsão é que ocorram novas pancadas entre a noite de terça e a manhã de quarta .</segment>
+		<segment id="8" parent="44" relname="span">A temperatura deve permanecer baixa ,</segment>
+		<segment id="9" parent="43" relname="span">por conta da massa de ar polar que acompanha a frente fria</segment>
+		<segment id="10" parent="9" relname="elaboration">que passa pelo estado .</segment>
+		<segment id="11" parent="46" relname="sequence">Nesta segunda-feira ,  os termômetros não devem passar de 18 graus .</segment>
+		<segment id="12" parent="13" relname="concession">Amanhã ,  a temperatura máxima pode chegar a 22 graus ,</segment>
+		<segment id="13" parent="45" relname="span">mas na quarta volta a cair .</segment>
+		<segment id="14" parent="51" relname="span">O Aeroporto de Congonhas funciona normalmente nesta segunda .</segment>
+		<segment id="15" parent="49" relname="attribution">De acordo com a Infraero ,</segment>
+		<segment id="16" parent="49" relname="list">até 8h20m apenas dois dos 42 vôos programados atrasaram</segment>
+		<segment id="17" parent="49" relname="list">e um foi cancelado .</segment>
+		<segment id="18" parent="52" relname="sequence">A chuva começou na noite de domingo</segment>
+		<segment id="19" parent="52" relname="sequence">e ficou mais forte entre 6h e 7h30m desta segunda .</segment>
+		<segment id="20" parent="53" relname="list">Na madrugada ,  a temperatura foi de 12 graus nos lugares mais frios da cidade .</segment>
+		<segment id="21" parent="54" relname="span">Com o asfalto molhado ,  o trânsito ficou mais lento</segment>
+		<segment id="22" parent="21" relname="non-volitional-result">e o congestionamento ficou o dobro da média .</segment>
+		<segment id="23" parent="55" relname="span">Até 9h30m foram registrados oito pontos de alagamento ,  dois deles intransitáveis</segment>
+		<segment id="24" parent="23" relname="parenthetical">- na Marginal Pinheiros ,  na altura da Ponte João Dias ,  e na Marginal Tietê ,  no acesso à Rodovia dos Bandeirantes .</segment>
+		<segment id="25" parent="58" relname="span">Na noite de domingo ,  a pista molhada causou dois capotamentos .</segment>
+		<segment id="26" parent="57" relname="list">Um deles ,  no começo da Rodovia dos Imigrantes ,  deixou sete feridos .</segment>
+		<segment id="27" parent="57" relname="list">O outro ,  na Avenida 23 de Maio ,  perto do Viaduto Pedroso ,  feriu quatro .</segment>
+		<segment id="28" parent="29" relname="attribution">De acordo com a CET ,</segment>
+		<segment id="29" parent="59" relname="span">o índice de congestionamento era de 54 quilômetros às 8h ,  bem acima da média .</segment>
+		<segment id="30" parent="31" relname="circumstance">Em julho do ano passado ,</segment>
+		<segment id="31" parent="60" relname="span">a média foi de 36 km no horário .</segment>
+		<segment id="32" parent="61" relname="span">O pico de lentidão foi registrado às 9h ,  com 113 km de lentidão ,</segment>
+		<segment id="33" parent="32" relname="comparison">o dobro do registrado neste horário .</segment>
+		<segment id="34" parent="64" relname="span">O rodízio de veículos vigora na cidade</segment>
+		<segment id="35" parent="34" relname="elaboration">e hoje há restrição de circulação para os carros com placas final 1 e 2 .</segment>
+		<segment id="36" parent="65" relname="span">O tempo deve ficar firme somente a partir de quinta-feira -</segment>
+		<segment id="37" parent="36" relname="attribution">diz Alexandre Nascimento ,  da Climatempo .</segment>
+		<group id="38" type="span" parent="39" relname="attribution"/>
+		<group id="39" type="span" parent="40" relname="span"/>
+		<group id="40" type="span" parent="41" relname="circumstance"/>
+		<group id="41" type="span" parent="42" relname="span"/>
+		<group id="42" type="span" parent="66" relname="sequence"/>
+		<group id="43" type="span" parent="8" relname="non-volitional-cause"/>
+		<group id="44" type="span" parent="47" relname="span"/>
+		<group id="45" type="span" parent="46" relname="sequence"/>
+		<group id="46" type="multinuc" parent="44" relname="evidence"/>
+		<group id="47" type="span" parent="48" relname="list"/>
+		<group id="48" type="multinuc" parent="66" relname="sequence"/>
+		<group id="49" type="multinuc" parent="50" relname="span"/>
+		<group id="50" type="span" parent="14" relname="evidence"/>
+		<group id="51" type="span" parent="67" relname="list"/>
+		<group id="52" type="multinuc" parent="53" relname="list"/>
+		<group id="53" type="multinuc" parent="67" relname="elaboration"/>
+		<group id="54" type="span" parent="56" relname="list"/>
+		<group id="55" type="span" parent="56" relname="list"/>
+		<group id="56" type="multinuc" parent="69" relname="list"/>
+		<group id="57" type="multinuc" parent="25" relname="elaboration"/>
+		<group id="58" type="span" parent="69" relname="list"/>
+		<group id="59" type="span" parent="62" relname="span"/>
+		<group id="60" type="span" parent="59" relname="explanation"/>
+		<group id="61" type="span" parent="62" relname="elaboration"/>
+		<group id="62" type="span" parent="63" relname="span"/>
+		<group id="63" type="span" parent="69" relname="elaboration"/>
+		<group id="64" type="span" parent="71" relname="list"/>
+		<group id="65" type="span" parent="71" relname="list"/>
+		<group id="66" type="multinuc" parent="67" relname="list"/>
+		<group id="67" type="multinuc" parent="68" relname="span"/>
+		<group id="68" type="span" parent="72" relname="span"/>
+		<group id="69" type="multinuc" parent="70" relname="span"/>
+		<group id="70" type="span" parent="71" relname="list"/>
+		<group id="71" type="multinuc" parent="68" relname="non-volitional-result"/>
+		<group id="72" type="span" />
+		<signals>
+			<signal source="1" type="MD" subtype="ADV" tokens="1,2"/>
+			<signal source="1" type="GRAF" subtype="PONT" tokens="8"/>
+			<signal source="1" type="SINT" subtype="ORA-CIRCUNS" tokens="1,4,3,5,2,6,7"/>
+			<signal source="4" type="SEMA" subtype="ACRO" tokens="24,23"/>
+			<signal source="4" type="GRAF" subtype="PARENT" tokens="23"/>
+			<signal source="4" type="GRAF" subtype="PARENT" tokens="25"/>
+			<signal source="6" type="MD" subtype="ADV" tokens="42,43,44"/>
+			<signal source="10" type="SINT" subtype="PRO-REL" tokens="93"/>
+			<signal source="10" type="SINT" subtype="ORA-REL" tokens="94,95,96,97"/>
+			<signal source="12" type="GRAF" subtype="PONT" tokens="122"/>
+			<signal source="12" type="MD" subtype="CONJ" tokens="123"/>
+			<signal source="15" type="MD" subtype="PREP" tokens="139,140,141"/>
+			<signal source="15" type="SEMA" subtype="FONTE" tokens="143"/>
+			<signal source="15" type="GRAF" subtype="PONT" tokens="144"/>
+			<signal source="16" type="MD" subtype="CONJ" tokens="154"/>
+			<signal source="16" type="MORF" subtype="TEMPO-VERBAL" tokens="153"/>
+			<signal source="16" type="MORF" subtype="TEMPO-VERBAL" tokens="156"/>
+			<signal source="18" type="MD" subtype="CONJ" tokens="166,165"/>
+			<signal source="18" type="CDP" subtype="CDP" tokens="165"/>
+			<signal source="18" type="CDP" subtype="CDP" tokens="175"/>
+			<signal source="22" type="SEMA" subtype="CAMPO-SEM" tokens="196,197,201,204"/>
+			<signal source="24" type="GRAF" subtype="TRAVES" tokens="227"/>
+			<signal source="28" type="MD" subtype="PREP" tokens="303,304,305"/>
+			<signal source="28" type="SEMA" subtype="FONTE" tokens="307"/>
+			<signal source="28" type="GRAF" subtype="PONT" tokens="308"/>
+			<signal source="30" type="MD" subtype="PREP" tokens="326"/>
+			<signal source="33" type="SEMA" subtype="CONHE-MUND" tokens="358,359"/>
+			<signal source="35" type="MD" subtype="CONJ" tokens="371"/>
+			<signal source="35" type="SEMA" subtype="CAMPO-SEM" tokens="365,367,366,374,375,376"/>
+			<signal source="37" type="SEMA" subtype="VERB-COMUNI" tokens="398"/>
+			<signal source="37" type="SEMA" subtype="FONTE" tokens="399,400,404,403,401"/>
+			<signal source="37" type="GRAF" subtype="TRAVES" tokens="397"/>
+			<signal source="38" type="MD" subtype="PREP" tokens="16"/>
+			<signal source="38" type="SEMA" subtype="FONTE" tokens="18,20,22,21,19"/>
+			<signal source="38" type="GRAF" subtype="PONT" tokens="26"/>
+			<signal source="43" type="MD" subtype="PREP" tokens="81,83,82"/>
+		</signals>
+	</body>
+</rst>

@@ -1,0 +1,178 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis-e" type="rst"/>
+			<rel name="antithesis" type="rst"/>
+			<rel name="attribution-e" type="rst"/>
+			<rel name="attribution" type="rst"/>
+			<rel name="background-e" type="rst"/>
+			<rel name="background" type="rst"/>
+			<rel name="circumstance-e" type="rst"/>
+			<rel name="circumstance" type="rst"/>
+			<rel name="comparison-e" type="rst"/>
+			<rel name="comparison" type="rst"/>
+			<rel name="concession-e" type="rst"/>
+			<rel name="concession" type="rst"/>
+			<rel name="conclusion-e" type="rst"/>
+			<rel name="conclusion" type="rst"/>
+			<rel name="condition-e" type="rst"/>
+			<rel name="condition" type="rst"/>
+			<rel name="contrast" type="multinuc"/>
+			<rel name="elaboration-e" type="rst"/>
+			<rel name="elaboration" type="rst"/>
+			<rel name="enablement-e" type="rst"/>
+			<rel name="enablement" type="rst"/>
+			<rel name="evaluation-e" type="rst"/>
+			<rel name="evaluation" type="rst"/>
+			<rel name="evidence-e" type="rst"/>
+			<rel name="evidence" type="rst"/>
+			<rel name="explanation-e" type="rst"/>
+			<rel name="explanation" type="rst"/>
+			<rel name="interpretation-e" type="rst"/>
+			<rel name="interpretation" type="rst"/>
+			<rel name="joint" type="multinuc"/>
+			<rel name="justify-e" type="rst"/>
+			<rel name="justify" type="rst"/>
+			<rel name="list" type="multinuc"/>
+			<rel name="means-e" type="rst"/>
+			<rel name="means" type="rst"/>
+			<rel name="motivation-e" type="rst"/>
+			<rel name="motivation" type="rst"/>
+			<rel name="non-volitional-cause-e" type="rst"/>
+			<rel name="non-volitional-cause" type="rst"/>
+			<rel name="non-volitional-result-e" type="rst"/>
+			<rel name="non-volitional-result" type="rst"/>
+			<rel name="other-rel-e" type="rst"/>
+			<rel name="other-rel" type="multinuc"/>
+			<rel name="other-rel" type="rst"/>
+			<rel name="otherwise-e" type="rst"/>
+			<rel name="otherwise" type="rst"/>
+			<rel name="parenthetical" type="rst"/>
+			<rel name="purpose-e" type="rst"/>
+			<rel name="purpose" type="rst"/>
+			<rel name="restatement-e" type="rst"/>
+			<rel name="restatement" type="rst"/>
+			<rel name="same-unit" type="multinuc"/>
+			<rel name="sequence" type="multinuc"/>
+			<rel name="solutionhood-e" type="rst"/>
+			<rel name="solutionhood" type="rst"/>
+			<rel name="summary-e" type="rst"/>
+			<rel name="summary" type="rst"/>
+			<rel name="volitional-cause-e" type="rst"/>
+			<rel name="volitional-cause" type="rst"/>
+			<rel name="volitional-result-e" type="rst"/>
+			<rel name="volitional-result" type="rst"/>
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="40" relname="circumstance">Após quase 24 horas de tensão ,</segment>
+		<segment id="2" parent="39" relname="span">terminou no fim da manhã desta quarta-feira a rebelião na Central de Custódia de Presos de Justiça</segment>
+		<segment id="3" parent="2" relname="parenthetical">( CCJP )</segment>
+		<segment id="4" parent="40" relname="same-unit">no Maranhão .</segment>
+		<segment id="5" parent="43" relname="sequence">Depois que os presos entregaram o revólver usado para dar início ao motim ,</segment>
+		<segment id="6" parent="43" relname="sequence">a Tropa de Choque da Polícia Militar entrou no presídio</segment>
+		<segment id="7" parent="42" relname="span">e liberou os 30 reféns</segment>
+		<segment id="8" parent="7" relname="parenthetical">- sendo 16 crianças .</segment>
+		<segment id="9" parent="44" relname="span">Alguns menores saíram demaiados</segment>
+		<segment id="10" parent="9" relname="non-volitional-result">e foram conduzidos para o atendimento médico .</segment>
+		<segment id="11" parent="45" relname="list">Quatro pessoas teriam ficado feridas .</segment>
+		<segment id="12" parent="49" relname="volitional-result">A Tropa de Choque entrou no presídio</segment>
+		<segment id="13" parent="48" relname="span">depois que Charlene Ribeiro da Silva ,  esposa do detento Bruno Monteiro da Silva</segment>
+		<segment id="14" parent="13" relname="parenthetical">- suspeito de chefiar a rebelião  -</segment>
+		<segment id="15" parent="49" relname="same-unit">conversou com o diretor da unidade .</segment>
+		<segment id="16" parent="51" relname="attribution">Segundo ela ,</segment>
+		<segment id="17" parent="51" relname="span">o diretor assinou um termo de compromisso</segment>
+		<segment id="18" parent="52" relname="span">onde dá garantias de que os presos não serão torturados</segment>
+		<segment id="19" parent="18" relname="circumstance">depois do motim</segment>
+		<segment id="20" parent="53" relname="list">e que Bruno será transferido para outra unidade .</segment>
+		<segment id="21" parent="57" relname="span">-  O preso Bruno agiu de forma traiçoeira e covarde ,</segment>
+		<segment id="22" parent="56" relname="span">sem dar oportunidade para os agentes</segment>
+		<segment id="23" parent="22" relname="elaboration">que distribuíam lanches às crianças .</segment>
+		<segment id="24" parent="58" relname="span">Ele saiu atirando ,</segment>
+		<segment id="25" parent="24" relname="elaboration">acertando a cabeça de um agente e o braço de outro</segment>
+		<segment id="26" parent="58" relname="attribution">- contou o secretário-adjunto de Administração Penitenciária ,  Sidones Cruz .</segment>
+		<segment id="27" parent="60" relname="span">A Secretaria de Segurança deve abrir sindicância</segment>
+		<segment id="28" parent="27" relname="purpose">para averiguar como a arma entrou no presídio .</segment>
+		<segment id="29" parent="65" relname="span">O motim começou durante a festa do Dia das Crianças .</segment>
+		<segment id="30" parent="64" relname="list">As negociações foram feitas por um pequeno buraco no muro do presídio .</segment>
+		<segment id="31" parent="64" relname="list">A água e a luz da unidade chegaram a ser cortadas .</segment>
+		<segment id="32" parent="68" relname="contrast">A cadeia abriga 203 detentos ,</segment>
+		<segment id="33" parent="68" relname="contrast">mas só tem capacidade para 80 .</segment>
+		<segment id="34" parent="69" relname="list">Neste mesmo pavilhão ,  no início deste mês ,  os presos quebraram objetos</segment>
+		<segment id="35" parent="70" relname="span">e fizeram um túnel</segment>
+		<segment id="36" parent="35" relname="purpose">para tentar uma fuga em massa .</segment>
+		<segment id="37" parent="69" relname="elaboration">Até agora as celas não foram reparadas .</segment>
+		<segment id="38" parent="73" relname="elaboration">Esta é a terceira rebelião em São Luís só neste mês .</segment>
+		<group id="39" type="span" parent="40" relname="same-unit"/>
+		<group id="40" type="multinuc" parent="41" relname="span"/>
+		<group id="41" type="span" parent="47" relname="span"/>
+		<group id="42" type="span" parent="46" relname="span"/>
+		<group id="43" type="multinuc" parent="41" relname="elaboration"/>
+		<group id="44" type="span" parent="45" relname="list"/>
+		<group id="45" type="multinuc" parent="42" relname="elaboration"/>
+		<group id="46" type="span" parent="43" relname="sequence"/>
+		<group id="47" type="span" parent="66" relname="span"/>
+		<group id="48" type="span" parent="49" relname="same-unit"/>
+		<group id="49" type="multinuc" parent="50" relname="span"/>
+		<group id="50" type="span" parent="55" relname="span"/>
+		<group id="51" type="span" parent="54" relname="span"/>
+		<group id="52" type="span" parent="53" relname="list"/>
+		<group id="53" type="multinuc" parent="17" relname="elaboration"/>
+		<group id="54" type="span" parent="50" relname="elaboration"/>
+		<group id="55" type="span" parent="63" relname="span"/>
+		<group id="56" type="span" parent="21" relname="justify"/>
+		<group id="57" type="span" parent="61" relname="span"/>
+		<group id="58" type="span" parent="59" relname="span"/>
+		<group id="59" type="span" parent="57" relname="evidence"/>
+		<group id="60" type="span" parent="61" relname="elaboration"/>
+		<group id="61" type="span" parent="62" relname="span"/>
+		<group id="62" type="span" parent="55" relname="elaboration"/>
+		<group id="63" type="span" parent="47" relname="explanation"/>
+		<group id="64" type="multinuc" parent="29" relname="elaboration"/>
+		<group id="65" type="span" parent="66" relname="elaboration"/>
+		<group id="66" type="span" parent="67" relname="span"/>
+		<group id="67" type="span" parent="72" relname="span"/>
+		<group id="68" type="multinuc" parent="67" relname="elaboration"/>
+		<group id="69" type="multinuc" parent="71" relname="span"/>
+		<group id="70" type="span" parent="69" relname="list"/>
+		<group id="71" type="span" parent="72" relname="elaboration"/>
+		<group id="72" type="span" parent="73" relname="span"/>
+		<group id="73" type="span" parent="74" relname="span"/>
+		<group id="74" type="span" />
+		<signals>
+			<signal source="1" type="MD" subtype="ADV" tokens="1"/>
+			<signal source="3" type="GRAF" subtype="PARENT" tokens=""/>
+			<signal source="3" type="SEMA" subtype="ACRO" tokens="18,19,20,21,22,23,24,26"/>
+			<signal source="5" type="MORF" subtype="TEMPO-VERBAL" tokens="35,52,56"/>
+			<signal source="5" type="MD" subtype="CONJ" tokens="55"/>
+			<signal source="8" type="GRAF" subtype="TRAVES" tokens="60"/>
+			<signal source="10" type="SINT" subtype="ORA-CIRCUNS" tokens="70,71,72,73,74,75"/>
+			<signal source="12" type="SINT" subtype="ORA-CIRCUNS" tokens="83,84,85,86,87,88,89"/>
+			<signal source="14" type="GRAF" subtype="TRAVES" tokens="105,112"/>
+			<signal source="16" type="MD" subtype="PREP" tokens="120"/>
+			<signal source="16" type="SEMA" subtype="FONTE" tokens="121"/>
+			<signal source="16" type="GRAF" subtype="PONT" tokens="122"/>
+			<signal source="19" type="MD" subtype="ADV" tokens="140"/>
+			<signal source="23" type="SINT" subtype="PRO-REL" tokens="170"/>
+			<signal source="23" type="SINT" subtype="ORA-CIRCUNS" tokens="171,172,173,174"/>
+			<signal source="23" type="GRAF" subtype="PONT" tokens="175"/>
+			<signal source="25" type="SINT" subtype="ORA-REL" tokens="180,181,182,183,184,185,186,187,188,189,190"/>
+			<signal source="25" type="GRAF" subtype="PONT" tokens="179"/>
+			<signal source="26" type="SEMA" subtype="VERB-COMUNI" tokens="192"/>
+			<signal source="26" type="SEMA" subtype="FONTE" tokens="200,201"/>
+			<signal source="28" type="MD" subtype="CONJ" tokens="210"/>
+			<signal source="30" type="SINT" subtype="ORA-REL" tokens="230,231,232,233"/>
+			<signal source="32" type="MD" subtype="CONJ" tokens="261"/>
+			<signal source="34" type="MD" subtype="CONJ" tokens="283"/>
+			<signal source="34" type="MORF" subtype="TEMPO-VERBAL" tokens="281,284"/>
+			<signal source="36" type="MD" subtype="CONJ" tokens="287"/>
+			<signal source="39" type="SINT" subtype="VALE-VERB" tokens="8,15,16"/>
+			<signal source="44" type="MD" subtype="CONJ" tokens="69"/>
+			<signal source="48" type="SINT" subtype="VALE-VERB" tokens="92,93,94,95,113"/>
+			<signal source="52" type="MD" subtype="ADV" tokens="140"/>
+			<signal source="52" type="MD" subtype="CONJ" tokens="143"/>
+			<signal source="53" type="SINT" subtype="ORA-REL" tokens="130,131,132,133,134,135,136,137,138,139"/>
+			<signal source="56" type="SINT" subtype="ORA-REL" tokens="164,165,166,167,168,169"/>
+		</signals>
+	</body>
+</rst>

@@ -1,0 +1,158 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="" type="rst"/>
+			<rel name="antithesis-e" type="rst"/>
+			<rel name="antithesis" type="rst"/>
+			<rel name="attribution-e" type="rst"/>
+			<rel name="attribution" type="rst"/>
+			<rel name="background-e" type="rst"/>
+			<rel name="background" type="rst"/>
+			<rel name="circumstance-e" type="rst"/>
+			<rel name="circumstance" type="rst"/>
+			<rel name="comparison-e" type="rst"/>
+			<rel name="comparison" type="rst"/>
+			<rel name="concession-e" type="rst"/>
+			<rel name="concession" type="rst"/>
+			<rel name="conclusion-e" type="rst"/>
+			<rel name="conclusion" type="rst"/>
+			<rel name="condition-e" type="rst"/>
+			<rel name="condition" type="rst"/>
+			<rel name="contrast" type="multinuc"/>
+			<rel name="elaboration-e" type="rst"/>
+			<rel name="elaboration" type="rst"/>
+			<rel name="enablement-e" type="rst"/>
+			<rel name="enablement" type="rst"/>
+			<rel name="evaluation-e" type="rst"/>
+			<rel name="evaluation" type="rst"/>
+			<rel name="evidence-e" type="rst"/>
+			<rel name="evidence" type="rst"/>
+			<rel name="explanation-e" type="rst"/>
+			<rel name="explanation" type="rst"/>
+			<rel name="interpretation-e" type="rst"/>
+			<rel name="interpretation" type="rst"/>
+			<rel name="joint" type="multinuc"/>
+			<rel name="justify-e" type="rst"/>
+			<rel name="justify" type="rst"/>
+			<rel name="list" type="multinuc"/>
+			<rel name="means-e" type="rst"/>
+			<rel name="means" type="rst"/>
+			<rel name="motivation-e" type="rst"/>
+			<rel name="motivation" type="rst"/>
+			<rel name="non-volitional-cause-e" type="rst"/>
+			<rel name="non-volitional-cause" type="rst"/>
+			<rel name="non-volitional-result-e" type="rst"/>
+			<rel name="non-volitional-result" type="rst"/>
+			<rel name="other-rel-e" type="rst"/>
+			<rel name="other-rel" type="multinuc"/>
+			<rel name="other-rel" type="rst"/>
+			<rel name="otherwise-e" type="rst"/>
+			<rel name="otherwise" type="rst"/>
+			<rel name="parenthetical" type="rst"/>
+			<rel name="purpose-e" type="rst"/>
+			<rel name="purpose" type="rst"/>
+			<rel name="restatement-e" type="rst"/>
+			<rel name="restatement" type="rst"/>
+			<rel name="same-unit" type="multinuc"/>
+			<rel name="sequence" type="multinuc"/>
+			<rel name="solutionhood-e" type="rst"/>
+			<rel name="solutionhood" type="rst"/>
+			<rel name="summary-e" type="rst"/>
+			<rel name="summary" type="rst"/>
+			<rel name="volitional-cause-e" type="rst"/>
+			<rel name="volitional-cause" type="rst"/>
+			<rel name="volitional-result-e" type="rst"/>
+			<rel name="volitional-result" type="rst"/>
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="31" relname="span">Maradona voltou a ter problemas de saúde no fim de semana .</segment>
+		<segment id="2" parent="28" relname="non-volitional-result">Internado em um hospital em Buenos Aires ,</segment>
+		<segment id="3" parent="26" relname="list">ele teve uma recaída</segment>
+		<segment id="4" parent="26" relname="list">e voltou a sentir dores</segment>
+		<segment id="5" parent="27" relname="span">devido a hepatite aguda</segment>
+		<segment id="6" parent="5" relname="elaboration">que o atinge ,</segment>
+		<segment id="7" parent="29" relname="attribution">segundo seu médico pessoal ,  Alfredo Cahe .</segment>
+		<segment id="8" parent="33" relname="list">" Agora está estável .</segment>
+		<segment id="9" parent="10" relname="concession">Mesmo com esta melhora ,</segment>
+		<segment id="10" parent="32" relname="span">ele continuará internado "  ,</segment>
+		<segment id="11" parent="33" relname="attribution">disse o médico ,</segment>
+		<segment id="12" parent="36" relname="span">que descartou a possibilidade do ex-jogador ter uma pancreatite</segment>
+		<segment id="13" parent="35" relname="list">( inflamação do pâncreas ,  órgão situado atrás do estômago</segment>
+		<segment id="14" parent="35" relname="list">e que influencia na digestão )  .</segment>
+		<segment id="15" parent="16" relname="attribution">Cahe reforçou que</segment>
+		<segment id="16" parent="38" relname="span">Maradona ainda tem problemas .</segment>
+		<segment id="17" parent="39" relname="list">" Os valores hepáticos dele na avaliação não estão equilibrados</segment>
+		<segment id="18" parent="39" relname="list">e ele não está bem .</segment>
+		<segment id="19" parent="39" relname="elaboration">Mas não é nada grave "  ,</segment>
+		<segment id="20" parent="40" relname="attribution">afirma ,  em entrevista ao diário La Nación .</segment>
+		<segment id="21" parent="46" relname="list">No domingo ,  Maradona assistiu ao empate por 1 a 1 no clássico Boca Juniors e River Plate pela televisão .</segment>
+		<segment id="22" parent="44" relname="span">Os torcedores do Boca ,</segment>
+		<segment id="23" parent="22" relname="elaboration">que compareceram em grande número ao Estádio La Bombonera ,</segment>
+		<segment id="24" parent="45" relname="same-unit">levaram muitas faixas e bandeiras com mensagens de apoio ao ídolo argentino .</segment>
+		<segment id="25" parent="46" relname="list">Sua filha ,  Dalma ,  foi ao estádio assistir ao jogo .</segment>
+		<group id="26" type="multinuc" parent="28" relname="span"/>
+		<group id="27" type="span" parent="26" relname="non-volitional-cause"/>
+		<group id="28" type="span" parent="29" relname="span"/>
+		<group id="29" type="span" parent="30" relname="span"/>
+		<group id="30" type="span" parent="1" relname="elaboration"/>
+		<group id="31" type="span" parent="47" relname="span"/>
+		<group id="32" type="span" parent="33" relname="list"/>
+		<group id="33" type="multinuc" parent="34" relname="span"/>
+		<group id="34" type="span" parent="37" relname="span"/>
+		<group id="35" type="multinuc" parent="12" relname="parenthetical"/>
+		<group id="36" type="span" parent="34" relname="elaboration"/>
+		<group id="37" type="span" parent="43" relname="span"/>
+		<group id="38" type="span" parent="42" relname="span"/>
+		<group id="39" type="multinuc" parent="40" relname="span"/>
+		<group id="40" type="span" parent="41" relname="span"/>
+		<group id="41" type="span" parent="38" relname="justify"/>
+		<group id="42" type="span" parent="37" relname="elaboration"/>
+		<group id="43" type="span" parent="31" relname="elaboration"/>
+		<group id="44" type="span" parent="45" relname="same-unit"/>
+		<group id="45" type="multinuc" parent="46" relname="list"/>
+		<group id="46" type="multinuc" parent="47" relname="non-volitional-result"/>
+		<group id="47" type="span" parent="48" relname="span"/>
+		<group id="48" type="span" />
+		<signals>
+			<signal source="2" type="SEMA" subtype="CAMPO-SEM" tokens="13,16,24,29,32,33"/>
+			<signal source="3" type="MD" subtype="CONJ" tokens="25"/>
+			<signal source="3" type="MORF" subtype="TEMPO-VERBAL" tokens="22,26"/>
+			<signal source="3" type="SEMA" subtype="CAMPO-SEM" tokens="24,29"/>
+			<signal source="6" type="SINT" subtype="PRO-REL" tokens="34"/>
+			<signal source="6" type="SINT" subtype="ORA-REL" tokens="35,36"/>
+			<signal source="7" type="MD" subtype="PREP" tokens="38"/>
+			<signal source="7" type="SEMA" subtype="FONTE" tokens="40,41,42,44,45"/>
+			<signal source="7" type="GRAF" subtype="PONT" tokens="37"/>
+			<signal source="9" type="MD" subtype="ADV" tokens="56,52,53"/>
+			<signal source="11" type="SEMA" subtype="VERB-COMUNI" tokens="63"/>
+			<signal source="11" type="SEMA" subtype="FONTE" tokens="64,65"/>
+			<signal source="11" type="GRAF" subtype="ASPAS" tokens="47,60"/>
+			<signal source="11" type="GRAF" subtype="PONT" tokens="62"/>
+			<signal source="13" type="MD" subtype="CONJ" tokens="87"/>
+			<signal source="13" type="MORF" subtype="TEMPO-VERBAL" tokens="83,89"/>
+			<signal source="13" type="SEMA" subtype="CAMPO-SEM" tokens="79,86,91"/>
+			<signal source="15" type="SEMA" subtype="FONTE" tokens="95"/>
+			<signal source="15" type="SEMA" subtype="VERB-COMUNI" tokens="96"/>
+			<signal source="15" type="MD" subtype="CONJ" tokens="97"/>
+			<signal source="17" type="MD" subtype="CONJ" tokens="113"/>
+			<signal source="17" type="MD" subtype="ADV" tokens="110,115"/>
+			<signal source="17" type="MORF" subtype="TEMPO-VERBAL" tokens="111,116"/>
+			<signal source="17" type="SEMA" subtype="SINO" tokens="110,111,112,115,117,116"/>
+			<signal source="19" type="MD" subtype="CONJ" tokens="119"/>
+			<signal source="19" type="MD" subtype="ADV" tokens="120"/>
+			<signal source="20" type="SEMA" subtype="VERB-COMUNI" tokens="127"/>
+			<signal source="20" type="GRAF" subtype="ASPAS" tokens="103,124"/>
+			<signal source="20" type="GRAF" subtype="PONT" tokens="126"/>
+			<signal source="23" type="GRAF" subtype="PONT" tokens="163,173"/>
+			<signal source="23" type="SINT" subtype="PRO-REL" tokens="164"/>
+			<signal source="23" type="SINT" subtype="PRO-REL" tokens="165,166,167,168,169,170,171,172"/>
+			<signal source="27" type="MD" subtype="PREP" tokens="30,31"/>
+			<signal source="35" type="GRAF" subtype="PARENT" tokens="76,92"/>
+			<signal source="36" type="GRAF" subtype="PONT" tokens="66"/>
+			<signal source="36" type="SINT" subtype="PRO-REL" tokens="67"/>
+			<signal source="36" type="SINT" subtype="ORA-REL" tokens="68,69,70,72,71,73,74,75"/>
+			<signal source="44" type="SINT" subtype="VALE-VERB" tokens="159,160,161,162,174"/>
+		</signals>
+	</body>
+</rst>

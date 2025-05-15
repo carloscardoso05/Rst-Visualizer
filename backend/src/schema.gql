@@ -2,13 +2,66 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-type User {
-  id: Int!
+type Relation {
   name: String!
-  email: String!
+  type: String!
+  nodes: [Node!]!
+}
+
+type Node {
+  id: Int!
+  parent: Node
+  relation: Relation
+  signals: [Signal!]!
+  children: [Node!]!
+  isMultinuclear: Boolean!
+}
+
+type Signal {
+  id: Int!
+  source: Node!
+  type: String!
+  subtype: String!
+  tokensIds: [Int!]!
+  tokens: [String!]!
+  text: String!
+}
+
+type Group {
+  id: Int!
+  parent: Node
+  relation: Relation
+  signals: [Signal!]!
+  children: [Node!]!
+  isMultinuclear: Boolean!
+  type: String!
+}
+
+type Segment {
+  id: Int!
+  parent: Node
+  relation: Relation
+  signals: [Signal!]!
+  children: [Node!]!
+  isMultinuclear: Boolean!
+  order: Int!
+  innerText: String!
+  initialTokenId: Int!
+  sentenceId: Int!
+}
+
+type RS3Document {
+  code: String!
+  name: String!
+  path: String!
+  relations: [Relation!]!
+  segments: [Segment!]!
+  groups: [Group!]!
+  signals: [Signal!]!
+  nodes: [Node!]!
 }
 
 type Query {
-  hello: String!
-  getUsers: [User!]!
+  relation: Relation!
+  documents: [RS3Document!]!
 }

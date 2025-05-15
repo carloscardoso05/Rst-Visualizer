@@ -1,0 +1,169 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis-e" type="rst"/>
+			<rel name="antithesis" type="rst"/>
+			<rel name="attribution-e" type="rst"/>
+			<rel name="attribution" type="rst"/>
+			<rel name="background-e" type="rst"/>
+			<rel name="background" type="rst"/>
+			<rel name="circumstance-e" type="rst"/>
+			<rel name="circumstance" type="rst"/>
+			<rel name="comparison-e" type="rst"/>
+			<rel name="comparison" type="rst"/>
+			<rel name="concession-e" type="rst"/>
+			<rel name="concession" type="rst"/>
+			<rel name="conclusion-e" type="rst"/>
+			<rel name="conclusion" type="rst"/>
+			<rel name="condition-e" type="rst"/>
+			<rel name="condition" type="rst"/>
+			<rel name="contrast" type="multinuc"/>
+			<rel name="elaboration-e" type="rst"/>
+			<rel name="elaboration" type="rst"/>
+			<rel name="enablement-e" type="rst"/>
+			<rel name="enablement" type="rst"/>
+			<rel name="evaluation-e" type="rst"/>
+			<rel name="evaluation" type="rst"/>
+			<rel name="evidence-e" type="rst"/>
+			<rel name="evidence" type="rst"/>
+			<rel name="explanation-e" type="rst"/>
+			<rel name="explanation" type="rst"/>
+			<rel name="interpretation-e" type="rst"/>
+			<rel name="interpretation" type="rst"/>
+			<rel name="joint" type="multinuc"/>
+			<rel name="justify-e" type="rst"/>
+			<rel name="justify" type="rst"/>
+			<rel name="list" type="multinuc"/>
+			<rel name="means-e" type="rst"/>
+			<rel name="means" type="rst"/>
+			<rel name="motivation-e" type="rst"/>
+			<rel name="motivation" type="rst"/>
+			<rel name="non-volitional-cause-e" type="rst"/>
+			<rel name="non-volitional-cause" type="rst"/>
+			<rel name="non-volitional-result-e" type="rst"/>
+			<rel name="non-volitional-result" type="rst"/>
+			<rel name="other-rel-e" type="rst"/>
+			<rel name="other-rel" type="multinuc"/>
+			<rel name="other-rel" type="rst"/>
+			<rel name="otherwise-e" type="rst"/>
+			<rel name="otherwise" type="rst"/>
+			<rel name="parenthetical" type="rst"/>
+			<rel name="purpose-e" type="rst"/>
+			<rel name="purpose" type="rst"/>
+			<rel name="restatement-e" type="rst"/>
+			<rel name="restatement" type="rst"/>
+			<rel name="same-unit" type="multinuc"/>
+			<rel name="sequence" type="multinuc"/>
+			<rel name="solutionhood-e" type="rst"/>
+			<rel name="solutionhood" type="rst"/>
+			<rel name="summary-e" type="rst"/>
+			<rel name="summary" type="rst"/>
+			<rel name="volitional-cause-e" type="rst"/>
+			<rel name="volitional-cause" type="rst"/>
+			<rel name="volitional-result-e" type="rst"/>
+			<rel name="volitional-result" type="rst"/>
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="32" relname="span">Um forte terremoto matou ao menos cinco pessoas no noroeste do Japão nesta segunda-feira .</segment>
+		<segment id="2" parent="31" relname="list">Mais de 600 pessoas ficaram feridas ,</segment>
+		<segment id="3" parent="31" relname="list">casas foram derrubadas</segment>
+		<segment id="4" parent="31" relname="list">e houve um pequeno incêndio na maior usina nuclear do mundo .</segment>
+		<segment id="5" parent="35" relname="list">Os prédios chegaram a tremer em Tóquio ,</segment>
+		<segment id="6" parent="33" relname="span">e os reatores de usinas nucleares em Niigata desligaram-se automaticamente</segment>
+		<segment id="7" parent="6" relname="purpose">para checagens ,</segment>
+		<segment id="8" parent="33" relname="concession">embora não haja relatos de vazamento de radiação .</segment>
+		<segment id="9" parent="36" relname="span">Duas mulheres na faixa dos 80 anos morreram</segment>
+		<segment id="10" parent="9" relname="circumstance">quando suas casas ruíram durante o tremor de magnitude 6 , 8 ,  na área de Niigata ,  cerca de 250 km noroeste de Tóquio ,</segment>
+		<segment id="11" parent="36" relname="attribution">informou a imprensa japonesa .</segment>
+		<segment id="12" parent="39" relname="span">Um porta-voz policial confirmou cinco mortes .</segment>
+		<segment id="13" parent="14" relname="attribution">A imprensa noticiou que</segment>
+		<segment id="14" parent="38" relname="span">uma outra idosa e um casal estariam entre os mortos .</segment>
+		<segment id="15" parent="42" relname="list">-  Prateleiras altas caíram</segment>
+		<segment id="16" parent="42" relname="list">e as coisas voaram por toda parte</segment>
+		<segment id="17" parent="43" relname="span">- contou Harumi Mikami ,  55 ,</segment>
+		<segment id="18" parent="17" relname="elaboration">uma professora que estava em sua escola na Cidade de Kashiwazaki ,  perto do epicentro do terremoto .</segment>
+		<segment id="19" parent="45" relname="span">-  Metade da minha casa está destruída -</segment>
+		<segment id="20" parent="19" relname="attribution">disse Mikami .</segment>
+		<segment id="21" parent="45" relname="elaboration">- Minha maior preocupação é onde vou viver agora .</segment>
+		<segment id="22" parent="48" relname="span">Cerca de 1 . 700 pessoas fugiram de suas casas para quase 100 centros de resgate ,</segment>
+		<segment id="23" parent="22" relname="attribution">segundo a rede NHK e a Prefeitura de Niigata .</segment>
+		<segment id="24" parent="25" relname="concession">Um incêndio em um transformador elétrico na usina nuclear de Kashiwazaki Kariwa foi rapidamente extinto ,</segment>
+		<segment id="25" parent="49" relname="span">mas ainda não está claro quando a companhia elétrica de Tóquio vai religar três unidades no complexo ,</segment>
+		<segment id="26" parent="49" relname="attribution">disse Yoshinobu Kamijima ,  porta-voz da empresa .</segment>
+		<segment id="27" parent="51" relname="span">O Japão é um dos países do mundo mais suscetíveis a terremotos ,</segment>
+		<segment id="28" parent="27" relname="evidence">com um tremor ocorrendo a ao menos cada cinco minutos .</segment>
+		<segment id="29" parent="52" relname="span">Os mercados financeiros do país estão fechados nesta segunda-feira</segment>
+		<segment id="30" parent="29" relname="explanation">devido a um feriado .</segment>
+		<group id="31" type="multinuc" parent="1" relname="non-volitional-result"/>
+		<group id="32" type="span" parent="41" relname="span"/>
+		<group id="33" type="span" parent="34" relname="span"/>
+		<group id="34" type="span" parent="35" relname="list"/>
+		<group id="35" type="multinuc" parent="40" relname="list"/>
+		<group id="36" type="span" parent="37" relname="span"/>
+		<group id="37" type="span" parent="12" relname="elaboration"/>
+		<group id="38" type="span" parent="12" relname="elaboration"/>
+		<group id="39" type="span" parent="40" relname="list"/>
+		<group id="40" type="multinuc" parent="32" relname="elaboration"/>
+		<group id="41" type="span" parent="53" relname="span"/>
+		<group id="42" type="multinuc" parent="44" relname="span"/>
+		<group id="43" type="span" parent="42" relname="attribution"/>
+		<group id="44" type="span" parent="47" relname="list"/>
+		<group id="45" type="span" parent="46" relname="span"/>
+		<group id="46" type="span" parent="47" relname="list"/>
+		<group id="47" type="multinuc" parent="41" relname="elaboration"/>
+		<group id="48" type="span" parent="47" relname="list"/>
+		<group id="49" type="span" parent="50" relname="span"/>
+		<group id="50" type="span" parent="47" relname="list"/>
+		<group id="51" type="span" parent="53" relname="elaboration"/>
+		<group id="52" type="span" parent="55" relname="joint"/>
+		<group id="53" type="span" parent="54" relname="span"/>
+		<group id="54" type="span" parent="55" relname="joint"/>
+		<group id="55" type="multinuc" />
+		<signals>
+			<signal source="2" type="GRAF" subtype="PONT" tokens="22"/>
+			<signal source="2" type="MD" subtype="CONJ" tokens="26"/>
+			<signal source="2" type="MORF" subtype="TEMPO-VERBAL" tokens="20,24,27"/>
+			<signal source="2" type="SINT" subtype="NUM" tokens="18"/>
+			<signal source="2" type="SEMA" subtype="CAMPO-SEM" tokens="19,21,23,25,30"/>
+			<signal source="5" type="MD" subtype="CONJ" tokens="46"/>
+			<signal source="5" type="MORF" subtype="TEMPO-VERBAL" tokens="40,54"/>
+			<signal source="5" type="SEMA" subtype="CONHE-MUND" tokens="44,53,42,50,51"/>
+			<signal source="7" type="MD" subtype="CONJ" tokens="56"/>
+			<signal source="7" type="CDP" subtype="CDP" tokens="57"/>
+			<signal source="8" type="MD" subtype="CONJ" tokens="59"/>
+			<signal source="8" type="SEMA" subtype="CAMPO-SEM" tokens="66,48,49,50,51"/>
+			<signal source="10" type="MD" subtype="ADV" tokens="76"/>
+			<signal source="10" type="SINT" subtype="ORA-CIRCUNS" tokens="77,78,79,80,81,82,83,84,86,85,87,88,92,91,90,93,96,98,97,99,100,102,101,94"/>
+			<signal source="10" type="SINT" subtype="NUM" tokens="68"/>
+			<signal source="10" type="SEMA" subtype="CONHE-MUND" tokens="75,82,83,84,85,87,90,91,69,92,93"/>
+			<signal source="11" type="SEMA" subtype="VERB-COMUNI" tokens="104"/>
+			<signal source="11" type="SEMA" subtype="FONTE" tokens="106,107,105"/>
+			<signal source="11" type="GRAF" subtype="PONT" tokens="103"/>
+			<signal source="13" type="SEMA" subtype="FONTE" tokens="117"/>
+			<signal source="13" type="SEMA" subtype="VERB-COMUNI" tokens="118"/>
+			<signal source="13" type="MD" subtype="CONJ" tokens="119"/>
+			<signal source="15" type="MORF" subtype="TEMPO-VERBAL" tokens="135,139"/>
+			<signal source="15" type="MD" subtype="CONJ" tokens="136"/>
+			<signal source="18" type="GRAF" subtype="PONT" tokens="150"/>
+			<signal source="18" type="CDP" subtype="CDP" tokens="145,146,152"/>
+			<signal source="20" type="SEMA" subtype="VERB-COMUNI" tokens="179"/>
+			<signal source="20" type="SEMA" subtype="FONTE" tokens="180"/>
+			<signal source="20" type="GRAF" subtype="TRAVES" tokens="170,178"/>
+			<signal source="23" type="MD" subtype="PREP" tokens="209"/>
+			<signal source="23" type="SEMA" subtype="FONTE" tokens="211,212,215,216,217,213,214,210"/>
+			<signal source="23" type="GRAF" subtype="PONT" tokens="208"/>
+			<signal source="24" type="MD" subtype="ADV" tokens="235,236,237"/>
+			<signal source="24" type="SEMA" subtype="CAMPO-SEM" tokens="223,224,242,243,247"/>
+			<signal source="26" type="SEMA" subtype="VERB-COMUNI" tokens="253"/>
+			<signal source="26" type="SEMA" subtype="FONTE" tokens="254,255,258,259,260"/>
+			<signal source="26" type="GRAF" subtype="PONT" tokens="252"/>
+			<signal source="28" type="SEMA" subtype="CONHE-MUND" tokens="276,277,279,278,281,282,283,284,263,280,273"/>
+			<signal source="30" type="MD" subtype="CONJ" tokens="295"/>
+			<signal source="30" type="SEMA" subtype="CONHE-MUND" tokens="287,288,292,298"/>
+			<signal source="43" type="SEMA" subtype="VERB-COMUNI" tokens="144"/>
+			<signal source="43" type="SEMA" subtype="FONTE" tokens="145,146"/>
+			<signal source="43" type="GRAF" subtype="TRAVES" tokens="143,131"/>
+		</signals>
+	</body>
+</rst>

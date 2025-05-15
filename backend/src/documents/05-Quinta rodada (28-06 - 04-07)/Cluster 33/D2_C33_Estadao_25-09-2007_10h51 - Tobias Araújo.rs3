@@ -1,0 +1,350 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis-e" type="rst"/>
+			<rel name="antithesis" type="rst"/>
+			<rel name="attribution-e" type="rst"/>
+			<rel name="attribution" type="rst"/>
+			<rel name="background-e" type="rst"/>
+			<rel name="background" type="rst"/>
+			<rel name="circumstance-e" type="rst"/>
+			<rel name="circumstance" type="rst"/>
+			<rel name="comparison-e" type="rst"/>
+			<rel name="comparison" type="rst"/>
+			<rel name="concession-e" type="rst"/>
+			<rel name="concession" type="rst"/>
+			<rel name="conclusion-e" type="rst"/>
+			<rel name="conclusion" type="rst"/>
+			<rel name="condition-e" type="rst"/>
+			<rel name="condition" type="rst"/>
+			<rel name="contrast" type="multinuc"/>
+			<rel name="elaboration-e" type="rst"/>
+			<rel name="elaboration" type="rst"/>
+			<rel name="enablement-e" type="rst"/>
+			<rel name="enablement" type="rst"/>
+			<rel name="evaluation-e" type="rst"/>
+			<rel name="evaluation" type="rst"/>
+			<rel name="evidence-e" type="rst"/>
+			<rel name="evidence" type="rst"/>
+			<rel name="explanation-e" type="rst"/>
+			<rel name="explanation" type="rst"/>
+			<rel name="interpretation-e" type="rst"/>
+			<rel name="interpretation" type="rst"/>
+			<rel name="joint" type="multinuc"/>
+			<rel name="justify-e" type="rst"/>
+			<rel name="justify" type="rst"/>
+			<rel name="list" type="multinuc"/>
+			<rel name="means-e" type="rst"/>
+			<rel name="means" type="rst"/>
+			<rel name="motivation-e" type="rst"/>
+			<rel name="motivation" type="rst"/>
+			<rel name="non-volitional-cause-e" type="rst"/>
+			<rel name="non-volitional-cause" type="rst"/>
+			<rel name="non-volitional-result-e" type="rst"/>
+			<rel name="non-volitional-result" type="rst"/>
+			<rel name="other-rel-e" type="rst"/>
+			<rel name="other-rel" type="multinuc"/>
+			<rel name="other-rel" type="rst"/>
+			<rel name="otherwise-e" type="rst"/>
+			<rel name="otherwise" type="rst"/>
+			<rel name="parenthetical" type="rst"/>
+			<rel name="purpose-e" type="rst"/>
+			<rel name="purpose" type="rst"/>
+			<rel name="restatement-e" type="rst"/>
+			<rel name="restatement" type="rst"/>
+			<rel name="same-unit" type="multinuc"/>
+			<rel name="sequence" type="multinuc"/>
+			<rel name="solutionhood-e" type="rst"/>
+			<rel name="solutionhood" type="rst"/>
+			<rel name="summary-e" type="rst"/>
+			<rel name="summary" type="rst"/>
+			<rel name="volitional-cause-e" type="rst"/>
+			<rel name="volitional-cause" type="rst"/>
+			<rel name="volitional-result-e" type="rst"/>
+			<rel name="volitional-result" type="rst"/>
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="2" relname="attribution">O presidente Luiz Inácio Lula da Silva afirmou ,  nesta terça-feira ,  25 ,  na abertura da 62ª Assembléia Geral da ONU ,  que</segment>
+		<segment id="2" parent="106" relname="span">os biocombustíveis não afetam a segurança alimentar .</segment>
+		<segment id="3" parent="109" relname="list">" A cana-de-açúcar ocupa apenas 1 %  de nossas terras agricultáveis "  .</segment>
+		<segment id="4" parent="5" relname="attribution">Lula disse que</segment>
+		<segment id="5" parent="108" relname="span">irá definir quais áreas serão destinadas à produção de etanol no País .</segment>
+		<segment id="6" parent="7" relname="attribution">O presidente afirmou que</segment>
+		<segment id="7" parent="110" relname="span">o Brasil vai sediar ,  no ano que vem ,  uma conferência internacional sobre biocombustíveis ,</segment>
+		<segment id="8" parent="111" relname="list">e convidou todos os países a participarem do evento .</segment>
+		<segment id="9" parent="10" relname="attribution">Segundo Lula ,</segment>
+		<segment id="10" parent="112" relname="span">o mundo precisa urgentemente de uma nova matriz energética .</segment>
+		<segment id="11" parent="138" relname="span">" O etanol pode ser muito mais que uma alternativa de energia limpa "  .</segment>
+		<segment id="12" parent="113" relname="concession">" O problema da fome no planeta não decorre da falta de alimentos ,</segment>
+		<segment id="13" parent="113" relname="span">mas da falta de renda</segment>
+		<segment id="14" parent="13" relname="elaboration">que golpeia quase um bilhão de homens ,  mulheres e crianças "  ,</segment>
+		<segment id="15" parent="114" relname="attribution">disse .</segment>
+		<segment id="16" parent="118" relname="attribution">Lula ressaltou que ,</segment>
+		<segment id="17" parent="116" relname="span">com o Programa Fome Zero ,  conseguiu atingir o primeiro ponto das Metas do Milênio</segment>
+		<segment id="18" parent="17" relname="parenthetical">-  erradicar a fome - ,</segment>
+		<segment id="19" parent="117" relname="same-unit">com dez anos de antecedência ,</segment>
+		<segment id="20" parent="117" relname="volitional-result">reduzindo em mais da metade a pobreza extrema .</segment>
+		<segment id="21" parent="120" relname="span">" O Brasil dará todas as garantias sociais e ambientais à produção de biocombustíveis "  ,</segment>
+		<segment id="22" parent="21" relname="attribution">frisou no discurso .</segment>
+		<segment id="23" parent="121" relname="list">Lula apontou o etanol e o biodiesel como oportunidades de países pobres e em desenvolvimento terem autonomia energética ,  sem grandes investimentos .</segment>
+		<segment id="24" parent="121" relname="list">" Podem gerar emprego ,  renda</segment>
+		<segment id="25" parent="121" relname="list">e favorecer a agricultura familiar "  .</segment>
+		<segment id="26" parent="27" relname="attribution">O presidente afirmou também que</segment>
+		<segment id="27" parent="122" relname="span">os biocombustíveis evitaram que 644 milhões de toneladas de CO2 fossem despejadas na atmosfera .</segment>
+		<segment id="28" parent="123" relname="span">" Não haverá solução para os terríveis efeitos das mudanças climáticas</segment>
+		<segment id="29" parent="28" relname="condition">se a humanidade não for capaz também de mudar seus padrões de produção e consumo "  ,</segment>
+		<segment id="30" parent="123" relname="attribution">disse .</segment>
+		<segment id="31" parent="125" relname="attribution">O presidente Lula frisou que</segment>
+		<segment id="32" parent="125" relname="list">os países mais industrializados  " precisam dar o exemplo no combate ao aquecimento global "</segment>
+		<segment id="33" parent="125" relname="list">e disse ser  " imprescindível "  que eles cumpram as metas do Protocolo de Kyoto .</segment>
+		<segment id="34" parent="127" relname="attribution">Segundo o presidente ,</segment>
+		<segment id="35" parent="127" relname="contrast">" cada um de nós deve assumir sua parte nesta tarefa ,</segment>
+		<segment id="36" parent="127" relname="contrast">mas não é admissível que o ônus maior da imprevidência dos privilegiados recaia sobre os despossuídos da terra "  .</segment>
+		<segment id="37" parent="130" relname="attribution">Lula disse que</segment>
+		<segment id="38" parent="130" relname="span">o Brasil se propõe a sediar ,  em 2012 ,  uma nova conferência</segment>
+		<segment id="39" parent="129" relname="span">para discutir questões ambientais ,  a  " Rio+20 "  ,</segment>
+		<segment id="40" parent="39" relname="purpose">para avaliar os resultados da ECO-92 .</segment>
+		<segment id="41" parent="141" relname="span">O presidente exaltou a queda no índice do desmatamento da Amazônia ,</segment>
+		<segment id="42" parent="43" relname="attribution">que afirmou</segment>
+		<segment id="43" parent="140" relname="span">ter caído para  " menos da metade "  .</segment>
+		<segment id="44" parent="142" relname="span">" Não é obra do acaso .</segment>
+		<segment id="45" parent="44" relname="justify">O Brasil não abdica ,  em nenhuma hipótese ,  de sua soberania nem de suas responsabilidades na Amazônia "  .</segment>
+		<segment id="46" parent="144" relname="span">A taxa de desmatamento na Amazônia caiu 25 %  ,</segment>
+		<segment id="47" parent="46" relname="volitional-result">baixando de 27 mil quilômetros quadrados em 2004 ,  para 14 mil quilômetros em 2006 ,  dentro do plano de ação para prevenção e controle do desmatamento .</segment>
+		<segment id="48" parent="149" relname="span">O discurso de Lula na ONU deu grande ênfase ao fim do protecionismo agrícola .</segment>
+		<segment id="49" parent="147" relname="span">" São inaceitáveis os exorbitantes subsídios agrícolas ,</segment>
+		<segment id="50" parent="146" relname="list">que enriquecem os ricos</segment>
+		<segment id="51" parent="146" relname="list">e empobrece os mais pobres "  ,</segment>
+		<segment id="52" parent="147" relname="attribution">disse o presidente .</segment>
+		<segment id="53" parent="150" relname="attribution">Segundo Lula ,</segment>
+		<segment id="54" parent="150" relname="span">a  " superação da pobreza "  exige novas relações econômicas ,</segment>
+		<segment id="55" parent="54" relname="elaboration">" que não penalizem os países pobres "  .</segment>
+		<segment id="56" parent="152" relname="span">" A Rodada de Doha da OMC deve promover um verdadeiro pacto pelo desenvolvimento ,</segment>
+		<segment id="57" parent="56" relname="means">aprovando regras justas e equilibradas para o comércio internacional "  .</segment>
+		<segment id="58" parent="154" relname="list">Para Lula ,  a construção de uma nova ordem internacional não é uma figura de retórica ,</segment>
+		<segment id="59" parent="154" relname="list">mas um requisito de sensatez .</segment>
+		<segment id="60" parent="155" relname="span">Ele citou ,  ainda ,  a criação</segment>
+		<segment id="61" parent="60" relname="parenthetical">- Brasil ,  África do Sul e Índia  -</segment>
+		<segment id="62" parent="156" relname="same-unit">de um foro inovador de diálogo e ação conjunta ,  o IBAS .</segment>
+		<segment id="63" parent="157" relname="span">" Temos realizado inclusive projetos concretos de cooperação em diversos países ,</segment>
+		<segment id="64" parent="63" relname="elaboration">a exemplo de Haiti e Guiné Bissau "  ,</segment>
+		<segment id="65" parent="157" relname="attribution">emendou .</segment>
+		<segment id="66" parent="161" relname="span">" Não nos iludamos :</segment>
+		<segment id="67" parent="68" relname="condition">se o modelo de desenvolvimento global não for repensado ,</segment>
+		<segment id="68" parent="160" relname="span">crescem os riscos de uma catástrofe ambiental e humana sem precedentes "  .</segment>
+		<segment id="69" parent="167" relname="span">Lula citou positivamente a proposta do presidente francês Nicolas Sarkozy de ampliar o Conselho de Segurança da ONU ,  com a inclusão permanente de países em desenvolvimento .</segment>
+		<segment id="70" parent="166" relname="span">O Brasil luta historicamente</segment>
+		<segment id="71" parent="70" relname="purpose">para ter direito a voto no órgão .</segment>
+		<segment id="72" parent="168" relname="span">" É hora de passar das intenções à ação "  ,</segment>
+		<segment id="73" parent="72" relname="attribution">ressaltou .</segment>
+		<segment id="74" parent="171" relname="span">Para o presidente ,  as Nações Unidas são o melhor instrumento para enfrentar os desafios do mundo de hoje .</segment>
+		<segment id="75" parent="170" relname="span">" É no exercício da diplomacia multilateral que encontramos os meios de promover a paz e o desenvolvimento "  ,</segment>
+		<segment id="76" parent="75" relname="attribution">emendou .</segment>
+		<segment id="77" parent="172" relname="span">E citou que a participação do Brasil ,  em conjunto com outros países da América Latina e do Caribe ,  na Missão de Estabilização no Haiti ,  simboliza o empenho de fortalecer o multilateralismo .</segment>
+		<segment id="78" parent="77" relname="elaboration">" No Haiti ,  estamos mostrando que a paz e a estabilidade se constroem com a democracia e o desenvolvimento social "  .</segment>
+		<segment id="79" parent="175" relname="span">No encerramento do discurso ,  Lula fez alusão aos murais do artista brasileiro Cândido Portinari ,</segment>
+		<segment id="80" parent="79" relname="elaboration">exibidos na entrada no prédio da ONU em Nova York ,  presente do governo brasileiro .</segment>
+		<segment id="81" parent="82" relname="attribution">O presidente brasileiro destacou que</segment>
+		<segment id="82" parent="176" relname="span">o sofrimento expresso no mural  ' Guerra '  remete à elevada responsabilidade das Nações Unidas em afastar o risco de conflitos armados .</segment>
+		<segment id="83" parent="177" relname="span">E o segundo mural ,   ' Paz '  ,</segment>
+		<segment id="84" parent="83" relname="attribution">segundo Lula ,</segment>
+		<segment id="85" parent="178" relname="same-unit">revela que a paz vai muito além da ausência da guerra .</segment>
+		<segment id="86" parent="180" relname="list">" Pressupõe bem-estar ,  saúde e um convívio harmonioso com a natureza .</segment>
+		<segment id="87" parent="180" relname="list">Pressupõe justiça social ,  liberdade e superação dos flagelos da fome e da pobreza "  .</segment>
+		<segment id="88" parent="89" relname="attribution">Ainda no discurso ,  Lula disse que</segment>
+		<segment id="89" parent="182" relname="span">não é por acaso que o mural  ' Guerra '  está colocado de frente para quem chega ,  e o mural  ' Paz '  ,  para quem sai .</segment>
+		<segment id="90" parent="184" relname="contrast">" A mensagem do artista é singela ,</segment>
+		<segment id="91" parent="184" relname="contrast">mas poderosa :</segment>
+		<segment id="92" parent="184" relname="parenthetical">transformar aflições em esperança ,  guerra em paz ,  é a essência da missão das Nações Unidas .</segment>
+		<segment id="93" parent="188" relname="span">O Brasil continuará a trabalhar</segment>
+		<segment id="94" parent="93" relname="purpose">para que essa expectativa tão elevada se torne realidade "  ,</segment>
+		<segment id="95" parent="188" relname="attribution">assegurou .</segment>
+		<segment id="96" parent="190" relname="list">Os murais pintados pelo artista brasileiro denunciam a violência</segment>
+		<segment id="97" parent="190" relname="list">e exaltam o amor e o entendimento .</segment>
+		<segment id="98" parent="192" relname="list">Portinari utilizou não apenas a sua obra em favor da paz ,</segment>
+		<segment id="99" parent="192" relname="list">mas também militou politicamente em prol deste objetivo .</segment>
+		<segment id="100" parent="193" relname="elaboration">Os murais presenteados pelo governo brasileiro à ONU ,  em 1957 ,  retratam essa postura .</segment>
+		<segment id="101" parent="194" relname="purpose">Para realizar o trabalho ,</segment>
+		<segment id="102" parent="103" relname="attribution">especialistas destacam que</segment>
+		<segment id="103" parent="194" relname="span">Portinari realizou quatro anos de estudos preparatórios .</segment>
+		<segment id="104" parent="196" relname="list">A obra é composta de dois painéis realizados a óleo sobre madeira compensada ,  de 14 metros de altura por dez metros de largura</segment>
+		<segment id="105" parent="196" relname="list">e foi executada em nove meses .</segment>
+		<group id="106" type="span" parent="107" relname="span"/>
+		<group id="107" type="span" parent="202" relname="span"/>
+		<group id="108" type="span" parent="109" relname="list"/>
+		<group id="109" type="multinuc" parent="106" relname="evidence"/>
+		<group id="110" type="span" parent="111" relname="list"/>
+		<group id="111" type="multinuc" parent="136" relname="span"/>
+		<group id="112" type="span" parent="111" relname="elaboration"/>
+		<group id="113" type="span" parent="114" relname="span"/>
+		<group id="114" type="span" parent="115" relname="span"/>
+		<group id="115" type="span" parent="137" relname="span"/>
+		<group id="116" type="span" parent="117" relname="same-unit"/>
+		<group id="117" type="multinuc" parent="118" relname="span"/>
+		<group id="118" type="span" parent="119" relname="span"/>
+		<group id="119" type="span" parent="115" relname="evidence"/>
+		<group id="120" type="span" parent="135" relname="span"/>
+		<group id="121" type="multinuc" parent="120" relname="elaboration"/>
+		<group id="122" type="span" parent="134" relname="span"/>
+		<group id="123" type="span" parent="124" relname="span"/>
+		<group id="124" type="span" parent="133" relname="span"/>
+		<group id="125" type="multinuc" parent="126" relname="span"/>
+		<group id="126" type="span" parent="132" relname="list"/>
+		<group id="127" type="multinuc" parent="128" relname="span"/>
+		<group id="128" type="span" parent="132" relname="list"/>
+		<group id="129" type="span" parent="38" relname="purpose"/>
+		<group id="130" type="span" parent="131" relname="span"/>
+		<group id="131" type="span" parent="205" relname="list"/>
+		<group id="132" type="multinuc" parent="124" relname="elaboration"/>
+		<group id="133" type="span" parent="122" relname="elaboration"/>
+		<group id="134" type="span" parent="201" relname="list"/>
+		<group id="135" type="span" parent="138" relname="elaboration"/>
+		<group id="136" type="span" parent="107" relname="elaboration"/>
+		<group id="137" type="span" parent="11" relname="elaboration"/>
+		<group id="138" type="span" parent="139" relname="span"/>
+		<group id="139" type="span" parent="201" relname="list"/>
+		<group id="140" type="span" parent="41" relname="elaboration"/>
+		<group id="141" type="span" parent="143" relname="span"/>
+		<group id="142" type="span" parent="141" relname="explanation"/>
+		<group id="143" type="span" parent="145" relname="span"/>
+		<group id="144" type="span" parent="143" relname="elaboration"/>
+		<group id="145" type="span" parent="205" relname="list"/>
+		<group id="146" type="multinuc" parent="49" relname="non-volitional-result"/>
+		<group id="147" type="span" parent="148" relname="span"/>
+		<group id="148" type="span" parent="48" relname="justify"/>
+		<group id="149" type="span" parent="162" relname="span"/>
+		<group id="150" type="span" parent="151" relname="span"/>
+		<group id="151" type="span" parent="153" relname="span"/>
+		<group id="152" type="span" parent="151" relname="elaboration"/>
+		<group id="153" type="span" parent="149" relname="elaboration"/>
+		<group id="154" type="multinuc" parent="162" relname="justify"/>
+		<group id="155" type="span" parent="156" relname="same-unit"/>
+		<group id="156" type="multinuc" parent="159" relname="span"/>
+		<group id="157" type="span" parent="158" relname="span"/>
+		<group id="158" type="span" parent="156" relname="elaboration"/>
+		<group id="159" type="span" parent="163" relname="elaboration"/>
+		<group id="160" type="span" parent="66" relname="parenthetical"/>
+		<group id="161" type="span" parent="164" relname="justify"/>
+		<group id="162" type="span" parent="163" relname="span"/>
+		<group id="163" type="span" parent="164" relname="span"/>
+		<group id="164" type="span" parent="165" relname="span"/>
+		<group id="165" type="span" parent="204" relname="list"/>
+		<group id="166" type="span" parent="69" relname="background"/>
+		<group id="167" type="span" parent="169" relname="span"/>
+		<group id="168" type="span" parent="167" relname="justify"/>
+		<group id="169" type="span" parent="174" relname="span"/>
+		<group id="170" type="span" parent="173" relname="span"/>
+		<group id="171" type="span" parent="169" relname="justify"/>
+		<group id="172" type="span" parent="170" relname="elaboration"/>
+		<group id="173" type="span" parent="74" relname="justify"/>
+		<group id="174" type="span" parent="204" relname="list"/>
+		<group id="175" type="span" parent="183" relname="span"/>
+		<group id="176" type="span" parent="179" relname="list"/>
+		<group id="177" type="span" parent="178" relname="same-unit"/>
+		<group id="178" type="multinuc" parent="181" relname="span"/>
+		<group id="179" type="multinuc" parent="175" relname="elaboration"/>
+		<group id="180" type="multinuc" parent="178" relname="justify"/>
+		<group id="181" type="span" parent="179" relname="list"/>
+		<group id="182" type="span" parent="186" relname="span"/>
+		<group id="183" type="span" parent="187" relname="span"/>
+		<group id="184" type="multinuc" parent="185" relname="span"/>
+		<group id="185" type="span" parent="191" relname="span"/>
+		<group id="186" type="span" parent="183" relname="elaboration"/>
+		<group id="187" type="span" parent="200" relname="span"/>
+		<group id="188" type="span" parent="189" relname="span"/>
+		<group id="189" type="span" parent="185" relname="elaboration"/>
+		<group id="190" type="multinuc" parent="193" relname="list"/>
+		<group id="191" type="span" parent="182" relname="elaboration"/>
+		<group id="192" type="multinuc" parent="193" relname="list"/>
+		<group id="193" type="multinuc" parent="197" relname="span"/>
+		<group id="194" type="span" parent="195" relname="span"/>
+		<group id="195" type="span" parent="197" relname="elaboration"/>
+		<group id="196" type="multinuc" parent="198" relname="elaboration"/>
+		<group id="197" type="span" parent="198" relname="span"/>
+		<group id="198" type="span" parent="199" relname="span"/>
+		<group id="199" type="span" parent="187" relname="elaboration"/>
+		<group id="200" type="span" parent="204" relname="elaboration"/>
+		<group id="201" type="multinuc" parent="202" relname="elaboration"/>
+		<group id="202" type="span" parent="203" relname="span"/>
+		<group id="203" type="span" parent="207" relname="list"/>
+		<group id="204" type="multinuc" parent="206" relname="span"/>
+		<group id="205" type="multinuc" parent="207" relname="list"/>
+		<group id="206" type="span" parent="207" relname="list"/>
+		<group id="207" type="multinuc" />
+		<signals>
+			<signal source="1" type="SEMA" subtype="FONTE" tokens="1,3,2,4,5,6,7"/>
+			<signal source="1" type="SEMA" subtype="VERB-COMUNI" tokens="8"/>
+			<signal source="4" type="SEMA" subtype="FONTE" tokens="52"/>
+			<signal source="4" type="SEMA" subtype="VERB-COMUNI" tokens="53"/>
+			<signal source="6" type="SEMA" subtype="FONTE" tokens="68,69"/>
+			<signal source="6" type="SEMA" subtype="VERB-COMUNI" tokens="70"/>
+			<signal source="9" type="MD" subtype="CONJ" tokens="100"/>
+			<signal source="9" type="SEMA" subtype="FONTE" tokens="101"/>
+			<signal source="9" type="GRAF" subtype="PONT" tokens="102"/>
+			<signal source="12" type="MD" subtype="CONJ" tokens="143"/>
+			<signal source="14" type="SINT" subtype="PRO-REL" tokens="148"/>
+			<signal source="14" type="SINT" subtype="ORA-REL" tokens="149,150,152,153,151,154,157,159,158,155,160"/>
+			<signal source="18" type="GRAF" subtype="TRAVES" tokens="185,190"/>
+			<signal source="22" type="GRAF" subtype="ASPAS" tokens="207,221"/>
+			<signal source="22" type="GRAF" subtype="PONT" tokens="223"/>
+			<signal source="22" type="SEMA" subtype="VERB-COMUNI" tokens="224"/>
+			<signal source="24" type="MORF" subtype="TEMPO-VERBAL" tokens="254,260"/>
+			<signal source="24" type="MD" subtype="CONJ" tokens="259"/>
+			<signal source="26" type="SEMA" subtype="FONTE" tokens="267,268"/>
+			<signal source="26" type="SEMA" subtype="VERB-COMUNI" tokens="269"/>
+			<signal source="29" type="MD" subtype="CONJ" tokens="298"/>
+			<signal source="31" type="SEMA" subtype="FONTE" tokens="318,319,320"/>
+			<signal source="31" type="SEMA" subtype="VERB-COMUNI" tokens="321"/>
+			<signal source="32" type="MORF" subtype="TEMPO-VERBAL" tokens="329,349"/>
+			<signal source="32" type="MD" subtype="CONJ" tokens="339"/>
+			<signal source="35" type="MD" subtype="CONJ" tokens="373"/>
+			<signal source="40" type="GRAF" subtype="PONT" tokens="424"/>
+			<signal source="40" type="MD" subtype="PREP" tokens="425"/>
+			<signal source="42" type="SEMA" subtype="VERB-COMUNI" tokens="445"/>
+			<signal source="42" type="GRAF" subtype="ASPAS" tokens="450,454"/>
+			<signal source="47" type="CDP" subtype="CDP" tokens=""/>
+			<signal source="50" type="MD" subtype="CONJ" tokens="555"/>
+			<signal source="55" type="GRAF" subtype="PONT" tokens="582"/>
+			<signal source="55" type="SINT" subtype="PRO-REL" tokens="584"/>
+			<signal source="55" type="SINT" subtype="ORA-REL" tokens="585,586,587,588,589"/>
+			<signal source="57" type="SINT" subtype="VALE-VERB" tokens="600,601,608,609"/>
+			<signal source="58" type="GRAF" subtype="PONT" tokens="637"/>
+			<signal source="58" type="MD" subtype="CONJ" tokens="638"/>
+			<signal source="61" type="GRAF" subtype="TRAVES" tokens="653,663"/>
+			<signal source="64" type="GRAF" subtype="PONT" tokens="689,699"/>
+			<signal source="67" type="MD" subtype="CONJ" tokens="707"/>
+			<signal source="67" type="GRAF" subtype="PONT" tokens="716"/>
+			<signal source="71" type="MD" subtype="PREP" tokens="764"/>
+			<signal source="73" type="GRAF" subtype="ASPAS" tokens="772,781"/>
+			<signal source="73" type="GRAF" subtype="PONT" tokens="783"/>
+			<signal source="73" type="SEMA" subtype="VERB-COMUNI" tokens="784"/>
+			<signal source="76" type="GRAF" subtype="ASPAS" tokens="807,825"/>
+			<signal source="76" type="GRAF" subtype="PONT" tokens="827"/>
+			<signal source="76" type="SEMA" subtype="VERB-COMUNI" tokens="828"/>
+			<signal source="80" type="GRAF" subtype="PONT" tokens="909"/>
+			<signal source="81" type="SEMA" subtype="FONTE" tokens="927,928,929"/>
+			<signal source="81" type="SEMA" subtype="VERB-COMUNI" tokens="930"/>
+			<signal source="84" type="MD" subtype="PREP" tokens="969"/>
+			<signal source="84" type="SEMA" subtype="FONTE" tokens="970"/>
+			<signal source="88" type="SEMA" subtype="FONTE" tokens="1021"/>
+			<signal source="88" type="SEMA" subtype="VERB-COMUNI" tokens="1022"/>
+			<signal source="90" type="GRAF" subtype="PONT" tokens="1066"/>
+			<signal source="90" type="MD" subtype="CONJ" tokens="1067"/>
+			<signal source="92" type="GRAF" subtype="PONT" tokens="1069"/>
+			<signal source="94" type="MD" subtype="PREP" tokens="1095"/>
+			<signal source="96" type="MORF" subtype="TEMPO-VERBAL" tokens="1115,1119"/>
+			<signal source="96" type="MD" subtype="CONJ" tokens="1118"/>
+			<signal source="98" type="GRAF" subtype="PONT" tokens="1137"/>
+			<signal source="98" type="MD" subtype="CONJ" tokens="1138"/>
+			<signal source="101" type="MD" subtype="PREP" tokens="1165"/>
+			<signal source="101" type="GRAF" subtype="PONT" tokens="1169"/>
+			<signal source="102" type="SEMA" subtype="FONTE" tokens="1170"/>
+			<signal source="102" type="SEMA" subtype="VERB-COMUNI" tokens="1171"/>
+			<signal source="104" type="MD" subtype="CONJ" tokens="1206"/>
+			<signal source="116" type="SINT" subtype="VALE-VERB" tokens="177,192,193,194,195,196"/>
+			<signal source="155" type="SINT" subtype="VALE-VERB" tokens="651,652,664,665,666,667"/>
+			<signal source="177" type="SINT" subtype="VALE-VERB" tokens="957,958,959,960,972"/>
+		</signals>
+	</body>
+</rst>

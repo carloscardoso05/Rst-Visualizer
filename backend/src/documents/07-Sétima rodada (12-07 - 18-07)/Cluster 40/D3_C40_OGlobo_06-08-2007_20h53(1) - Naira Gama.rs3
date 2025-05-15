@@ -1,0 +1,213 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis-e" type="rst"/>
+			<rel name="antithesis" type="rst"/>
+			<rel name="attribution-e" type="rst"/>
+			<rel name="attribution" type="rst"/>
+			<rel name="background-e" type="rst"/>
+			<rel name="background" type="rst"/>
+			<rel name="circumstance-e" type="rst"/>
+			<rel name="circumstance" type="rst"/>
+			<rel name="comparison-e" type="rst"/>
+			<rel name="comparison" type="rst"/>
+			<rel name="concession-e" type="rst"/>
+			<rel name="concession" type="rst"/>
+			<rel name="conclusion-e" type="rst"/>
+			<rel name="conclusion" type="rst"/>
+			<rel name="condition-e" type="rst"/>
+			<rel name="condition" type="rst"/>
+			<rel name="contrast" type="multinuc"/>
+			<rel name="elaboration-e" type="rst"/>
+			<rel name="elaboration" type="rst"/>
+			<rel name="enablement-e" type="rst"/>
+			<rel name="enablement" type="rst"/>
+			<rel name="evaluation-e" type="rst"/>
+			<rel name="evaluation" type="rst"/>
+			<rel name="evidence-e" type="rst"/>
+			<rel name="evidence" type="rst"/>
+			<rel name="explanation-e" type="rst"/>
+			<rel name="explanation" type="rst"/>
+			<rel name="interpretation-e" type="rst"/>
+			<rel name="interpretation" type="rst"/>
+			<rel name="joint" type="multinuc"/>
+			<rel name="justify-e" type="rst"/>
+			<rel name="justify" type="rst"/>
+			<rel name="list" type="multinuc"/>
+			<rel name="means-e" type="rst"/>
+			<rel name="means" type="rst"/>
+			<rel name="motivation-e" type="rst"/>
+			<rel name="motivation" type="rst"/>
+			<rel name="non-volitional-cause-e" type="rst"/>
+			<rel name="non-volitional-cause" type="rst"/>
+			<rel name="non-volitional-result-e" type="rst"/>
+			<rel name="non-volitional-result" type="rst"/>
+			<rel name="other-rel-e" type="rst"/>
+			<rel name="other-rel" type="multinuc"/>
+			<rel name="other-rel" type="rst"/>
+			<rel name="otherwise-e" type="rst"/>
+			<rel name="otherwise" type="rst"/>
+			<rel name="parenthetical" type="rst"/>
+			<rel name="purpose-e" type="rst"/>
+			<rel name="purpose" type="rst"/>
+			<rel name="restatement-e" type="rst"/>
+			<rel name="restatement" type="rst"/>
+			<rel name="same-unit" type="multinuc"/>
+			<rel name="sequence" type="multinuc"/>
+			<rel name="solutionhood-e" type="rst"/>
+			<rel name="solutionhood" type="rst"/>
+			<rel name="summary-e" type="rst"/>
+			<rel name="summary" type="rst"/>
+			<rel name="volitional-cause-e" type="rst"/>
+			<rel name="volitional-cause" type="rst"/>
+			<rel name="volitional-result-e" type="rst"/>
+			<rel name="volitional-result" type="rst"/>
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="48" relname="span">O procurador-geral da República ,  Antonio Fernando de Souza ,  pediu abertura de inquérito no Supremo Tribunal Federal</segment>
+		<segment id="2" parent="1" relname="parenthetical">( STF )</segment>
+		<segment id="3" parent="48" relname="purpose">para investigar o presidente do Senado ,  Renan Calheiros .</segment>
+		<segment id="4" parent="50" relname="attribution">Segundo ele ,</segment>
+		<segment id="5" parent="50" relname="list">o pedido de investigação diz respeito às denúncias de que Renan teria despesas pessoais pagas por um lobista ,</segment>
+		<segment id="6" parent="50" relname="list">mas pode incluir também o suposto uso de laranjas na compra de meios de comunicação em Alagoas ,  segundo revelou reportagem da revista Veja .</segment>
+		<segment id="7" parent="53" relname="span">" Eu já pedi ao Supremo abertura de inquérito</segment>
+		<segment id="8" parent="52" relname="span">para apurar fatos</segment>
+		<segment id="9" parent="8" relname="elaboration">que são objeto da representação em curso no Conselho de Ética do Senado .</segment>
+		<segment id="10" parent="54" relname="span">Esse pedido foi concluído na sexta-feira</segment>
+		<segment id="11" parent="10" relname="attribution">[  3  ]</segment>
+		<segment id="12" parent="55" relname="sequence">e deve ter sido protocolado no Supremo ”  ,</segment>
+		<segment id="13" parent="55" relname="attribution">disse Antonio Fernando de Souza .</segment>
+		<segment id="14" parent="62" relname="span">O procurador solicitou o encaminhamento de todo o material</segment>
+		<segment id="15" parent="60" relname="span">que está no Conselho de Ética e também a perícia da Polícia Federal</segment>
+		<segment id="16" parent="15" relname="parenthetical">( PF )</segment>
+		<segment id="17" parent="61" relname="same-unit">em documentos de Renan .</segment>
+		<segment id="18" parent="63" relname="list">Ele ressaltou que a decisão do MP não invalida a investigação em curso no Senado .</segment>
+		<segment id="19" parent="64" relname="span">“ A iniciativa</segment>
+		<segment id="20" parent="19" relname="elaboration">que tomei</segment>
+		<segment id="21" parent="65" relname="same-unit">tem o objetivo de esclarecer essa questão sob a perspectiva penal sem nenhuma interferência sobre o que vai ser decidido no Senado ”  ,</segment>
+		<segment id="22" parent="65" relname="attribution">declarou .</segment>
+		<segment id="23" parent="69" relname="span">O presidente do Senado ,  Renan Calheiros</segment>
+		<segment id="24" parent="23" relname="parenthetical">( PMDB-AL )  ,</segment>
+		<segment id="25" parent="70" relname="span">minimizou o pedido feito pelo procurador-geral da República ,  Antonio Fernando de Souza ,  ao Supremo Tribunal Federal</segment>
+		<segment id="26" parent="25" relname="parenthetical">( STF )</segment>
+		<segment id="27" parent="73" relname="span">para abrir inquérito</segment>
+		<segment id="28" parent="72" relname="span">para investigá-lo sobre a suposta ajuda de um lobista</segment>
+		<segment id="29" parent="28" relname="purpose">para pagar despesas pessoais .</segment>
+		<segment id="30" parent="31" relname="attribution">Renan afirmou que</segment>
+		<segment id="31" parent="75" relname="span">ele próprio pediu essa investigação ao procurador .</segment>
+		<segment id="32" parent="77" relname="span">" Eu pedi ao procurador-geral que fizesse a investigação há mais de 15 dias .</segment>
+		<segment id="33" parent="76" relname="span">Eu mandei uma carta a ele</segment>
+		<segment id="34" parent="33" relname="purpose">para que abrisse a investigação .</segment>
+		<segment id="35" parent="77" relname="purpose">Para que eu pudesse demonstrar a verdade "  ,</segment>
+		<segment id="36" parent="78" relname="attribution">disse Renan .</segment>
+		<segment id="37" parent="83" relname="span">O Democratas decidirá nesta terça-feira</segment>
+		<segment id="38" parent="37" relname="parenthetical">( 7 )</segment>
+		<segment id="39" parent="84" relname="span">que tipo de pedido entregará ao Conselho de Ética contra o presidente do Senado ,  Renan Calheiros</segment>
+		<segment id="40" parent="39" relname="parenthetical">( PMDB-AL )  :</segment>
+		<segment id="41" parent="86" relname="span">uma nova representação sobre as recentes denúncias da revista  " Veja "  ou apenas um aditamento ao processo</segment>
+		<segment id="42" parent="41" relname="elaboration">que ele já responde no órgão</segment>
+		<segment id="43" parent="88" relname="span">pela acusação de receber ajuda de um lobista</segment>
+		<segment id="44" parent="43" relname="purpose">para pagar despesas pessoais .</segment>
+		<segment id="45" parent="91" relname="list">O Democratas também decidirá qual postura tomará nas votações em plenário a partir de agora .</segment>
+		<segment id="46" parent="47" relname="condition">Se depender do líder do partido ,</segment>
+		<segment id="47" parent="90" relname="span">os senadores do DEM deveriam abandonar qualquer sessão com Renan no comando .</segment>
+		<group id="48" type="span" parent="49" relname="span"/>
+		<group id="49" type="span" parent="59" relname="span"/>
+		<group id="50" type="multinuc" parent="51" relname="span"/>
+		<group id="51" type="span" parent="58" relname="span"/>
+		<group id="52" type="span" parent="7" relname="purpose"/>
+		<group id="53" type="span" parent="57" relname="list"/>
+		<group id="54" type="span" parent="55" relname="sequence"/>
+		<group id="55" type="multinuc" parent="56" relname="span"/>
+		<group id="56" type="span" parent="57" relname="list"/>
+		<group id="57" type="multinuc" parent="51" relname="elaboration"/>
+		<group id="58" type="span" parent="49" relname="elaboration"/>
+		<group id="59" type="span" parent="68" relname="span"/>
+		<group id="60" type="span" parent="61" relname="same-unit"/>
+		<group id="61" type="multinuc" parent="14" relname="elaboration"/>
+		<group id="62" type="span" parent="63" relname="list"/>
+		<group id="63" type="multinuc" parent="67" relname="span"/>
+		<group id="64" type="span" parent="65" relname="same-unit"/>
+		<group id="65" type="multinuc" parent="66" relname="span"/>
+		<group id="66" type="span" parent="63" relname="elaboration"/>
+		<group id="67" type="span" parent="59" relname="elaboration"/>
+		<group id="68" type="span" parent="82" relname="span"/>
+		<group id="69" type="span" parent="71" relname="same-unit"/>
+		<group id="70" type="span" parent="71" relname="same-unit"/>
+		<group id="71" type="multinuc" parent="74" relname="span"/>
+		<group id="72" type="span" parent="27" relname="purpose"/>
+		<group id="73" type="span" parent="71" relname="purpose"/>
+		<group id="74" type="span" parent="81" relname="span"/>
+		<group id="75" type="span" parent="80" relname="span"/>
+		<group id="76" type="span" parent="32" relname="explanation"/>
+		<group id="77" type="span" parent="78" relname="span"/>
+		<group id="78" type="span" parent="79" relname="span"/>
+		<group id="79" type="span" parent="75" relname="explanation"/>
+		<group id="80" type="span" parent="74" relname="elaboration"/>
+		<group id="81" type="span" parent="68" relname="elaboration"/>
+		<group id="82" type="span" parent="92" relname="span"/>
+		<group id="83" type="span" parent="85" relname="same-unit"/>
+		<group id="84" type="span" parent="85" relname="same-unit"/>
+		<group id="85" type="multinuc" parent="89" relname="span"/>
+		<group id="86" type="span" parent="87" relname="span"/>
+		<group id="87" type="span" parent="85" relname="parenthetical"/>
+		<group id="88" type="span" parent="86" relname="elaboration"/>
+		<group id="89" type="span" parent="91" relname="list"/>
+		<group id="90" type="span" parent="91" relname="list"/>
+		<group id="91" type="multinuc" parent="82" relname="elaboration"/>
+		<group id="92" type="span" />
+		<signals>
+			<signal source="2" type="GRAF" subtype="PARENT" tokens="21,23"/>
+			<signal source="2" type="SEMA" subtype="ACRO" tokens="22,18,19,20"/>
+			<signal source="3" type="MD" subtype="CONJ" tokens="24"/>
+			<signal source="4" type="MD" subtype="PREP" tokens="35"/>
+			<signal source="4" type="SEMA" subtype="FONTE" tokens="36"/>
+			<signal source="5" type="MD" subtype="ADV" tokens="60"/>
+			<signal source="9" type="SINT" subtype="PRO-REL" tokens="95"/>
+			<signal source="9" type="SINT" subtype="ORA-REL" tokens="96,97,99,98,100,102,101,103,105,106,104,107"/>
+			<signal source="9" type="GRAF" subtype="PONT" tokens="108"/>
+			<signal source="11" type="GRAF" subtype="PARENT" tokens="115,119"/>
+			<signal source="13" type="SEMA" subtype="VERB-COMUNI" tokens="130"/>
+			<signal source="13" type="SEMA" subtype="FONTE" tokens="131,132,133,134"/>
+			<signal source="16" type="GRAF" subtype="PARENT" tokens="158,160"/>
+			<signal source="16" type="SEMA" subtype="ACRO" tokens="156,157,159"/>
+			<signal source="20" type="SINT" subtype="PRO-REL" tokens="185"/>
+			<signal source="22" type="SEMA" subtype="VERB-COMUNI" tokens="212"/>
+			<signal source="24" type="GRAF" subtype="PARENT" tokens="222,224"/>
+			<signal source="26" type="GRAF" subtype="PARENT" tokens="247,249"/>
+			<signal source="26" type="SEMA" subtype="ACRO" tokens="248,244,245,246"/>
+			<signal source="29" type="MD" subtype="CONJ" tokens="262"/>
+			<signal source="30" type="SEMA" subtype="FONTE" tokens="267"/>
+			<signal source="30" type="SEMA" subtype="VERB-COMUNI" tokens="268"/>
+			<signal source="34" type="MD" subtype="CONJ" tokens="299"/>
+			<signal source="38" type="GRAF" subtype="PARENT" tokens="323,325"/>
+			<signal source="40" type="GRAF" subtype="PARENT" tokens="344,346"/>
+			<signal source="42" type="SINT" subtype="PRO-REL" tokens="369"/>
+			<signal source="42" type="SINT" subtype="ORA-REL" tokens="370,371,372,373,374"/>
+			<signal source="44" type="MD" subtype="CONJ" tokens="383"/>
+			<signal source="46" type="MD" subtype="CONJ" tokens="404"/>
+			<signal source="52" type="MD" subtype="CONJ" tokens="92"/>
+			<signal source="53" type="MORF" subtype="TEMPO-VERBAL" tokens="86"/>
+			<signal source="54" type="MORF" subtype="TEMPO-VERBAL" tokens="111"/>
+			<signal source="54" type="MD" subtype="CONJ" tokens="120"/>
+			<signal source="56" type="MORF" subtype="TEMPO-VERBAL" tokens="111,124"/>
+			<signal source="56" type="MD" subtype="CONJ" tokens="120"/>
+			<signal source="60" type="SEMA" subtype="CONHE-MUND" tokens="148,149,150"/>
+			<signal source="61" type="SINT" subtype="PRO-REL" tokens="145"/>
+			<signal source="61" type="SINT" subtype="ORA-CIRCUNS" tokens="146,147,148,150,149,151,152,154,155,156,157,153"/>
+			<signal source="62" type="MORF" subtype="TEMPO-VERBAL" tokens="138"/>
+			<signal source="62" type="MD" subtype="CONJ" tokens="151"/>
+			<signal source="64" type="SINT" subtype="VALE-VERB" tokens="183,184,187,188,189"/>
+			<signal source="69" type="SINT" subtype="VALE-VERB" tokens="220,221,227,228,229"/>
+			<signal source="69" type="SEMA" subtype="CAMPO-SEM" tokens="215,232,233,234"/>
+			<signal source="72" type="MD" subtype="CONJ" tokens="253"/>
+			<signal source="73" type="MD" subtype="CONJ" tokens="250"/>
+			<signal source="83" type="SINT" subtype="VALE-VERB" tokens="320,318,319,326,327,328,329,330"/>
+			<signal source="87" type="GRAF" subtype="PONT" tokens="348"/>
+			<signal source="88" type="SINT" subtype="ORA-CIRCUNS" tokens="375,376,377,378,379,380,381,382"/>
+			<signal source="89" type="MORF" subtype="TEMPO-VERBAL" tokens="320,330"/>
+			<signal source="89" type="MD" subtype="CONJ" tokens="363"/>
+		</signals>
+	</body>
+</rst>

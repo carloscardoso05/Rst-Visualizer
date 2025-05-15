@@ -1,0 +1,243 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis-e" type="rst"/>
+			<rel name="antithesis" type="rst"/>
+			<rel name="attribution-e" type="rst"/>
+			<rel name="attribution" type="rst"/>
+			<rel name="background-e" type="rst"/>
+			<rel name="background" type="rst"/>
+			<rel name="circumstance-e" type="rst"/>
+			<rel name="circumstance" type="rst"/>
+			<rel name="comparison-e" type="rst"/>
+			<rel name="comparison" type="rst"/>
+			<rel name="concession-e" type="rst"/>
+			<rel name="concession" type="rst"/>
+			<rel name="conclusion-e" type="rst"/>
+			<rel name="conclusion" type="rst"/>
+			<rel name="condition-e" type="rst"/>
+			<rel name="condition" type="rst"/>
+			<rel name="contrast" type="multinuc"/>
+			<rel name="elaboration-e" type="rst"/>
+			<rel name="elaboration" type="rst"/>
+			<rel name="enablement-e" type="rst"/>
+			<rel name="enablement" type="rst"/>
+			<rel name="evaluation-e" type="rst"/>
+			<rel name="evaluation" type="rst"/>
+			<rel name="evidence-e" type="rst"/>
+			<rel name="evidence" type="rst"/>
+			<rel name="explanation-e" type="rst"/>
+			<rel name="explanation" type="rst"/>
+			<rel name="interpretation-e" type="rst"/>
+			<rel name="interpretation" type="rst"/>
+			<rel name="joint" type="multinuc"/>
+			<rel name="justify-e" type="rst"/>
+			<rel name="justify" type="rst"/>
+			<rel name="list" type="multinuc"/>
+			<rel name="means-e" type="rst"/>
+			<rel name="means" type="rst"/>
+			<rel name="motivation-e" type="rst"/>
+			<rel name="motivation" type="rst"/>
+			<rel name="non-volitional-cause-e" type="rst"/>
+			<rel name="non-volitional-cause" type="rst"/>
+			<rel name="non-volitional-result-e" type="rst"/>
+			<rel name="non-volitional-result" type="rst"/>
+			<rel name="other-rel-e" type="rst"/>
+			<rel name="other-rel" type="multinuc"/>
+			<rel name="other-rel" type="rst"/>
+			<rel name="otherwise-e" type="rst"/>
+			<rel name="otherwise" type="rst"/>
+			<rel name="parenthetical" type="rst"/>
+			<rel name="purpose-e" type="rst"/>
+			<rel name="purpose" type="rst"/>
+			<rel name="restatement-e" type="rst"/>
+			<rel name="restatement" type="rst"/>
+			<rel name="same-unit" type="multinuc"/>
+			<rel name="sequence" type="multinuc"/>
+			<rel name="solutionhood-e" type="rst"/>
+			<rel name="solutionhood" type="rst"/>
+			<rel name="summary-e" type="rst"/>
+			<rel name="summary" type="rst"/>
+			<rel name="volitional-cause-e" type="rst"/>
+			<rel name="volitional-cause" type="rst"/>
+			<rel name="volitional-result-e" type="rst"/>
+			<rel name="volitional-result" type="rst"/>
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="63" relname="span">Com a presença de 54 parlamentares às 10h40 ,  o plenário da Câmara começou o debate sobre a prorrogação da CPMF</segment>
+		<segment id="2" parent="1" relname="parenthetical">( imposto do cheque )</segment>
+		<segment id="3" parent="64" relname="same-unit">até 2011 .</segment>
+		<segment id="4" parent="65" relname="span">Na entrada da Câmara ,  315 deputados já registraram presença ,</segment>
+		<segment id="5" parent="4" relname="elaboration">o que é um número considerado alto pelos servidores da Casa para as 11h da manhã .</segment>
+		<segment id="6" parent="71" relname="span">A pauta foi liberada ,</segment>
+		<segment id="7" parent="67" relname="span">depois que a base aliada do governo aprovou no início da madrugada desta terça-feira</segment>
+		<segment id="8" parent="7" relname="parenthetical">( 18 )</segment>
+		<segment id="9" parent="68" relname="same-unit">uma medida provisória</segment>
+		<segment id="10" parent="69" relname="span">que libera R$ 6 , 3 bilhões para obras do Programa de Aceleração do Crescimento</segment>
+		<segment id="11" parent="10" relname="parenthetical">( PAC )  .</segment>
+		<segment id="12" parent="72" relname="span">Outro mecanismo</segment>
+		<segment id="13" parent="12" relname="non-volitional-result-e">que permitiu a liberação da pauta</segment>
+		<segment id="14" parent="73" relname="same-unit">foi a revogação da MP 382 ,</segment>
+		<segment id="15" parent="74" relname="span">que desonerava setores produtivos afetados pela desvalorização do dólar frente ao real ,</segment>
+		<segment id="16" parent="15" relname="elaboration">como o coureiro-calçadista e o de produtos têxteis .</segment>
+		<segment id="17" parent="18" relname="volitional-cause">Desta forma ,  não existem mais medidas provisórias com prazo de tramitação vencido ,</segment>
+		<segment id="18" parent="77" relname="span">portanto ,  a primeira matéria do dia é a prorrogação do imposto do cheque .</segment>
+		<segment id="19" parent="83" relname="span">A proposta original do governo foi aprovada sem alterações pela comissão especial na semana passada .</segment>
+		<segment id="20" parent="81" relname="span">O texto ,</segment>
+		<segment id="21" parent="80" relname="span">relatado pelo deputado Antônio Palocci</segment>
+		<segment id="22" parent="21" relname="parenthetical">( PT-SP )  ,</segment>
+		<segment id="23" parent="82" relname="same-unit">propõe que a CPMF seja cobrada até 2011 sobre todas movimentações financeiras e com a alíquota de 0 , 38 %  .</segment>
+		<segment id="24" parent="86" relname="span">Para a aprovação da matéria ,</segment>
+		<segment id="25" parent="84" relname="span">são necessários 308 votos dos 513 parlamentares</segment>
+		<segment id="26" parent="25" relname="parenthetical">( três quintos da Casa )  ,</segment>
+		<segment id="27" parent="85" relname="same-unit">em votações em primeiro e segundo turnos .</segment>
+		<segment id="28" parent="87" relname="span">Para ser promulgada ,</segment>
+		<segment id="29" parent="28" relname="condition">a PEC deve passar pelo mesmo trâmite no Senado .</segment>
+		<segment id="30" parent="92" relname="span">A oposição passará o dia tentando obstruir os trabalhos em plenário</segment>
+		<segment id="31" parent="91" relname="list">com o único objetivo de retardar a votação</segment>
+		<segment id="32" parent="91" relname="list">e dificultar a tarefa governista .</segment>
+		<segment id="33" parent="34" relname="justify">“ Sem CPMF vamos abrir uma crise no âmbito político e social .</segment>
+		<segment id="34" parent="93" relname="span">A oposição trabalha na lógica do quanto pior melhor ”  ,</segment>
+		<segment id="35" parent="95" relname="span">disse Henrique Fontana</segment>
+		<segment id="36" parent="35" relname="parenthetical">( PT-RS )  .</segment>
+		<segment id="37" parent="94" relname="explanation">A CPMF deve resultar em arrecadação de R$ 39 bilhões em 2008 ,  conforme a proposta orçamentária encaminhada pelo Planalto ao Congresso .</segment>
+		<segment id="38" parent="96" relname="list">“ Entraremos noite a dentro .</segment>
+		<segment id="39" parent="96" relname="list">O direito da oposição é legítimo e regimental ”  ,</segment>
+		<segment id="40" parent="96" relname="attribution">explicou o secretário-geral da Mesa da Câmara ,  Mozart Vianna .</segment>
+		<segment id="41" parent="101" relname="span">Como estratégia de obstrução ,  os partidos de oposição podem se utilizar ,  por mais de uma vez ,  de oito tipos de requerimentos</segment>
+		<segment id="42" parent="41" relname="purpose">para  " travar "  a votação ,</segment>
+		<segment id="43" parent="102" relname="span">sem contar com comunicações de líderes e outros instrumentos</segment>
+		<segment id="44" parent="43" relname="purpose">que estendem a sessão ,</segment>
+		<segment id="45" parent="103" relname="same-unit">todos previstos no regimento .</segment>
+		<segment id="46" parent="109" relname="span">“ Nosso objetivo é ganhar tempo .</segment>
+		<segment id="47" parent="105" relname="span">Sabemos que não temos chance de ganhar</segment>
+		<segment id="48" parent="47" relname="parenthetical">[  a votação  ]   ,</segment>
+		<segment id="49" parent="50" relname="volitional-cause">quanto mais levar aqui ,</segment>
+		<segment id="50" parent="107" relname="span">mais difícil fica para o governo no Senado ”  ,</segment>
+		<segment id="51" parent="106" relname="span">afirma o deputado Jutahy Junior</segment>
+		<segment id="52" parent="51" relname="parenthetical">( PSDB-BA )  .</segment>
+		<segment id="53" parent="54" relname="concession">Apesar de 54 parlamentares inscritos ,</segment>
+		<segment id="54" parent="113" relname="span">cerca de dez deputados estão neste momento fazendo discursos em plenário .</segment>
+		<segment id="55" parent="114" relname="span">Estão convocadas para esta quarta-feira</segment>
+		<segment id="56" parent="55" relname="parenthetical">( 19 )</segment>
+		<segment id="57" parent="115" relname="same-unit">duas sessões extraordinárias .</segment>
+		<segment id="58" parent="115" relname="elaboration">A primeira iniciou às 10h ,</segment>
+		<segment id="59" parent="119" relname="list">e a segunda está marcada para às 16h .</segment>
+		<segment id="60" parent="116" relname="span">Uma terceira sessão extraordinária para a votação da Proposta de Emenda Constitucional</segment>
+		<segment id="61" parent="60" relname="parenthetical">( PEC )</segment>
+		<segment id="62" parent="117" relname="same-unit">da CPMF deve ser convocada a partir das 21h .</segment>
+		<group id="63" type="span" parent="64" relname="same-unit"/>
+		<group id="64" type="multinuc" parent="66" relname="span"/>
+		<group id="65" type="span" parent="64" relname="elaboration"/>
+		<group id="66" type="span" parent="79" relname="span"/>
+		<group id="67" type="span" parent="68" relname="same-unit"/>
+		<group id="68" type="multinuc" parent="70" relname="span"/>
+		<group id="69" type="span" parent="68" relname="elaboration"/>
+		<group id="70" type="span" parent="6" relname="volitional-cause"/>
+		<group id="71" type="span" parent="76" relname="list"/>
+		<group id="72" type="span" parent="73" relname="same-unit"/>
+		<group id="73" type="multinuc" parent="75" relname="span"/>
+		<group id="74" type="span" parent="73" relname="elaboration"/>
+		<group id="75" type="span" parent="76" relname="list"/>
+		<group id="76" type="multinuc" parent="78" relname="span"/>
+		<group id="77" type="span" parent="76" relname="interpretation"/>
+		<group id="78" type="span" parent="66" relname="enablement"/>
+		<group id="79" type="span" parent="90" relname="span"/>
+		<group id="80" type="span" parent="20" relname="elaboration"/>
+		<group id="81" type="span" parent="82" relname="same-unit"/>
+		<group id="82" type="multinuc" parent="19" relname="elaboration"/>
+		<group id="83" type="span" parent="89" relname="span"/>
+		<group id="84" type="span" parent="85" relname="same-unit"/>
+		<group id="85" type="multinuc" parent="24" relname="condition"/>
+		<group id="86" type="span" parent="88" relname="list"/>
+		<group id="87" type="span" parent="88" relname="list"/>
+		<group id="88" type="multinuc" parent="83" relname="elaboration"/>
+		<group id="89" type="span" parent="79" relname="elaboration"/>
+		<group id="90" type="span" parent="121" relname="span"/>
+		<group id="91" type="multinuc" parent="30" relname="purpose"/>
+		<group id="92" type="span" parent="99" relname="span"/>
+		<group id="93" type="span" parent="94" relname="span"/>
+		<group id="94" type="span" parent="98" relname="span"/>
+		<group id="95" type="span" parent="93" relname="attribution"/>
+		<group id="96" type="multinuc" parent="97" relname="span"/>
+		<group id="97" type="span" parent="99" relname="elaboration"/>
+		<group id="98" type="span" parent="92" relname="explanation"/>
+		<group id="99" type="span" parent="100" relname="span"/>
+		<group id="100" type="span" parent="112" relname="span"/>
+		<group id="101" type="span" parent="104" relname="span"/>
+		<group id="102" type="span" parent="103" relname="same-unit"/>
+		<group id="103" type="multinuc" parent="101" relname="elaboration"/>
+		<group id="104" type="span" parent="111" relname="span"/>
+		<group id="105" type="span" parent="107" relname="concession"/>
+		<group id="106" type="span" parent="109" relname="attribution"/>
+		<group id="107" type="span" parent="108" relname="span"/>
+		<group id="108" type="span" parent="46" relname="justify"/>
+		<group id="109" type="span" parent="110" relname="span"/>
+		<group id="110" type="span" parent="104" relname="elaboration"/>
+		<group id="111" type="span" parent="100" relname="means"/>
+		<group id="112" type="span" parent="90" relname="elaboration"/>
+		<group id="113" type="span" parent="118" relname="span"/>
+		<group id="114" type="span" parent="115" relname="same-unit"/>
+		<group id="115" type="multinuc" parent="120" relname="span"/>
+		<group id="116" type="span" parent="117" relname="same-unit"/>
+		<group id="117" type="multinuc" parent="119" relname="list"/>
+		<group id="118" type="span" parent="119" relname="list"/>
+		<group id="119" type="multinuc" parent="90" relname="elaboration"/>
+		<group id="120" type="span" parent="113" relname="elaboration"/>
+		<group id="121" type="span" />
+		<signals>
+			<signal source="2" type="GRAF" subtype="PARENT" tokens="23,27"/>
+			<signal source="5" type="GRAF" subtype="PONT" tokens="42"/>
+			<signal source="5" type="SINT" subtype="PRO-REL" tokens="44"/>
+			<signal source="5" type="SINT" subtype="ORA-REL" tokens="45,46,47,48,49,50,51,52,53,54,55,56,57,58"/>
+			<signal source="5" type="SEMA" subtype="CAMPO-SEM" tokens="37,47"/>
+			<signal source="8" type="GRAF" subtype="PONT" tokens="79,81"/>
+			<signal source="11" type="GRAF" subtype="PARENT" tokens="100,102"/>
+			<signal source="11" type="SEMA" subtype="ACRO" tokens="101,95,96,97,98,99"/>
+			<signal source="13" type="SEMA" subtype="CAMPO-SEM" tokens="108"/>
+			<signal source="16" type="MD" subtype="CONJ" tokens="133"/>
+			<signal source="16" type="SEMA" subtype="HIPER-HIPO" tokens="122,123,135,139,140"/>
+			<signal source="17" type="MD" subtype="CONJ" tokens="157"/>
+			<signal source="17" type="GRAF" subtype="PONT" tokens="156,158"/>
+			<signal source="22" type="GRAF" subtype="PONT" tokens="197,199"/>
+			<signal source="22" type="SEMA" subtype="ACRO" tokens="198"/>
+			<signal source="26" type="GRAF" subtype="PARENT" tokens="238,243"/>
+			<signal source="26" type="SEMA" subtype="SINO" tokens="233,239,240,241,242"/>
+			<signal source="29" type="MD" subtype="CONJ" tokens="254"/>
+			<signal source="31" type="MD" subtype="CONJ" tokens="287"/>
+			<signal source="31" type="MORF" subtype="TEMPO-VERBAL" tokens="284,288"/>
+			<signal source="31" type="SEMA" subtype="CONHE-MUND" tokens="284,288"/>
+			<signal source="36" type="GRAF" subtype="PARENT" tokens="321,323"/>
+			<signal source="36" type="SEMA" subtype="ACRO" tokens="322"/>
+			<signal source="40" type="SEMA" subtype="VERB-COMUNI" tokens="367"/>
+			<signal source="40" type="SEMA" subtype="FONTE" tokens="368,369,370,371,372,373,374,376,377"/>
+			<signal source="40" type="GRAF" subtype="PONT" tokens="366"/>
+			<signal source="40" type="GRAF" subtype="ASPAS" tokens="350"/>
+			<signal source="42" type="MD" subtype="CONJ" tokens="406"/>
+			<signal source="44" type="SINT" subtype="PRO-REL" tokens="424"/>
+			<signal source="44" type="SINT" subtype="ORA-REL" tokens="425,427,426"/>
+			<signal source="49" type="MD" subtype="ADV" tokens="457,458,462"/>
+			<signal source="63" type="SINT" subtype="VALE-VERB" tokens="11,13,14,15,12,16,17,18,19,20,21,22,28,29"/>
+			<signal source="67" type="SINT" subtype="VALE-VERB" tokens="67,69,68,70,71,72,73,75,74,76,77,78,82,83,84"/>
+			<signal source="69" type="SINT" subtype="PRO-REL" tokens="85"/>
+			<signal source="69" type="SINT" subtype="ORA-REL" tokens="86,87,88,89,90,91,93,92,94,95,96,97,98,99"/>
+			<signal source="70" type="MD" subtype="ADV" tokens="65"/>
+			<signal source="70" type="SEMA" subtype="CONHE-MUND" tokens="71,72,82,83,84"/>
+			<signal source="72" type="SINT" subtype="VALE-VERB" tokens="105,106,113,114,115,117,116,118"/>
+			<signal source="74" type="GRAF" subtype="PONT" tokens="119"/>
+			<signal source="74" type="SINT" subtype="PRO-REL" tokens="120"/>
+			<signal source="74" type="SINT" subtype="ORA-REL" tokens="121,122,123,124,125,126,127,128,129,130,131,132"/>
+			<signal source="80" type="GRAF" subtype="PONT" tokens="191,201"/>
+			<signal source="80" type="SINT" subtype="ORA-REL" tokens="192,193,194,195,196"/>
+			<signal source="81" type="SINT" subtype="VALE-VERB" tokens="189,190,202"/>
+			<signal source="84" type="SINT" subtype="VALE-VERB" tokens="231,232,233,234,235,236,237,246,247,248,249,251,250,252,253"/>
+			<signal source="85" type="MD" subtype="CONJ" tokens="225"/>
+			<signal source="91" type="SEMA" subtype="CONHE-MUND" tokens="282,283"/>
+			<signal source="95" type="SEMA" subtype="VERB-COMUNI" tokens="318"/>
+			<signal source="95" type="SEMA" subtype="FONTE" tokens="319,320"/>
+			<signal source="102" type="SINT" subtype="VALE-VERB" tokens="418,419,420,421,422,423,429,430,431,432,433"/>
+			<signal source="103" type="SEMA" subtype="CONHE-MUND" tokens="380,381,382,418,419,420,421,422,423,402,403,404,405"/>
+		</signals>
+	</body>
+</rst>

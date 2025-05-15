@@ -1,0 +1,206 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis-e" type="rst"/>
+			<rel name="antithesis" type="rst"/>
+			<rel name="attribution-e" type="rst"/>
+			<rel name="attribution" type="rst"/>
+			<rel name="background-e" type="rst"/>
+			<rel name="background" type="rst"/>
+			<rel name="circumstance-e" type="rst"/>
+			<rel name="circumstance" type="rst"/>
+			<rel name="comparison-e" type="rst"/>
+			<rel name="comparison" type="rst"/>
+			<rel name="concession-e" type="rst"/>
+			<rel name="concession" type="rst"/>
+			<rel name="conclusion-e" type="rst"/>
+			<rel name="conclusion" type="rst"/>
+			<rel name="condition-e" type="rst"/>
+			<rel name="condition" type="rst"/>
+			<rel name="contrast" type="multinuc"/>
+			<rel name="elaboration-e" type="rst"/>
+			<rel name="elaboration" type="rst"/>
+			<rel name="enablement-e" type="rst"/>
+			<rel name="enablement" type="rst"/>
+			<rel name="evaluation-e" type="rst"/>
+			<rel name="evaluation" type="rst"/>
+			<rel name="evidence-e" type="rst"/>
+			<rel name="evidence" type="rst"/>
+			<rel name="explanation-e" type="rst"/>
+			<rel name="explanation" type="rst"/>
+			<rel name="interpretation-e" type="rst"/>
+			<rel name="interpretation" type="rst"/>
+			<rel name="joint" type="multinuc"/>
+			<rel name="justify-e" type="rst"/>
+			<rel name="justify" type="rst"/>
+			<rel name="list" type="multinuc"/>
+			<rel name="means-e" type="rst"/>
+			<rel name="means" type="rst"/>
+			<rel name="motivation-e" type="rst"/>
+			<rel name="motivation" type="rst"/>
+			<rel name="non-volitional-cause-e" type="rst"/>
+			<rel name="non-volitional-cause" type="rst"/>
+			<rel name="non-volitional-result-e" type="rst"/>
+			<rel name="non-volitional-result" type="rst"/>
+			<rel name="other-rel-e" type="rst"/>
+			<rel name="other-rel" type="multinuc"/>
+			<rel name="other-rel" type="rst"/>
+			<rel name="otherwise-e" type="rst"/>
+			<rel name="otherwise" type="rst"/>
+			<rel name="parenthetical" type="rst"/>
+			<rel name="purpose-e" type="rst"/>
+			<rel name="purpose" type="rst"/>
+			<rel name="restatement-e" type="rst"/>
+			<rel name="restatement" type="rst"/>
+			<rel name="same-unit" type="multinuc"/>
+			<rel name="sequence" type="multinuc"/>
+			<rel name="solutionhood-e" type="rst"/>
+			<rel name="solutionhood" type="rst"/>
+			<rel name="summary-e" type="rst"/>
+			<rel name="summary" type="rst"/>
+			<rel name="volitional-cause-e" type="rst"/>
+			<rel name="volitional-cause" type="rst"/>
+			<rel name="volitional-result-e" type="rst"/>
+			<rel name="volitional-result" type="rst"/>
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="40" relname="list">Uma explosão causou nesta segunda-feira a morte de dez pessoas</segment>
+		<segment id="2" parent="40" relname="list">e deixou cerca de 30 feridas no mercado Cherkizov de Moscou .</segment>
+		<segment id="3" parent="4" relname="attribution">De acordo com a polícia da capital russa ,</segment>
+		<segment id="4" parent="41" relname="span">uma bomba causou o incidente .</segment>
+		<segment id="5" parent="43" relname="attribution">As autoridades policiais de Moscou assinalaram que</segment>
+		<segment id="6" parent="42" relname="span">no recinto do mercado ,</segment>
+		<segment id="7" parent="6" relname="elaboration">situado no Nordeste da cidade ,</segment>
+		<segment id="8" parent="43" relname="same-unit">foi detonada uma carga explosiva .</segment>
+		<segment id="9" parent="45" relname="volitional-cause">-  Por causa da explosão ,</segment>
+		<segment id="10" parent="45" relname="list">morreram dez pessoas</segment>
+		<segment id="11" parent="45" relname="list">e 31 foram hospitalizadas</segment>
+		<segment id="12" parent="46" relname="attribution">- declarou à agência  " Interfax "  o alto funcionário de Moscou ,  Vladimir Resin .</segment>
+		<segment id="13" parent="51" relname="span">Anteriormente ,  a Polícia havia informado sobre nove mortos ,</segment>
+		<segment id="14" parent="13" relname="elaboration">sendo três deles crianças ,</segment>
+		<segment id="15" parent="52" relname="same-unit">e 25 feridos .</segment>
+		<segment id="16" parent="54" relname="span">Pouco depois da detonação ,</segment>
+		<segment id="17" parent="53" relname="span">ocorrida às 10h40</segment>
+		<segment id="18" parent="17" relname="parenthetical">( 3h40 em Brasília )  ,</segment>
+		<segment id="19" parent="55" relname="attribution">fontes da polícia moscovita adiantaram que</segment>
+		<segment id="20" parent="55" relname="span">ela teria acontecido</segment>
+		<segment id="21" parent="20" relname="explanation">provavelmente por causa da explosão acidental de um bujão de gás .</segment>
+		<segment id="22" parent="58" relname="span">-  Isto não foi um acidente ,</segment>
+		<segment id="23" parent="22" relname="restatement">foi proposital</segment>
+		<segment id="24" parent="60" relname="span">- disse Resin ,</segment>
+		<segment id="25" parent="24" relname="elaboration">citado pela agência oficial russa  " Itar-Tass "  .</segment>
+		<segment id="26" parent="62" relname="span">A Promotoria de Moscou começou um processo penal por assassinato ,</segment>
+		<segment id="27" parent="26" relname="interpretation">não por terrorismo ,</segment>
+		<segment id="28" parent="62" relname="interpretation">o que indica que as autoridades têm uma tendência a acreditar que a explosão possa ter sido um acerto de contas entre delinqüentes .</segment>
+		<segment id="29" parent="64" relname="span">-  No curso da investigação ,  serão examinadas todas as versões ,</segment>
+		<segment id="30" parent="29" relname="elaboration">incluindo a de um ataque terrorista</segment>
+		<segment id="31" parent="64" relname="attribution">- informou o centro de imprensa da Promotoria de Moscou .</segment>
+		<segment id="32" parent="74" relname="span">A bomba detonou no interior de uma cafeteria localizada no setor denominado  " Evrazia "  do mercado Cherkizov .</segment>
+		<segment id="33" parent="73" relname="sequence">- Testemunhas viram quando dois desconhecidos deixaram uma bolsa e saíram correndo da cafeteria .</segment>
+		<segment id="34" parent="69" relname="span">Pouco depois aconteceu a explosão</segment>
+		<segment id="35" parent="34" relname="attribution">-  disse um porta-voz policial citado pela  " Itar-Tass "  .</segment>
+		<segment id="36" parent="70" relname="span">O delegado de Moscou ,  Yuri Siomin ,</segment>
+		<segment id="37" parent="36" relname="elaboration">que se dirigiu ao local ,</segment>
+		<segment id="38" parent="71" relname="same-unit">declarou que</segment>
+		<segment id="39" parent="72" relname="span">a potência da bomba era equivalente a de até 1 , 2kg de TNT .</segment>
+		<group id="40" type="multinuc" parent="50" relname="span"/>
+		<group id="41" type="span" parent="49" relname="span"/>
+		<group id="42" type="span" parent="43" relname="same-unit"/>
+		<group id="43" type="multinuc" parent="44" relname="span"/>
+		<group id="44" type="span" parent="48" relname="span"/>
+		<group id="45" type="multinuc" parent="46" relname="span"/>
+		<group id="46" type="span" parent="47" relname="span"/>
+		<group id="47" type="span" parent="44" relname="volitional-result"/>
+		<group id="48" type="span" parent="41" relname="elaboration"/>
+		<group id="49" type="span" parent="40" relname="elaboration"/>
+		<group id="50" type="span" parent="68" relname="span"/>
+		<group id="51" type="span" parent="52" relname="same-unit"/>
+		<group id="52" type="multinuc" parent="67" relname="list"/>
+		<group id="53" type="span" parent="16" relname="elaboration"/>
+		<group id="54" type="span" parent="56" relname="circumstance"/>
+		<group id="55" type="span" parent="56" relname="span"/>
+		<group id="56" type="span" parent="57" relname="span"/>
+		<group id="57" type="span" parent="59" relname="antithesis"/>
+		<group id="58" type="span" parent="59" relname="span"/>
+		<group id="59" type="span" parent="61" relname="span"/>
+		<group id="60" type="span" parent="58" relname="attribution"/>
+		<group id="61" type="span" parent="67" relname="list"/>
+		<group id="62" type="span" parent="63" relname="span"/>
+		<group id="63" type="span" parent="66" relname="contrast"/>
+		<group id="64" type="span" parent="65" relname="span"/>
+		<group id="65" type="span" parent="66" relname="contrast"/>
+		<group id="66" type="multinuc" parent="68" relname="non-volitional-result"/>
+		<group id="67" type="multinuc" parent="50" relname="elaboration"/>
+		<group id="68" type="span" parent="76" relname="span"/>
+		<group id="69" type="span" parent="73" relname="sequence"/>
+		<group id="70" type="span" parent="71" relname="same-unit"/>
+		<group id="71" type="multinuc" parent="39" relname="attribution"/>
+		<group id="72" type="span" parent="74" relname="elaboration"/>
+		<group id="73" type="multinuc" parent="32" relname="elaboration"/>
+		<group id="74" type="span" parent="75" relname="span"/>
+		<group id="75" type="span" parent="68" relname="elaboration"/>
+		<group id="76" type="span" />
+		<signals>
+			<signal source="1" type="SINT" subtype="NUM" tokens="1,9,15"/>
+			<signal source="2" type="MD" subtype="CONJ" tokens="11"/>
+			<signal source="3" type="MD" subtype="PREP" tokens="23,24,25"/>
+			<signal source="3" type="SEMA" subtype="FONTE" tokens="27"/>
+			<signal source="3" type="GRAF" subtype="PONT" tokens="31"/>
+			<signal source="5" type="SINT" subtype="VALE-VERB" tokens="43"/>
+			<signal source="5" type="SEMA" subtype="FONTE" tokens="39,40"/>
+			<signal source="5" type="MD" subtype="CONJ" tokens="44"/>
+			<signal source="7" type="GRAF" subtype="PONT" tokens="49,55"/>
+			<signal source="7" type="SINT" subtype="ORA-REL" tokens="50,51,52,54,53"/>
+			<signal source="8" type="SINT" subtype="VALE-VERB" tokens="56,57,59,60,58"/>
+			<signal source="9" type="MD" subtype="CONJ" tokens="64,65"/>
+			<signal source="10" type="SINT" subtype="NUM" tokens="70,73"/>
+			<signal source="11" type="MD" subtype="CONJ" tokens="72"/>
+			<signal source="12" type="SEMA" subtype="VERB-COMUNI" tokens="77"/>
+			<signal source="12" type="SEMA" subtype="FONTE" tokens="92,93"/>
+			<signal source="12" type="GRAF" subtype="ASPAS" tokens="81,83"/>
+			<signal source="14" type="GRAF" subtype="PONT" tokens="105,110"/>
+			<signal source="14" type="SINT" subtype="ORA-REL" tokens="106,108,107,109"/>
+			<signal source="18" type="GRAF" subtype="PARENT" tokens="123,127"/>
+			<signal source="19" type="SEMA" subtype="VERB-COMUNI" tokens="134"/>
+			<signal source="19" type="MD" subtype="CONJ" tokens="135"/>
+			<signal source="21" type="MD" subtype="CONJ" tokens="140,141"/>
+			<signal source="23" type="GRAF" subtype="PONT" tokens="158"/>
+			<signal source="25" type="GRAF" subtype="PONT" tokens="164"/>
+			<signal source="25" type="SINT" subtype="ORA-CIRCUNS" tokens="165,166,167,168,169,172,170"/>
+			<signal source="25" type="GRAF" subtype="ASPAS" tokens="171,173"/>
+			<signal source="25" type="GRAF" subtype="PONT" tokens="175"/>
+			<signal source="27" type="GRAF" subtype="PONT" tokens="186,190"/>
+			<signal source="28" type="MD" subtype="CONJ" tokens="191,192,193"/>
+			<signal source="30" type="GRAF" subtype="PONT" tokens="228"/>
+			<signal source="30" type="SINT" subtype="ORA-CIRCUNS" tokens="229,231,232,230,233,234"/>
+			<signal source="31" type="GRAF" subtype="TRAVES" tokens="235"/>
+			<signal source="31" type="SEMA" subtype="VERB-COMUNI" tokens="236"/>
+			<signal source="31" type="SEMA" subtype="FONTE" tokens="238,239,240,241,242,243,244"/>
+			<signal source="31" type="GRAF" subtype="PONT" tokens="245"/>
+			<signal source="33" type="MORF" subtype="TEMPO-VERBAL" tokens="269,273,277"/>
+			<signal source="35" type="GRAF" subtype="TRAVES" tokens="287"/>
+			<signal source="35" type="SEMA" subtype="VERB-COMUNI" tokens="289"/>
+			<signal source="35" type="SEMA" subtype="FONTE" tokens="291,292"/>
+			<signal source="35" type="GRAF" subtype="ASPAS" tokens="296,298"/>
+			<signal source="37" type="SINT" subtype="PRO-REL" tokens="310"/>
+			<signal source="37" type="SINT" subtype="ORA-REL" tokens="311,313,312,314"/>
+			<signal source="37" type="GRAF" subtype="PONT" tokens="309,315"/>
+			<signal source="42" type="GRAF" subtype="PONT" tokens="49"/>
+			<signal source="51" type="SINT" subtype="NUM" tokens="103,112"/>
+			<signal source="51" type="SEMA" subtype="CAMPO-SEM" tokens="104,113"/>
+			<signal source="53" type="GRAF" subtype="PONT" tokens="119"/>
+			<signal source="53" type="SINT" subtype="ORA-CIRCUNS" tokens="120,122,121"/>
+			<signal source="54" type="MD" subtype="ADV" tokens="115,116"/>
+			<signal source="60" type="SEMA" subtype="VERB-COMUNI" tokens="162"/>
+			<signal source="60" type="SEMA" subtype="FONTE" tokens="163"/>
+			<signal source="60" type="GRAF" subtype="TRAVES" tokens="161"/>
+			<signal source="60" type="GRAF" subtype="PONT" tokens="164"/>
+			<signal source="70" type="SINT" subtype="VALE-VERB" tokens="301,302,316"/>
+			<signal source="71" type="SEMA" subtype="FONTE" tokens="307,308"/>
+			<signal source="71" type="MD" subtype="CONJ" tokens="317"/>
+			<signal source="71" type="GRAF" subtype="PONT" tokens="309,315"/>
+			<signal source="71" type="SEMA" subtype="VERB-COMUNI" tokens="316"/>
+		</signals>
+	</body>
+</rst>

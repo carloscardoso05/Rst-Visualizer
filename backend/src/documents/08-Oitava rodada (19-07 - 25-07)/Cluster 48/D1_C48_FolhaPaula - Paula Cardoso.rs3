@@ -1,0 +1,290 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis-e" type="rst"/>
+			<rel name="antithesis" type="rst"/>
+			<rel name="attribution-e" type="rst"/>
+			<rel name="attribution" type="rst"/>
+			<rel name="background-e" type="rst"/>
+			<rel name="background" type="rst"/>
+			<rel name="circumstance-e" type="rst"/>
+			<rel name="circumstance" type="rst"/>
+			<rel name="comparison-e" type="rst"/>
+			<rel name="comparison" type="rst"/>
+			<rel name="concession-e" type="rst"/>
+			<rel name="concession" type="rst"/>
+			<rel name="conclusion-e" type="rst"/>
+			<rel name="conclusion" type="rst"/>
+			<rel name="condition-e" type="rst"/>
+			<rel name="condition" type="rst"/>
+			<rel name="contrast" type="multinuc"/>
+			<rel name="elaboration-e" type="rst"/>
+			<rel name="elaboration" type="rst"/>
+			<rel name="enablement-e" type="rst"/>
+			<rel name="enablement" type="rst"/>
+			<rel name="evaluation-e" type="rst"/>
+			<rel name="evaluation" type="rst"/>
+			<rel name="evidence-e" type="rst"/>
+			<rel name="evidence" type="rst"/>
+			<rel name="explanation-e" type="rst"/>
+			<rel name="explanation" type="rst"/>
+			<rel name="interpretation-e" type="rst"/>
+			<rel name="interpretation" type="rst"/>
+			<rel name="joint" type="multinuc"/>
+			<rel name="justify-e" type="rst"/>
+			<rel name="justify" type="rst"/>
+			<rel name="list" type="multinuc"/>
+			<rel name="means-e" type="rst"/>
+			<rel name="means" type="rst"/>
+			<rel name="motivation-e" type="rst"/>
+			<rel name="motivation" type="rst"/>
+			<rel name="non-volitional-cause-e" type="rst"/>
+			<rel name="non-volitional-cause" type="rst"/>
+			<rel name="non-volitional-result-e" type="rst"/>
+			<rel name="non-volitional-result" type="rst"/>
+			<rel name="other-rel-e" type="rst"/>
+			<rel name="other-rel" type="multinuc"/>
+			<rel name="other-rel" type="rst"/>
+			<rel name="otherwise-e" type="rst"/>
+			<rel name="otherwise" type="rst"/>
+			<rel name="parenthetical" type="rst"/>
+			<rel name="purpose-e" type="rst"/>
+			<rel name="purpose" type="rst"/>
+			<rel name="restatement-e" type="rst"/>
+			<rel name="restatement" type="rst"/>
+			<rel name="same-unit" type="multinuc"/>
+			<rel name="sequence" type="multinuc"/>
+			<rel name="solutionhood-e" type="rst"/>
+			<rel name="solutionhood" type="rst"/>
+			<rel name="summary-e" type="rst"/>
+			<rel name="summary" type="rst"/>
+			<rel name="volitional-cause-e" type="rst"/>
+			<rel name="volitional-cause" type="rst"/>
+			<rel name="volitional-result-e" type="rst"/>
+			<rel name="volitional-result" type="rst"/>
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="74" relname="list">A torcida recebeu Bernardinho com vaias e gritos de  " Ricardinho "  na estréia da seleção de vôlei no Pan do Rio ,  ontem .</segment>
+		<segment id="2" parent="72" relname="span">Nem o levantador Bruninho ,  filho do técnico e novo jogador da equipe ,  foi poupado .</segment>
+		<segment id="3" parent="4" relname="circumstance">Quando ele entrou em quadra ,  no fim do primeiro set ,</segment>
+		<segment id="4" parent="71" relname="span">o Maracanãzinho ,  lotado ,  dividiu-se entre apupos e gritos de incentivo .</segment>
+		<segment id="5" parent="6" relname="circumstance">Quando o nome do treinador foi anunciado ,</segment>
+		<segment id="6" parent="73" relname="span">parte dos torcedores também o vaiou .</segment>
+		<segment id="7" parent="76" relname="span">As arquibancadas estavam cheias de cartazes de apoio ao levantador Ricardinho ,</segment>
+		<segment id="8" parent="7" relname="elaboration">cortado no sábado .</segment>
+		<segment id="9" parent="82" relname="elaboration">O time atuou com faixas pretas nos braços em homenagem às vítimas do acidente em Congonhas .</segment>
+		<segment id="10" parent="79" relname="span">Em quadra ,  foi a equipe que mostrou distanciamento do técnico .</segment>
+		<segment id="11" parent="78" relname="span">No banco ,  ele tinha de procurar os jogadores ,  um por um ,</segment>
+		<segment id="12" parent="11" relname="purpose">para dar instruções .</segment>
+		<segment id="13" parent="80" relname="span">Bernardinho também foi muito mais contido</segment>
+		<segment id="14" parent="13" relname="comparison">do que costuma ser durante a partida ,</segment>
+		<segment id="15" parent="80" relname="evidence">gritou e gesticulou pouco ,  nos erros e nos acertos .</segment>
+		<segment id="16" parent="83" relname="list">" Não somos unanimidade como querem fazer crer ,</segment>
+		<segment id="17" parent="83" relname="list">nem tão ruins como podem fazer parecer .</segment>
+		<segment id="18" parent="84" relname="span">As vaias também são boas</segment>
+		<segment id="19" parent="18" relname="justify">porque te colocam em uma dimensão mais humana .</segment>
+		<segment id="20" parent="85" relname="span">Quantas vezes não fui vaiado</segment>
+		<segment id="21" parent="20" relname="explanation">porque os torcedores queriam ver o William jogar ?</segment>
+		<segment id="22" parent="85" relname="attribution">"  ,  perguntou o técnico .</segment>
+		<segment id="23" parent="90" relname="concession">Mesmo com altos e baixos ,</segment>
+		<segment id="24" parent="89" relname="span">a equipe brasileira não teve muito trabalho para superar o fraco time do Canadá por 3 sets a 0</segment>
+		<segment id="25" parent="24" relname="parenthetical">( 25/18 ,  25/19 e 25/17 )  ,</segment>
+		<segment id="26" parent="90" relname="same-unit">em uma hora e dez minutos .</segment>
+		<segment id="27" parent="95" relname="span">O confronto de hoje será contra Cuba ,  às 22h .</segment>
+		<segment id="28" parent="94" relname="span">Os cubanos são considerados por Bernardinho como os rivais mais perigosos da fase classificatória .</segment>
+		<segment id="29" parent="92" relname="list">" Eles são uma fábrica de fazer atletas ,</segment>
+		<segment id="30" parent="92" relname="list">têm muito vigor físico</segment>
+		<segment id="31" parent="92" relname="list">e saque e ataque muito pesados "  ,</segment>
+		<segment id="32" parent="92" relname="attribution">afirmou o treinador .</segment>
+		<segment id="33" parent="95" relname="elaboration">Para essa partida ,  os jogadores esperam uma posição diferente da torcida .</segment>
+		<segment id="34" parent="123" relname="span">Ontem ,  vários se mostraram contrariados com as vaias .</segment>
+		<segment id="35" parent="103" relname="span">" Foi muito chato .</segment>
+		<segment id="36" parent="102" relname="span">Fiquei surpreso</segment>
+		<segment id="37" parent="101" relname="span">porque ninguém espera isso</segment>
+		<segment id="38" parent="37" relname="circumstance">quando joga em casa .</segment>
+		<segment id="39" parent="104" relname="concession">O Ricardinho faz falta ,</segment>
+		<segment id="40" parent="104" relname="span">mas a responsabilidade foi passada para o Marcelinho e o Bruno ,</segment>
+		<segment id="41" parent="40" relname="non-volitional-result">e a torcida tem que apoiá-los "  ,</segment>
+		<segment id="42" parent="106" relname="attribution">disse Escadinha .</segment>
+		<segment id="43" parent="108" relname="span">Bruninho ,</segment>
+		<segment id="44" parent="43" relname="elaboration">que faz sua estréia em Pans ,</segment>
+		<segment id="45" parent="109" relname="same-unit">minimizou a hostilidade dos torcedores .</segment>
+		<segment id="46" parent="47" relname="circumstance">E ,  após a partida ,</segment>
+		<segment id="47" parent="110" relname="span">fez questão de cumprimentar Marcelinho ,  novo levantador titular ,  pela atuação .</segment>
+		<segment id="48" parent="111" relname="span">" Ouvi alguma coisa</segment>
+		<segment id="49" parent="48" relname="parenthetical">[  vaias  ]</segment>
+		<segment id="50" parent="112" relname="same-unit">quando eu entrei .</segment>
+		<segment id="51" parent="114" relname="span">É normal ,</segment>
+		<segment id="52" parent="113" relname="list">todo mundo queria que o Ricardinho estivesse aqui ,</segment>
+		<segment id="53" parent="113" relname="list">eu também .</segment>
+		<segment id="54" parent="115" relname="list">Mas ,  com o tempo ,  a torcida vai se acostumar</segment>
+		<segment id="55" parent="115" relname="list">e apoiar ,</segment>
+		<segment id="56" parent="115" relname="comparison">como fez no restante do jogo "  ,</segment>
+		<segment id="57" parent="117" relname="attribution">afirmou .</segment>
+		<segment id="58" parent="130" relname="span">Na quadra ,  a seleção mostrou estar bastante nervosa .</segment>
+		<segment id="59" parent="126" relname="span">Cometeu vários erros de ataque no começo do jogo ,  principalmente com Giba ,</segment>
+		<segment id="60" parent="125" relname="span">só o quarto maior pontuador do time</segment>
+		<segment id="61" parent="60" relname="parenthetical">( 8 pontos )  .</segment>
+		<segment id="62" parent="128" relname="span">No total ,  a equipe cedeu 14 pontos ao adversário ,</segment>
+		<segment id="63" parent="127" relname="span">pouco se comparado aos 29 dos canadenses ,</segment>
+		<segment id="64" parent="63" relname="elaboration">que ofereceram resistência apenas no terceiro set .</segment>
+		<segment id="65" parent="132" relname="span">O destaque foi Dante ,</segment>
+		<segment id="66" parent="131" relname="span">que anotou 12 pontos</segment>
+		<segment id="67" parent="66" relname="parenthetical">-3 aces .</segment>
+		<segment id="68" parent="133" relname="list">" A gente sentiu a tensão da estréia .</segment>
+		<segment id="69" parent="133" relname="list">Se a gente perdesse .  .  .  "  ,</segment>
+		<segment id="70" parent="133" relname="attribution">disse Anderson .</segment>
+		<group id="71" type="span" parent="2" relname="elaboration"/>
+		<group id="72" type="span" parent="74" relname="list"/>
+		<group id="73" type="span" parent="74" relname="elaboration"/>
+		<group id="74" type="multinuc" parent="75" relname="span"/>
+		<group id="75" type="span" parent="77" relname="span"/>
+		<group id="76" type="span" parent="75" relname="explanation"/>
+		<group id="77" type="span" parent="98" relname="sequence"/>
+		<group id="78" type="span" parent="10" relname="evidence"/>
+		<group id="79" type="span" parent="82" relname="list"/>
+		<group id="80" type="span" parent="81" relname="span"/>
+		<group id="81" type="span" parent="82" relname="list"/>
+		<group id="82" type="multinuc" parent="88" relname="span"/>
+		<group id="83" type="multinuc" parent="98" relname="elaboration"/>
+		<group id="84" type="span" parent="87" relname="span"/>
+		<group id="85" type="span" parent="86" relname="span"/>
+		<group id="86" type="span" parent="84" relname="elaboration"/>
+		<group id="87" type="span" parent="83" relname="list"/>
+		<group id="88" type="span" parent="98" relname="sequence"/>
+		<group id="89" type="span" parent="90" relname="same-unit"/>
+		<group id="90" type="multinuc" parent="91" relname="span"/>
+		<group id="91" type="span" parent="100" relname="list"/>
+		<group id="92" type="multinuc" parent="93" relname="span"/>
+		<group id="93" type="span" parent="28" relname="justify"/>
+		<group id="94" type="span" parent="27" relname="elaboration"/>
+		<group id="95" type="span" parent="97" relname="span"/>
+		<group id="96" type="multinuc" parent="124" relname="span"/>
+		<group id="97" type="span" parent="96" relname="list"/>
+		<group id="98" type="multinuc" parent="99" relname="span"/>
+		<group id="99" type="span" parent="100" relname="list"/>
+		<group id="100" type="multinuc" parent="96" relname="list"/>
+		<group id="101" type="span" parent="36" relname="explanation"/>
+		<group id="102" type="span" parent="35" relname="explanation"/>
+		<group id="103" type="span" parent="106" relname="list"/>
+		<group id="104" type="span" parent="105" relname="span"/>
+		<group id="105" type="span" parent="106" relname="list"/>
+		<group id="106" type="multinuc" parent="107" relname="span"/>
+		<group id="107" type="span" parent="122" relname="list"/>
+		<group id="108" type="span" parent="109" relname="same-unit"/>
+		<group id="109" type="multinuc" parent="120" relname="list"/>
+		<group id="110" type="span" parent="120" relname="list"/>
+		<group id="111" type="span" parent="112" relname="same-unit"/>
+		<group id="112" type="multinuc" parent="117" relname="span"/>
+		<group id="113" type="multinuc" parent="51" relname="justify"/>
+		<group id="114" type="span" parent="116" relname="concession"/>
+		<group id="115" type="multinuc" parent="116" relname="span"/>
+		<group id="116" type="span" parent="118" relname="span"/>
+		<group id="117" type="span" parent="119" relname="span"/>
+		<group id="118" type="span" parent="112" relname="evaluation"/>
+		<group id="119" type="span" parent="120" relname="elaboration"/>
+		<group id="120" type="multinuc" parent="121" relname="span"/>
+		<group id="121" type="span" parent="122" relname="list"/>
+		<group id="122" type="multinuc" parent="34" relname="elaboration"/>
+		<group id="123" type="span" parent="96" relname="elaboration"/>
+		<group id="124" type="span" parent="137" relname="span"/>
+		<group id="125" type="span" parent="59" relname="elaboration"/>
+		<group id="126" type="span" parent="129" relname="span"/>
+		<group id="127" type="span" parent="62" relname="comparison"/>
+		<group id="128" type="span" parent="126" relname="non-volitional-result"/>
+		<group id="129" type="span" parent="58" relname="evidence"/>
+		<group id="130" type="span" parent="135" relname="span"/>
+		<group id="131" type="span" parent="65" relname="evidence"/>
+		<group id="132" type="span" parent="130" relname="elaboration"/>
+		<group id="133" type="multinuc" parent="134" relname="span"/>
+		<group id="134" type="span" parent="135" relname="elaboration"/>
+		<group id="135" type="span" parent="136" relname="span"/>
+		<group id="136" type="span" parent="124" relname="elaboration"/>
+		<group id="137" type="span" />
+		<signals>
+			<signal source="3" type="MD" subtype="ADV" tokens="48"/>
+			<signal source="3" type="SINT" subtype="ORA-CIRCUNS" tokens="49,50,51,52,55,57,53,56,58,59,60"/>
+			<signal source="5" type="MD" subtype="ADV" tokens="76"/>
+			<signal source="5" type="SINT" subtype="ORA-CIRCUNS" tokens="77,78,79,80,81,82,83"/>
+			<signal source="8" type="GRAF" subtype="PONT" tokens="102"/>
+			<signal source="8" type="SINT" subtype="ORA-REL" tokens="103,104,105"/>
+			<signal source="8" type="SEMA" subtype="CONHE-MUND" tokens="101,103,98"/>
+			<signal source="12" type="MD" subtype="CONJ" tokens="153"/>
+			<signal source="12" type="CDP" subtype="CDP" tokens="154,155"/>
+			<signal source="14" type="MD" subtype="CONJ" tokens="163,164"/>
+			<signal source="15" type="GRAF" subtype="PONT" tokens="170"/>
+			<signal source="15" type="SEMA" subtype="CAMPO-SEM" tokens="171,173,172,174,162,160"/>
+			<signal source="16" type="MORF" subtype="TEMPO-VERBAL" tokens="188,196"/>
+			<signal source="16" type="GRAF" subtype="PONT" tokens="191"/>
+			<signal source="16" type="SEMA" subtype="CONHE-MUND" tokens="186,194"/>
+			<signal source="19" type="MD" subtype="CONJ" tokens="205"/>
+			<signal source="19" type="SEMA" subtype="CONHE-MUND" tokens="201,212,210,211"/>
+			<signal source="21" type="MD" subtype="CONJ" tokens="219"/>
+			<signal source="21" type="SEMA" subtype="CONHE-MUND" tokens="218,221"/>
+			<signal source="22" type="GRAF" subtype="ASPAS" tokens="228,183"/>
+			<signal source="22" type="GRAF" subtype="PONT" tokens="230"/>
+			<signal source="22" type="SEMA" subtype="VERB-COMUNI" tokens="232"/>
+			<signal source="22" type="SEMA" subtype="FONTE" tokens="233,234"/>
+			<signal source="23" type="GRAF" subtype="PONT" tokens="241"/>
+			<signal source="23" type="MD" subtype="PREP" tokens="236,237"/>
+			<signal source="25" type="GRAF" subtype="PARENT" tokens="261,268"/>
+			<signal source="25" type="SEMA" subtype="CAMPO-SEM" tokens="257,258,259,260,262,265,267"/>
+			<signal source="29" type="GRAF" subtype="PONT" tokens="313"/>
+			<signal source="29" type="MD" subtype="CONJ" tokens="318"/>
+			<signal source="29" type="MORF" subtype="TEMPO-VERBAL" tokens="307,314"/>
+			<signal source="29" type="SEMA" subtype="CAMPO-SEM" tokens="309,310,311,312,316,317,319,321,322,323"/>
+			<signal source="32" type="GRAF" subtype="ASPAS" tokens="324,305"/>
+			<signal source="32" type="SEMA" subtype="VERB-COMUNI" tokens="327"/>
+			<signal source="32" type="GRAF" subtype="PONT" tokens="326"/>
+			<signal source="32" type="SEMA" subtype="FONTE" tokens="328,329"/>
+			<signal source="38" type="MD" subtype="ADV" tokens="367"/>
+			<signal source="38" type="SINT" subtype="ORA-CIRCUNS" tokens="368,369,370"/>
+			<signal source="39" type="GRAF" subtype="PONT" tokens="376"/>
+			<signal source="39" type="MD" subtype="CONJ" tokens="377"/>
+			<signal source="41" type="SEMA" subtype="CONHE-MUND" tokens="379,394"/>
+			<signal source="42" type="GRAF" subtype="ASPAS" tokens="356,395"/>
+			<signal source="42" type="GRAF" subtype="PONT" tokens="397"/>
+			<signal source="42" type="SEMA" subtype="VERB-COMUNI" tokens="398"/>
+			<signal source="42" type="SEMA" subtype="FONTE" tokens="399"/>
+			<signal source="44" type="GRAF" subtype="PONT" tokens="402,409"/>
+			<signal source="44" type="SINT" subtype="PRO-REL" tokens="403"/>
+			<signal source="44" type="SINT" subtype="ORA-REL" tokens="404,405,406,407,408"/>
+			<signal source="46" type="MD" subtype="ADV" tokens="419"/>
+			<signal source="46" type="GRAF" subtype="PONT" tokens="422"/>
+			<signal source="49" type="GRAF" subtype="PARENT" tokens="442,446"/>
+			<signal source="52" type="GRAF" subtype="PONT" tokens="462"/>
+			<signal source="52" type="SEMA" subtype="CAMPO-SEM" tokens="454,455,463,464"/>
+			<signal source="54" type="MORF" subtype="TEMPO-VERBAL" tokens="478,480"/>
+			<signal source="54" type="MD" subtype="CONJ" tokens="479"/>
+			<signal source="56" type="MD" subtype="CONJ" tokens="482"/>
+			<signal source="57" type="GRAF" subtype="ASPAS" tokens="438,488"/>
+			<signal source="57" type="GRAF" subtype="PONT" tokens="490"/>
+			<signal source="57" type="SEMA" subtype="VERB-COMUNI" tokens="491"/>
+			<signal source="61" type="GRAF" subtype="PARENT" tokens="526,529"/>
+			<signal source="61" type="SEMA" subtype="CONHE-MUND" tokens="527,528,522,523,521"/>
+			<signal source="64" type="GRAF" subtype="PONT" tokens="551"/>
+			<signal source="64" type="SINT" subtype="PRO-REL" tokens="552"/>
+			<signal source="64" type="SINT" subtype="ORA-REL" tokens="553,554,555,556,557,558"/>
+			<signal source="67" type="GRAF" subtype="TRAVES" tokens="569"/>
+			<signal source="70" type="GRAF" subtype="ASPAS" tokens="591,572"/>
+			<signal source="70" type="GRAF" subtype="PONT" tokens="593"/>
+			<signal source="70" type="SEMA" subtype="VERB-COMUNI" tokens="594"/>
+			<signal source="70" type="SEMA" subtype="FONTE" tokens="595"/>
+			<signal source="89" type="SINT" subtype="VALE-VERB" tokens="242,244,245,243,246,247,248,249,250,251,253,252,254,255,256,257,258,260,259,271,272,273,274,275,277,276"/>
+			<signal source="101" type="MD" subtype="CONJ" tokens="363"/>
+			<signal source="108" type="SINT" subtype="VALE-VERB" tokens="401,410"/>
+			<signal source="111" type="SINT" subtype="VALE-VERB" tokens="439,440,441,447,448,449"/>
+			<signal source="113" type="GRAF" subtype="PONT" tokens="453"/>
+			<signal source="125" type="GRAF" subtype="PONT" tokens="518"/>
+			<signal source="125" type="SEMA" subtype="CAMPO-SEM" tokens="517,521,522,523,524,525"/>
+			<signal source="127" type="SEMA" subtype="CONHE-MUND" tokens="546,544,545"/>
+			<signal source="127" type="SINT" subtype="NUM" tokens="539,548"/>
+			<signal source="127" type="GRAF" subtype="PONT" tokens="543"/>
+			<signal source="131" type="GRAF" subtype="PONT" tokens="564"/>
+			<signal source="131" type="SINT" subtype="PRO-REL" tokens="565"/>
+			<signal source="131" type="SINT" subtype="ORA-REL" tokens="566,567,568"/>
+			<signal source="131" type="SEMA" subtype="CAMPO-SEM" tokens="561,567,568,569,570"/>
+		</signals>
+	</body>
+</rst>

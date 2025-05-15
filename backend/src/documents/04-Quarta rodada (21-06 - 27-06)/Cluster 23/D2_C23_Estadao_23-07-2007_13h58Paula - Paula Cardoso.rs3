@@ -1,0 +1,222 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis-e" type="rst"/>
+			<rel name="antithesis" type="rst"/>
+			<rel name="attribution-e" type="rst"/>
+			<rel name="attribution" type="rst"/>
+			<rel name="background-e" type="rst"/>
+			<rel name="background" type="rst"/>
+			<rel name="circumstance-e" type="rst"/>
+			<rel name="circumstance" type="rst"/>
+			<rel name="comparison-e" type="rst"/>
+			<rel name="comparison" type="rst"/>
+			<rel name="concession-e" type="rst"/>
+			<rel name="concession" type="rst"/>
+			<rel name="conclusion-e" type="rst"/>
+			<rel name="conclusion" type="rst"/>
+			<rel name="condition-e" type="rst"/>
+			<rel name="condition" type="rst"/>
+			<rel name="contrast" type="multinuc"/>
+			<rel name="elaboration-e" type="rst"/>
+			<rel name="elaboration" type="rst"/>
+			<rel name="enablement-e" type="rst"/>
+			<rel name="enablement" type="rst"/>
+			<rel name="evaluation-e" type="rst"/>
+			<rel name="evaluation" type="rst"/>
+			<rel name="evidence-e" type="rst"/>
+			<rel name="evidence" type="rst"/>
+			<rel name="explanation-e" type="rst"/>
+			<rel name="explanation" type="rst"/>
+			<rel name="interpretation-e" type="rst"/>
+			<rel name="interpretation" type="rst"/>
+			<rel name="joint" type="multinuc"/>
+			<rel name="justify-e" type="rst"/>
+			<rel name="justify" type="rst"/>
+			<rel name="list" type="multinuc"/>
+			<rel name="means-e" type="rst"/>
+			<rel name="means" type="rst"/>
+			<rel name="motivation-e" type="rst"/>
+			<rel name="motivation" type="rst"/>
+			<rel name="non-volitional-cause-e" type="rst"/>
+			<rel name="non-volitional-cause" type="rst"/>
+			<rel name="non-volitional-result-e" type="rst"/>
+			<rel name="non-volitional-result" type="rst"/>
+			<rel name="other-rel-e" type="rst"/>
+			<rel name="other-rel" type="multinuc"/>
+			<rel name="other-rel" type="rst"/>
+			<rel name="otherwise-e" type="rst"/>
+			<rel name="otherwise" type="rst"/>
+			<rel name="parenthetical" type="rst"/>
+			<rel name="purpose-e" type="rst"/>
+			<rel name="purpose" type="rst"/>
+			<rel name="restatement-e" type="rst"/>
+			<rel name="restatement" type="rst"/>
+			<rel name="same-unit" type="multinuc"/>
+			<rel name="sequence" type="multinuc"/>
+			<rel name="solutionhood-e" type="rst"/>
+			<rel name="solutionhood" type="rst"/>
+			<rel name="summary-e" type="rst"/>
+			<rel name="summary" type="rst"/>
+			<rel name="volitional-cause-e" type="rst"/>
+			<rel name="volitional-cause" type="rst"/>
+			<rel name="volitional-result-e" type="rst"/>
+			<rel name="volitional-result" type="rst"/>
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="46" relname="span">A chuva torrencial</segment>
+		<segment id="2" parent="1" relname="elaboration">que atinge o Reino Unido</segment>
+		<segment id="3" parent="47" relname="same-unit">encobriu estradas e milhares de pessoas estão sem fornecimento de eletricidade e de água potável em decorrência da pior enchente nos últimos 60 anos no país ,</segment>
+		<segment id="4" parent="47" relname="attribution">segundo informou nesta segunda-feira ,  23 ,  a rede de televisão BBC .</segment>
+		<segment id="5" parent="50" relname="span">Os dois maiores rios do Reino Unido ,  Severn e Tâmisa ,  ameaçam transbordar nesta segunda ,</segment>
+		<segment id="6" parent="49" relname="span">agravando ainda mais a situação nas regiões centro e sul da Inglaterra ,</segment>
+		<segment id="7" parent="6" relname="elaboration">que vêm sendo castigadas por inundações</segment>
+		<segment id="8" parent="50" relname="circumstance">desde a última sexta-feira .</segment>
+		<segment id="9" parent="52" relname="list">Serviços de metereologia acreditam que este seja o mês de julho mais chuvoso da história</segment>
+		<segment id="10" parent="52" relname="list">e prevêem mais chuvas para esta semana e início de agosto .</segment>
+		<segment id="11" parent="54" relname="span">O nível da água do rio Severn atingiu 10 , 4 metros em alguns pontos ,</segment>
+		<segment id="12" parent="53" relname="span">quase ultrapassando as barreiras de defesa ,</segment>
+		<segment id="13" parent="12" relname="elaboration">que medem 10 , 7 metros de altura ,</segment>
+		<segment id="14" parent="54" relname="attribution">segundo informou nesta segunda-feira ,  23 ,  a BBC .</segment>
+		<segment id="15" parent="56" relname="span">Já o rio Tâmisa ,</segment>
+		<segment id="16" parent="15" relname="elaboration">que está com seu leito no limite ,</segment>
+		<segment id="17" parent="57" relname="same-unit">pode transbordar durante a próxima madrugada</segment>
+		<segment id="18" parent="57" relname="condition">caso as chuvas cotinuem ,</segment>
+		<segment id="19" parent="58" relname="attribution">informou a Agência de Meio-Ambiente do Reino Unido .</segment>
+		<segment id="20" parent="60" relname="span">O primeiro-ministro Gordon Brown está em Gloucestershire ,  o condado mais afetado pelas enchentes ,</segment>
+		<segment id="21" parent="20" relname="elaboration">que deixaram 150 mil casas sem água .</segment>
+		<segment id="22" parent="61" relname="span">Cerca de 43 mil residências também estão sem eletricidade ,</segment>
+		<segment id="23" parent="62" relname="span">depois que uma estação na cidade de Gloucester teve de ser desligada</segment>
+		<segment id="24" parent="23" relname="circumstance">quando o nível da água começou a subir .</segment>
+		<segment id="25" parent="63" relname="list">Em Oxford ,  1 . 500 pessoas foram evacuadas para o maior estádio de futebol da cidade .</segment>
+		<segment id="26" parent="64" relname="span">O condado de Worcestershire também foi castigado pelas enchentes ,</segment>
+		<segment id="27" parent="26" relname="elaboration">onde o nível da água atingiu 1 , 82 metro</segment>
+		<segment id="28" parent="64" relname="non-volitional-result">e cerca de quatro mil pessoas estão sem água .</segment>
+		<segment id="29" parent="66" relname="circumstance">Desde sexta-feira ,</segment>
+		<segment id="30" parent="66" relname="span">centenas de pessoas na Inglaterra foram resgatadas de suas casas ,</segment>
+		<segment id="31" parent="30" relname="elaboration">no que a Força Aérea britânica chamou de  " a maior operação de resgate em tempos de paz "  .</segment>
+		<segment id="32" parent="68" relname="span">Nas piores áreas ,  o Exército pediu ajuda à Aeronáutica ,</segment>
+		<segment id="33" parent="32" relname="elaboration">que enviou helicópteros</segment>
+		<segment id="34" parent="68" relname="purpose">para resgatar mais de cem moradores de suas casas .</segment>
+		<segment id="35" parent="71" relname="span">No fim de semana ,  Gordon Brown prometeu destinar recursos adicionais</segment>
+		<segment id="36" parent="35" relname="purpose">para ajudar autoridades locais a recuperar os danos no período posterior às chuvas ,</segment>
+		<segment id="37" parent="72" relname="list">e garantiu que o governo vai tirar lições da situação .</segment>
+		<segment id="38" parent="74" relname="attribution">Fontes da Agência de Meio Ambiente do Reino Unido disseram à BBC que</segment>
+		<segment id="39" parent="73" relname="span">seria necessário 1 bilhão de libras por ano</segment>
+		<segment id="40" parent="39" relname="parenthetical">( R$ 3 , 8 bilhões )</segment>
+		<segment id="41" parent="74" relname="span">para aprimorar o sistema de barreiras contra inundações .</segment>
+		<segment id="42" parent="77" relname="span">A Associação de Seguradores Britânicos estima que a conta</segment>
+		<segment id="43" parent="42" relname="purpose">para cobrir os estragos provocados pelas enchentes dos meses de junho e julho no país</segment>
+		<segment id="44" parent="76" relname="span">chegue a 2 bilhões de libras</segment>
+		<segment id="45" parent="44" relname="parenthetical">( R$ 7 , 6 bilhões )  .</segment>
+		<group id="46" type="span" parent="47" relname="same-unit"/>
+		<group id="47" type="multinuc" parent="48" relname="span"/>
+		<group id="48" type="span" parent="79" relname="span"/>
+		<group id="49" type="span" parent="5" relname="non-volitional-result"/>
+		<group id="50" type="span" parent="51" relname="span"/>
+		<group id="51" type="span" parent="48" relname="non-volitional-result"/>
+		<group id="52" type="multinuc" parent="79" relname="elaboration"/>
+		<group id="53" type="span" parent="11" relname="elaboration"/>
+		<group id="54" type="span" parent="55" relname="span"/>
+		<group id="55" type="span" parent="81" relname="list"/>
+		<group id="56" type="span" parent="57" relname="same-unit"/>
+		<group id="57" type="multinuc" parent="58" relname="span"/>
+		<group id="58" type="span" parent="59" relname="span"/>
+		<group id="59" type="span" parent="81" relname="list"/>
+		<group id="60" type="span" parent="83" relname="list"/>
+		<group id="61" type="span" parent="63" relname="list"/>
+		<group id="62" type="span" parent="22" relname="non-volitional-cause"/>
+		<group id="63" type="multinuc" parent="83" relname="list"/>
+		<group id="64" type="span" parent="65" relname="span"/>
+		<group id="65" type="span" parent="83" relname="list"/>
+		<group id="66" type="span" parent="67" relname="span"/>
+		<group id="67" type="span" parent="70" relname="span"/>
+		<group id="68" type="span" parent="69" relname="span"/>
+		<group id="69" type="span" parent="67" relname="elaboration"/>
+		<group id="70" type="span" parent="84" relname="sequence"/>
+		<group id="71" type="span" parent="72" relname="list"/>
+		<group id="72" type="multinuc" parent="84" relname="sequence"/>
+		<group id="73" type="span" parent="41" relname="condition"/>
+		<group id="74" type="span" parent="75" relname="span"/>
+		<group id="75" type="span" parent="86" relname="list"/>
+		<group id="76" type="span" parent="78" relname="same-unit"/>
+		<group id="77" type="span" parent="78" relname="same-unit"/>
+		<group id="78" type="multinuc" parent="86" relname="list"/>
+		<group id="79" type="span" parent="80" relname="span"/>
+		<group id="80" type="span" parent="82" relname="span"/>
+		<group id="81" type="multinuc" parent="80" relname="elaboration"/>
+		<group id="82" type="span" parent="85" relname="span"/>
+		<group id="83" type="multinuc" parent="84" relname="sequence"/>
+		<group id="84" type="multinuc" parent="82" relname="elaboration"/>
+		<group id="85" type="span" parent="87" relname="span"/>
+		<group id="86" type="multinuc" parent="85" relname="elaboration"/>
+		<group id="87" type="span" />
+		<signals>
+			<signal source="2" type="SINT" subtype="PRO-REL" tokens="4"/>
+			<signal source="2" type="SINT" subtype="ORA-CIRCUNS" tokens="5,6,7,8"/>
+			<signal source="4" type="MD" subtype="PREP" tokens="36"/>
+			<signal source="4" type="SEMA" subtype="VERB-COMUNI" tokens="37"/>
+			<signal source="4" type="SEMA" subtype="FONTE" tokens="45,46,47,48,49"/>
+			<signal source="7" type="SINT" subtype="PRO-REL" tokens="83"/>
+			<signal source="7" type="SINT" subtype="ORA-REL" tokens="84,85,86,87,88"/>
+			<signal source="8" type="MD" subtype="ADV" tokens="89"/>
+			<signal source="9" type="MD" subtype="CONJ" tokens="109"/>
+			<signal source="9" type="MORF" subtype="TEMPO-VERBAL" tokens="96,97,110"/>
+			<signal source="9" type="SEMA" subtype="CAMPO-SEM" tokens="96,106,112"/>
+			<signal source="13" type="SINT" subtype="PRO-REL" tokens="144"/>
+			<signal source="13" type="SINT" subtype="ORA-REL" tokens="145,146,149,151,150,147,148"/>
+			<signal source="13" type="GRAF" subtype="PONT" tokens="143"/>
+			<signal source="14" type="MD" subtype="PREP" tokens="153"/>
+			<signal source="14" type="SEMA" subtype="VERB-COMUNI" tokens="154"/>
+			<signal source="14" type="SEMA" subtype="FONTE" tokens="163"/>
+			<signal source="14" type="GRAF" subtype="PONT" tokens="152"/>
+			<signal source="16" type="GRAF" subtype="PONT" tokens="169,177"/>
+			<signal source="16" type="SINT" subtype="PRO-REL" tokens="170"/>
+			<signal source="16" type="SINT" subtype="ORA-REL" tokens="171,172,173,175,174,176"/>
+			<signal source="18" type="MD" subtype="CONJ" tokens="184"/>
+			<signal source="18" type="SEMA" subtype="CONHE-MUND" tokens="167,186,179"/>
+			<signal source="19" type="SEMA" subtype="VERB-COMUNI" tokens="189"/>
+			<signal source="19" type="SEMA" subtype="FONTE" tokens="190,192,193,191,194,195,196"/>
+			<signal source="19" type="GRAF" subtype="PONT" tokens="188"/>
+			<signal source="21" type="GRAF" subtype="PONT" tokens="213"/>
+			<signal source="21" type="SINT" subtype="PRO-REL" tokens="214"/>
+			<signal source="21" type="SINT" subtype="ORA-REL" tokens="215,216,217,218,219,221,220"/>
+			<signal source="24" type="MD" subtype="ADV" tokens="244"/>
+			<signal source="24" type="SINT" subtype="ORA-CIRCUNS" tokens="245,247,246,248,249,250,251"/>
+			<signal source="27" type="GRAF" subtype="PONT" tokens="281,289"/>
+			<signal source="27" type="MD" subtype="ADV" tokens="282"/>
+			<signal source="28" type="SEMA" subtype="CONHE-MUND" tokens="278,279,280,297,299,300"/>
+			<signal source="29" type="MD" subtype="ADV" tokens="302,303"/>
+			<signal source="29" type="GRAF" subtype="PONT" tokens="304"/>
+			<signal source="31" type="SEMA" subtype="CAMPO-SEM" tokens="311,328,329,330"/>
+			<signal source="31" type="GRAF" subtype="PONT" tokens="315"/>
+			<signal source="33" type="SINT" subtype="PRO-REL" tokens="350"/>
+			<signal source="33" type="SINT" subtype="ORA-REL" tokens="351,352"/>
+			<signal source="34" type="MD" subtype="CONJ" tokens="353"/>
+			<signal source="34" type="SEMA" subtype="CONHE-MUND" tokens="346,354"/>
+			<signal source="36" type="MD" subtype="CONJ" tokens="375"/>
+			<signal source="36" type="SEMA" subtype="CONHE-MUND" tokens="373,374,376,380"/>
+			<signal source="38" type="SEMA" subtype="FONTE" tokens="400,402,403,401,404,405,406,407,408"/>
+			<signal source="38" type="SEMA" subtype="VERB-COMUNI" tokens="409"/>
+			<signal source="38" type="MD" subtype="CONJ" tokens="412"/>
+			<signal source="40" type="GRAF" subtype="PARENT" tokens="421,427"/>
+			<signal source="40" type="SEMA" subtype="SINO" tokens="415,416,417,419,418,420,422,423,424,425,426"/>
+			<signal source="43" type="MD" subtype="PREP" tokens="446"/>
+			<signal source="45" type="GRAF" subtype="PARENT" tokens="467,473"/>
+			<signal source="45" type="SEMA" subtype="SINO" tokens="463,462,465,464,466,468,469,470,471,472"/>
+			<signal source="46" type="SINT" subtype="VALE-VERB" tokens="1,2,3,9"/>
+			<signal source="49" type="SEMA" subtype="CONHE-MUND" tokens="54,66,65,70,88"/>
+			<signal source="53" type="GRAF" subtype="PONT" tokens="136,143"/>
+			<signal source="53" type="SINT" subtype="NUM" tokens="129,130,131,146,147,148"/>
+			<signal source="56" type="SINT" subtype="VALE-VERB" tokens="166,167,168,178"/>
+			<signal source="62" type="MD" subtype="ADV" tokens="232,233"/>
+			<signal source="62" type="SEMA" subtype="CAMPO-SEM" tokens="230,243,235"/>
+			<signal source="71" type="MD" subtype="CONJ" tokens="389"/>
+			<signal source="71" type="MORF" subtype="TEMPO-VERBAL" tokens="371,390"/>
+			<signal source="73" type="CDP" subtype="CDP" tokens=""/>
+			<signal source="73" type="SEMA" subtype="CONHE-MUND" tokens="414,428,429"/>
+			<signal source="77" type="SINT" subtype="VALE-VERB" tokens="437,438,439,440,441,442,443,445,444,461,462,465,463,464,466"/>
+		</signals>
+	</body>
+</rst>

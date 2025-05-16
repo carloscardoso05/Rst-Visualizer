@@ -1,6 +1,7 @@
 import { ObjectType, Field } from "@nestjs/graphql";
 import { Node } from "./node.model";
 import { IGroupData } from "./RS3Parser";
+import { TokenId } from "./token-id.model";
 
 
 @ObjectType()

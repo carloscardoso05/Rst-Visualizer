@@ -24,7 +24,7 @@ export class DocumentService implements OnModuleInit {
 
         try {
             const result = glob.sync(pattern).filter(file => fs.statSync(file).isFile() && file.endsWith('rs3'));
-            this.logger.debug(`Found ${result.length} documents matching the pattern. \n${result.join('\n')}`);
+            this.logger.debug(`Found ${result.length} documents matching the pattern`);
             return result;
         } catch (error) {
             this.logger.error(`Error while searching documents: ${error.message}`);

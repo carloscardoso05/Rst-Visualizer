@@ -8,6 +8,7 @@ import { Node } from './node.model';
 import { Relation } from './relation.model';
 import { Segment } from './segment.model';
 import { Signal } from './signal.model';
+import { TokenId } from './token-id.model';
 
 export interface IRelationData {
     '@_name': string;
@@ -128,6 +129,7 @@ export class RS3Parser {
         // signals
         for (const [index, signalData] of data.rst.body.signals?.signal.entries() ?? []) {
             const signal = Signal.fromData(signalData, index);
+            signal.parser = this
             this.signals.set(signal.id, signal);
             const sourceNode = this.nodes.get(signal.sourceId);
             if (!sourceNode) {
@@ -150,9 +152,8 @@ export class RS3Parser {
         let tokenCursor = 1;
         for (const segment of this.getSortedSegments()) {
             segment.sentenceId = sentenceId;
-            segment.initialTokenId = tokenCursor;
-            const tokens = segment.tokens;
-            // if ends with .,? or ! then new sentence
+            segment._initialTokenId = tokenCursor;
+            const tokens = segment.tokensIds.map(t => t.token);
             if (/[.?!]['"]?\s*$/.test(tokens[tokens.length - 1] || '')) {
                 sentenceId++;
             }
@@ -165,7 +166,7 @@ export class RS3Parser {
     }
 
     getTokens(): string[] {
-        return this.rootNode.tokens;
+        return this.rootNode.subtreeSegmentsTexts;
     }
 
     getTokensDict(): Map<number, string> {
@@ -214,7 +215,7 @@ export class RS3Parser {
         for (const n of nodes) {
             if (!n) continue;
             if (n instanceof Segment) segs.push(n);
-            else segs.push(...n.deepSegments);
+            else segs.push(...n.subtreeSegments);
         }
         if (segs.length <= 1) return true;
         const sid = segs[0].sentenceId;

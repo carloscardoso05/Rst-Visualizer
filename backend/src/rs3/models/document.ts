@@ -34,9 +34,13 @@ export class RS3Document {
         return [...this.segments, ...this.groups];
     }
 
-    @Field(() => Node, { nullable: true })
-    public get root(): Node | null {
-        return this.nodes.find(node => node.isRoot) ?? null;
+    @Field(() => Node)
+    public get root(): Node {
+        const root = this.nodes.find(node => node.isRoot);
+        if (!root) {
+            throw new Error("Root node not found");
+        }
+        return root;
     }
 
     @Field(() => [Node], { defaultValue: [] })

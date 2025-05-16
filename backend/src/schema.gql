@@ -9,6 +9,8 @@ type Relation {
 }
 
 type Node {
+  initialTokenId: Int!
+  tokensIds: [TokenId!]!
   id: Int!
   parent: Node
   relation: Relation
@@ -28,7 +30,14 @@ type Signal {
   text: String!
 }
 
+type TokenId {
+  id: Int!
+  token: String!
+}
+
 type Group {
+  initialTokenId: Int!
+  tokensIds: [TokenId!]!
   id: Int!
   parent: Node
   relation: Relation
@@ -40,6 +49,8 @@ type Group {
 }
 
 type Segment {
+  initialTokenId: Int!
+  tokensIds: [TokenId!]!
   id: Int!
   parent: Node
   relation: Relation
@@ -49,7 +60,6 @@ type Segment {
   text: String!
   order: Int!
   innerText: String!
-  initialTokenId: Int!
   sentenceId: Int!
 }
 
@@ -62,11 +72,11 @@ type RS3Document {
   groups: [Group!]!
   signals: [Signal!]!
   nodes: [Node!]!
-  root: Node
+  root: Node!
   intraSententialRelations: [Node!]!
 }
 
 type Query {
   relation: Relation!
-  documents: [RS3Document!]!
+  documents(code: String, name: String): [RS3Document!]!
 }

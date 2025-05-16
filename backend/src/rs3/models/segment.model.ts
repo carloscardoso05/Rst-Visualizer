@@ -1,6 +1,7 @@
 import { ObjectType, Field, Int } from "@nestjs/graphql";
 import { ISegmentData } from "./RS3Parser";
 import { Node } from "./node.model";
+import { TokenId } from "./token-id.model";
 
 
 @ObjectType()
@@ -9,14 +10,15 @@ export class Segment extends Node {
         return "segment";
     }
 
+    // _tokensIds: TokenId[] = [];
+
     @Field(() => Int)
     order: number;
 
     @Field()
     innerText: string;
 
-    @Field(() => Int)
-    initialTokenId: number;
+    _initialTokenId: number;
 
     @Field(() => Int)
     sentenceId: number;

@@ -44,7 +44,7 @@ export interface IRS3 {
     body: {
         segment: ISegmentData[];
         group: IGroupData[];
-        signals: {
+        signals?: {
             signal: ISignalData[];
         };
     };
@@ -72,6 +72,7 @@ export class RS3Parser {
         document.segments = Array.from(this.segments.values());
         document.groups = Array.from(this.groups.values());
         document.signals = Array.from(this.signals.values());
+        document.intraSententialRelations = this.getIntraSententialRelations();
         return document;
     }
 
@@ -86,16 +87,16 @@ export class RS3Parser {
         }
         const xml = await fs.readFile(this.filePath, 'utf-8');
         const parser = new XMLParser({ ignoreAttributes: false });
-        const data = parser.parse(xml) as { rs3: IRS3 };
+        const data = parser.parse(xml) as { rst: IRS3 };
 
         // segments
-        for (const [index, segmentData] of data.rs3.body.segment.entries()) {
+        for (const [index, segmentData] of data.rst.body.segment.entries()) {
             const segment = Segment.fromData(segmentData, index);
             this.segments.set(segment.id, segment);
         }
 
         // groups
-        for (const groupData of data.rs3.body.group) {
+        for (const groupData of data.rst.body.group) {
             const group = Group.fromData(groupData);
             this.groups.set(group.id, group);
         }
@@ -113,7 +114,7 @@ export class RS3Parser {
         }
 
         // relations
-        for (const relationData of data.rs3.header.relations.rel) {
+        for (const relationData of data.rst.header.relations.rel) {
             const relation = Relation.fromData(relationData);
             this.relations.set(relation.name, relation);
             for (const node of this.nodes.values()) {
@@ -125,7 +126,7 @@ export class RS3Parser {
         }
 
         // signals
-        for (const [index, signalData] of data.rs3.body.signals.signal.entries()) {
+        for (const [index, signalData] of data.rst.body.signals?.signal.entries() ?? []) {
             const signal = Signal.fromData(signalData, index);
             this.signals.set(signal.id, signal);
             const sourceNode = this.nodes.get(signal.sourceId);

@@ -9,6 +9,7 @@ import { Rs3Module } from './rs3/rs3.module';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
+      playground: false
     }),
     Rs3Module
   ],

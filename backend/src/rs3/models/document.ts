@@ -29,8 +29,16 @@ export class RS3Document {
     @Field(() => [Signal], { defaultValue: [] })
     public signals: Signal[] = [];
 
-    @Field(() => [Node], { defaultValue: [] })
+    @Field(() => [Node])
     public get nodes(): Node[] {
         return [...this.segments, ...this.groups];
     }
+
+    @Field(() => Node, { nullable: true })
+    public get root(): Node | null {
+        return this.nodes.find(node => node.isRoot) ?? null;
+    }
+
+    @Field(() => [Node], { defaultValue: [] })
+    public intraSententialRelations: Node[] = [];
 };

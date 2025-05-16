@@ -12,7 +12,7 @@ export class Relation {
     type: string;
 
     @Field(() => [Node], { defaultValue: [] })
-    nodes: Node[];
+    nodes: Node[] = [];
 
     public static fromData(data: IRelationData): Relation {
         const relation = new Relation();

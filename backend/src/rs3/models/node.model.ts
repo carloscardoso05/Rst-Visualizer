@@ -44,7 +44,7 @@ export abstract class Node {
     }
 
     get isRoot(): boolean {
-        return this.parent === null;
+        return !this.parent;
     }
 
     get deepSegments(): Segment[] {
@@ -61,6 +61,7 @@ export abstract class Node {
         return this.deepSegments.flatMap(s => s.innerText.split(/\s+/).filter(Boolean));
     }
 
+    @Field()
     get text(): string {
         return this.tokens.join(' ');
     }

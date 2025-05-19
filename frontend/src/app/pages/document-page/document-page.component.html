@@ -8,13 +8,7 @@
 <div class="document-container">
   <h1 class="text-2xl font-bold">{{ document()!.name }}</h1>
   <div role="tablist" class="tabs tabs-border">
-    <input
-      type="radio"
-      name="document-tabs"
-      class="tab"
-      aria-label="Texto"
-      checked
-    />
+    <input type="radio" name="document-tabs" class="tab" aria-label="Texto" checked />
     <div class="tab-content mr-20">
       <!-- Key-tracking for better DOM updating -->
       <div [attr.data-document-id]="document()!.id">
@@ -23,19 +17,58 @@
         }
       </div>
     </div>
-    <input
-      type="radio"
-      name="document-tabs"
-      class="tab"
-      aria-label="Texto original"
-    />
+    <input type="radio" name="document-tabs" class="tab" aria-label="Texto original" />
     <div class="tab-content">
       <div [attr.data-document-id]="document()!.id">
         {{ document()!.formattedText ?? "Texto não encontrado" }}
       </div>
     </div>
     <input type="radio" name="document-tabs" class="tab" aria-label="Relações" />
-    <div class="tab-content">3</div>
+    <div class="tab-content">
+      <div class="relations-container">
+        <h2 class="text-xl font-semibold mb-4">Relações e seus Sinais</h2>
+        @if (document()!.intraSententialRelations.length === 0) {
+        <p>Nenhuma relação encontrada neste documento.</p>
+        } @else {
+        <div class="overflow-x-auto">
+          <table class="table w-full">
+            <thead>
+              <tr>
+                <th>Relação</th>
+                <th>Texto</th>
+                <th>Texto Pai</th>
+                <th>Sinais</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (rel of document()!.intraSententialRelations; track rel.text) {
+              <tr class="hover">
+                <td>{{ rel.relation?.name || 'N/A' }}</td>
+                <td>{{ rel.text }}</td>
+                <td>{{ rel.parent?.text || 'N/A' }}</td>
+                <td>
+                  @if (rel.signals.length === 0) {
+                  <span class="text-gray-400">Nenhum sinal</span>
+                  } @else {
+                  <ul class="list-disc list-inside">
+                    @for (signal of rel.signals; track signal.text) {
+                    <li>
+                      <span class="font-medium">{{ signal.text }}</span>
+                      <span class="text-sm text-gray-500">({{ signal.type }}{{ signal.subtype ? ' - ' + signal.subtype :
+                        '' }})</span>
+                    </li>
+                    }
+                  </ul>
+                  }
+                </td>
+              </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+        }
+      </div>
+    </div>
   </div>
 </div>
 } @else {

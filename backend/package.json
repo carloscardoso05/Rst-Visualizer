@@ -27,6 +27,7 @@
     "@nestjs/graphql": "^13.1.0",
     "@nestjs/platform-express": "^11.0.1",
     "co": "^4.6.0",
+    "detect-file-encoding-and-language": "^2.4.0",
     "fast-xml-parser": "^5.2.3",
     "glob": "^11.0.2",
     "graphql": "^16.11.0",

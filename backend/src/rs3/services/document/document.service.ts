@@ -37,6 +37,7 @@ export class DocumentService implements OnModuleInit {
         const documents: RS3Document[] = await Promise.all(
             files.map(async (file) => new RS3Parser(file).toRS3Document())
         );
+        for (const [index, document] of documents.entries()) document.id = index + 1;
         return documents;
     }
 

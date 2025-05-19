@@ -64,6 +64,7 @@ type Segment {
 }
 
 type RS3Document {
+  id: Int!
   code: String!
   name: String!
   path: String!
@@ -74,9 +75,10 @@ type RS3Document {
   nodes: [Node!]!
   root: Node!
   intraSententialRelations: [Node!]!
+  formattedText: String
 }
 
 type Query {
   relation: Relation!
-  documents(code: String, name: String): [RS3Document!]!
+  documents(code: String, name: String, id: Int): [RS3Document!]!
 }

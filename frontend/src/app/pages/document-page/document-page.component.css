@@ -1,3 +1,19 @@
 :host {
   display: block;
 }
+
+.parent-token-highlight {
+  background-color: rgb(175, 255, 238);
+  padding: 2px 0;
+  border-radius: 2px;
+  box-shadow: 0 0 0 2px rgb(175, 255, 238);
+  transition: background-color 0.3s ease;
+}
+
+.token-highlight {
+  background-color: #fffc66 !important;
+  padding: 2px 0;
+  border-radius: 2px;
+  box-shadow: 0 0 0 2px #fffc66 !important;
+  transition: background-color 0.3s ease;
+}

@@ -1,4 +1,4 @@
-import { Component, inject, OnInit, signal, viewChildren } from '@angular/core';
+import { AfterRenderRef, AfterViewInit, Component, effect, ElementRef, inject, OnInit, signal, viewChild, viewChildren } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import {
   DocumentPageQueryGQL,
@@ -13,7 +13,6 @@ import { SafeHtmlPipe } from '../../safe-html/safe-html.pipe';
   styleUrl: './document-page.component.css',
 })
 export class DocumentPageComponent implements OnInit {
-
   private readonly route = inject(ActivatedRoute);
   private readonly query = inject(DocumentPageQueryGQL);
 
@@ -22,7 +21,6 @@ export class DocumentPageComponent implements OnInit {
   >(null);
   readonly loading = signal(false);
   readonly error = signal<Error | null>(null);
-  readonly tokensElements = viewChildren('token')
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
@@ -38,7 +36,6 @@ export class DocumentPageComponent implements OnInit {
     this.loading.set(true);
     this.query.fetch({ id: id }, { fetchPolicy: 'network-only' }).subscribe({
       next: (result) => {
-        console.log(result.data.documents[0].formattedText);
         if (result.data.documents.length !== 1) {
           const error = new Error(
             `Only one document is expected, but got ${result.data.documents.length}
@@ -68,9 +65,48 @@ export class DocumentPageComponent implements OnInit {
     if (!relation.tokensIds || !Array.isArray(relation.tokensIds)) {
       return false;
     }
-    
+
     return relation.tokensIds.some((t: any) => t.id === tokenId);
   }
 
-  
+  scrollToRelation(relation: DocumentPageQueryQuery['documents'][number]['intraSententialRelations'][number]): void {
+
+    // Remove any existing highlights
+    document.querySelectorAll('.token-highlight').forEach(el => {
+      el.classList.remove('token-highlight');
+    });
+    document.querySelectorAll('.parent-token-highlight').forEach(el => {
+      el.classList.remove('parent-token-highlight');
+    });
+
+    const innerTokensIds = relation.tokensIds ?? [];
+    const parentTokensIds = relation.parent?.tokensIds ?? [];
+
+    const tabs = document.querySelectorAll('input[name="document-tabs"]');
+    if (tabs.length > 0) {
+      (tabs[0] as HTMLInputElement).checked = true;
+    }
+
+    if (!innerTokensIds.length) return;
+
+    const firstToken = document.getElementById(`token-${innerTokensIds[0]?.id}`);
+
+    if (firstToken) {
+      firstToken.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      parentTokensIds.forEach((token) => {
+        const element = document.getElementById(`token-${token.id}`);
+        if (element) {
+          element.classList.add('parent-token-highlight');
+        }
+      });
+
+      innerTokensIds.forEach((token) => {
+        const element = document.getElementById(`token-${token.id}`);
+        if (element) {
+          element.classList.add('token-highlight');
+        }
+      });
+    }
+  }
 }

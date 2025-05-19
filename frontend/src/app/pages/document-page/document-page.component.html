@@ -14,7 +14,7 @@
         <!-- Key-tracking for better DOM updating -->
         <div [attr.data-document-id]="document()!.id">
           @for (token of document()!.root!.tokensIds; track token.id) {
-          <span [id]="`token-${token.id}`" #token>{{ token.token }} </span>
+          <span [id]="`token-${token.id}`">{{ token.token }} </span>
           }
         </div>
       </div>
@@ -35,33 +35,38 @@
                 {{relation.text}}
               </p>
             </div>
-            <div class="collapse-content text-sm grid grid-cols-2 gap-5">
-              <div>
-                <h3 class="font-semibold">Texto</h3>
-                <p>{{relation.text}}</p>
-              </div>
-              <div>
-                <h3 class="font-semibold">Texto pai</h3>
-                <p>{{relation.parent?.text ?? ''}}</p>
-              </div>
-              <div>
-                <h3 class="font-semibold">Sinalizadores</h3>
-                @if (relation.signals.length === 0) {
-                <span class="text-gray-400">Nenhum sinalizador</span>
-                } @else {
-                <ul class="space-y-2">
-                  @for (signal of relation.signals; track signal.text) {
-                  <li class="space-x-2">
-                    <span class="text-sm text-gray-500 badge badge-soft badge-primary">({{ signal.type }}{{
-                      signal.subtype
-                      ? ' - ' + signal.subtype :
-                      '' }})</span>
-                    <span>{{ signal.text }}</span>
-                  </li>
+            <div class="collapse-content text-sm space-y-5">
+              <div class="grid grid-cols-2 gap-5">
+                <div>
+                  <h3 class="font-semibold">Texto</h3>
+                  <p>{{relation.text}}</p>
+                </div>
+                <div>
+                  <h3 class="font-semibold">Texto pai</h3>
+                  <p>{{relation.parent?.text ?? ''}}</p>
+                </div>
+                <div>
+                  <h3 class="font-semibold">Sinalizadores</h3>
+                  @if (relation.signals.length === 0) {
+                  <span class="text-gray-400">Nenhum sinalizador</span>
+                  } @else {
+                  <ul class="space-y-2">
+                    @for (signal of relation.signals; track signal.text) {
+                    <li class="space-x-2">
+                      <span class="text-sm text-gray-500 badge badge-soft badge-primary">({{ signal.type }}{{
+                        signal.subtype
+                        ? ' - ' + signal.subtype :
+                        '' }})</span>
+                      <span>{{ signal.text }}</span>
+                    </li>
+                    }
+                  </ul>
                   }
-                </ul>
-                }
+                </div>
               </div>
+              <button class="btn" (click)="scrollToRelation(relation)">
+                Ver no texto
+              </button>
             </div>
           </div>
           }
@@ -71,7 +76,8 @@
     </div>
     <input type="radio" name="document-tabs" class="tab" aria-label="Texto original" />
     <div class="tab-content mx-10">
-      <div [attr.data-document-id]="document()!.id" [innerHTML]="document()!.formattedText ?? 'Text não encontrado' | safeHtml">
+      <div [attr.data-document-id]="document()!.id"
+        [innerHTML]="document()!.formattedText ?? 'Text não encontrado' | safeHtml">
       </div>
     </div>
   </div>

@@ -1,0 +1,51 @@
+query DocumentsNameAndCode {
+  documents {
+    id
+    name
+    code
+  }
+}
+
+query DocumentsNameText {
+  documents {
+    id
+    name
+    root {
+      text
+    }
+  }
+}
+
+query DocumentPageQuery($id: Int!) {
+  documents(id: $id) {
+    id
+    name
+    formattedText
+    intraSententialRelations {
+      text
+      parent {
+        id
+        text
+        tokensIds {
+          id
+          token
+        }
+      }
+      relation {
+        name
+      }
+      signals {
+        text
+        type
+        subtype
+        tokensIds
+      }
+    }
+    root {
+      tokensIds {
+        id
+        token
+      }
+    }
+  }
+}

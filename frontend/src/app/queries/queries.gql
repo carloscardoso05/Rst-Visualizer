@@ -22,7 +22,12 @@ query DocumentPageQuery($id: Int!) {
     name
     formattedText
     intraSententialRelations {
+      id
       text
+      tokensIds {
+        id
+        token
+      }
       parent {
         id
         text

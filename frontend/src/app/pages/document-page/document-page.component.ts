@@ -4,10 +4,11 @@ import {
   DocumentPageQueryGQL,
   DocumentPageQueryQuery,
 } from '../../../generated/graphql';
+import { SafeHtmlPipe } from '../../safe-html/safe-html.pipe';
 
 @Component({
   selector: 'app-document-page',
-  imports: [RouterModule],
+  imports: [RouterModule, SafeHtmlPipe],
   templateUrl: './document-page.component.html',
   styleUrl: './document-page.component.css',
 })
@@ -37,6 +38,7 @@ export class DocumentPageComponent implements OnInit {
     this.loading.set(true);
     this.query.fetch({ id: id }, { fetchPolicy: 'network-only' }).subscribe({
       next: (result) => {
+        console.log(result.data.documents[0].formattedText);
         if (result.data.documents.length !== 1) {
           const error = new Error(
             `Only one document is expected, but got ${result.data.documents.length}
@@ -60,4 +62,15 @@ export class DocumentPageComponent implements OnInit {
       },
     });
   }
+
+  // Add this method to your component class
+  isTokenInRelation(tokenId: string | number, relation: any): boolean {
+    if (!relation.tokensIds || !Array.isArray(relation.tokensIds)) {
+      return false;
+    }
+    
+    return relation.tokensIds.some((t: any) => t.id === tokenId);
+  }
+
+  
 }

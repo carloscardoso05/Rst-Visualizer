@@ -1,16 +1,16 @@
 import {
   ApplicationConfig,
-  provideZoneChangeDetection,
   inject,
+  provideZoneChangeDetection,
 } from '@angular/core';
-import { provideRouter, withHashLocation, withRouterConfig } from '@angular/router';
+import { provideRouter } from '@angular/router';
 
 import { provideHttpClient } from '@angular/common/http';
-import { routes } from './app.routes';
+import { InMemoryCache } from '@apollo/client/core';
 import { provideApollo } from 'apollo-angular';
 import { HttpLink } from 'apollo-angular/http';
-import { InMemoryCache } from '@apollo/client/core';
 import { environment } from '../environments/environment';
+import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
   providers: [

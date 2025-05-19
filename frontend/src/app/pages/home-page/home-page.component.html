@@ -10,8 +10,8 @@
       <h2 class="card-title">{{ document.name }}</h2>
       <p>{{ document.root.text | truncate : 200 }}</p>
       <div class="justify-end card-actions">
-        <a class="btn btn-primary" [routerLink]="['/documents', document.id]" routerLinkActive="active">Ver
-          documento</a>
+        <a class="btn btn-primary" [routerLink]="['/documents', document.id]" routerLinkActive="active">
+          Ver documento</a>
       </div>
     </div>
   </div>

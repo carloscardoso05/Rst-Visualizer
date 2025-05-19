@@ -23,8 +23,7 @@
   />
 </label>
 <ul class="menu bg-base-200 text-base-content min-h-full w-100 p-4">
-  @if (filteredDocuments().length > 0) { @for (document of filteredDocuments();
-  track $index) {
+  @if (filteredDocuments().length > 0) { @for (document of filteredDocuments(); track document.id) {
   <li>
     <a [routerLink]="['/documents', document.id]" routerLinkActive="active">
       {{ document.name }}

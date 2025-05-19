@@ -101,6 +101,49 @@ export const DocumentPageQueryDocument = gql`
       super(apollo);
     }
   }
+export const RelationsDataDocument = gql`
+    query RelationsData {
+  documents {
+    id
+    name
+    intraSententialRelations {
+      id
+      text
+      tokensIds {
+        id
+        token
+      }
+      parent {
+        id
+        text
+        tokensIds {
+          id
+          token
+        }
+      }
+      relation {
+        name
+      }
+      signals {
+        text
+        type
+        subtype
+      }
+    }
+  }
+}
+    `;
+
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class RelationsDataGQL extends Apollo.Query<RelationsDataQuery, RelationsDataQueryVariables> {
+    document = RelationsDataDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
   ID: { input: string; output: string; }
@@ -222,6 +265,11 @@ export type DocumentPageQueryQueryVariables = Exact<{
 
 
 export type DocumentPageQueryQuery = { __typename?: 'Query', documents: Array<{ __typename?: 'RS3Document', id: number, name: string, formattedText?: string | null, intraSententialRelations: Array<{ __typename?: 'Node', id: number, text: string, tokensIds: Array<{ __typename?: 'TokenId', id: number, token: string }>, parent?: { __typename?: 'Node', id: number, text: string, tokensIds: Array<{ __typename?: 'TokenId', id: number, token: string }> } | null, relation?: { __typename?: 'Relation', name: string } | null, signals: Array<{ __typename?: 'Signal', text: string, type: string, subtype: string, tokensIds: Array<number> }> }>, root: { __typename?: 'Node', tokensIds: Array<{ __typename?: 'TokenId', id: number, token: string }> } }> };
+
+export type RelationsDataQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type RelationsDataQuery = { __typename?: 'Query', documents: Array<{ __typename?: 'RS3Document', id: number, name: string, intraSententialRelations: Array<{ __typename?: 'Node', id: number, text: string, tokensIds: Array<{ __typename?: 'TokenId', id: number, token: string }>, parent?: { __typename?: 'Node', id: number, text: string, tokensIds: Array<{ __typename?: 'TokenId', id: number, token: string }> } | null, relation?: { __typename?: 'Relation', name: string } | null, signals: Array<{ __typename?: 'Signal', text: string, type: string, subtype: string }> }> }> };
 
 
       export interface PossibleTypesResultData {

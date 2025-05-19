@@ -54,3 +54,36 @@ query DocumentPageQuery($id: Int!) {
     }
   }
 }
+
+
+query RelationsData {
+  documents {
+    id
+    name
+    intraSententialRelations {
+      id
+      text
+      tokensIds {
+        id
+        token
+      }
+      parent {
+        id
+        text
+        tokensIds {
+          id
+          token
+        }
+      }
+      relation {
+        name
+      }
+      signals {
+        text
+        type
+        subtype
+      }
+    }
+  }
+}
+

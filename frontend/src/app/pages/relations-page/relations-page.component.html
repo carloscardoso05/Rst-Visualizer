@@ -1,0 +1,49 @@
+<div class="p-4">
+    <div class="flex justify-between items-center mb-4">
+        <h1 class="text-xl font-bold">Relações</h1>
+
+        <!-- Filter indicators -->
+        <div class="flex gap-2">
+            @if (type()) {
+            <div class="badge badge-soft">Tipo: {{ type() }}</div>
+            }
+            @if (subtype()) {
+            <div class="badge badge-soft">Subtipo: {{ subtype() }}</div>
+            }
+            @if (relationName()) {
+            <div class="badge badge-soft">Relação: {{ relationName() }}</div>
+            }
+        </div>
+    </div>
+
+    @if (loading()) {
+    <div class="flex justify-center p-4">
+        <span class="loading loading-spinner loading-md"></span>
+    </div>
+    } @else if (error()) {
+    <div class="p-4 text-error">
+        <p>{{ error()?.message }}</p>
+    </div>
+    } @else if (filters().length === 0) {
+    <div class="alert alert-info">
+        <span>Nenhuma relação encontrada.</span>
+    </div>
+    } @else {
+    <div class="grid grid-cols-3 gap-4">
+        @for (relation of filters(); track relation.relationId) {
+        <div class="card bg-base-100 shadow-md cursor-pointer" (click)="navigateToDocument(relation)">
+            <div class="card-body p-4">
+                <div class="card-title flex justify-between items-center">
+                    <span class="badge badge-soft badge-lg">{{ relation.relationName }}</span>
+                </div>
+
+                <div>
+                    <p>{{ relation.relationText }}</p>
+                    <p class="my-2 text-xs">Documento: {{relation.documentName}}</p>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+    }
+</div>

@@ -29,6 +29,22 @@ export class DocumentPageComponent implements OnInit {
         throw new Error('File Id is required');
       }
       this.loadDocument(id);
+      
+      // Check for relationId in query params
+      this.route.queryParams.subscribe(queryParams => {
+        const relationId = queryParams['relationId'];
+        if (relationId && this.document()) {
+          // Find and highlight the relation after document is loaded
+          setTimeout(() => {
+            const relation = this.document()?.intraSententialRelations.find(
+              r => r.id === parseInt(relationId, 10)
+            );
+            if (relation) {
+              this.scrollToRelation(relation);
+            }
+          }, 500); // Small delay to ensure DOM is ready
+        }
+      });
     });
   }
 

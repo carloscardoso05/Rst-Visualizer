@@ -1,6 +1,6 @@
 import { Logger } from '@nestjs/common';
 import { Args, Int, Parent, Query, ResolveField, Resolver } from '@nestjs/graphql';
-import DetectFileEncodingAndLanguage from 'detect-file-encoding-and-language';
+import * as chardet from 'chardet';
 import * as fs from 'fs';
 import * as glob from 'glob';
 import * as path from 'path';
@@ -36,19 +36,20 @@ export class DocumentResolver {
     }
 
     @ResolveField(() => String, { nullable: true })
-    async formattedText(@Parent() doc: RS3Document): Promise<string | null> {
-        const pattern = path.join(__dirname, '../../../documents', '**', `*${doc.code}*.txt`).replace(/\\/g, '/');
+    formattedText(@Parent() doc: RS3Document): string | null {
+        const pattern = path.join(__dirname, '../../documents', '**', `*${doc.code}_*.txt`).replace(/\\/g, '/');
         this.logger.debug(`Searching for text files with pattern: ${pattern}`);
 
         try {
-            const result = glob.sync(pattern).filter(file => fs.statSync(file).isFile() && file.endsWith('txt'));
+            const result = glob.sync(pattern).filter(file => fs.statSync(file).isFile());
+            this.logger.debug(`Found text files: ${result}`);
             if (result.length > 1) {
                 this.logger.error(`Expected one text file, but found ${result.length}`);
             } else if (result.length === 0) {
                 return null;
             }
             const filePath = result[0];
-            let encoding = (await DetectFileEncodingAndLanguage(filePath)).encoding ?? 'UTF-8';
+            let encoding = chardet.detectFileSync(filePath)?.toLowerCase() ?? 'utf-8';
             const validEncodings = [
                 'ascii',
                 'utf8',
@@ -71,7 +72,8 @@ export class DocumentResolver {
             const fileContent = fs.readFileSync(filePath, validEncoding);
             return fileContent;
         } catch (error) {
-            throw new Error('Error while listing documents');
+            this.logger.error(`Error reading file: ${error}`);
+            throw new Error('Error while listing documents', error);
         }
     }
 }

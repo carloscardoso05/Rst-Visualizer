@@ -60,6 +60,7 @@ type Segment {
   text: String!
   order: Int!
   innerText: String!
+  innterTokensIds: [TokenId!]!
   sentenceId: Int!
 }
 
@@ -79,6 +80,5 @@ type RS3Document {
 }
 
 type Query {
-  relation: Relation!
   documents(code: String, name: String, id: Int): [RS3Document!]!
 }

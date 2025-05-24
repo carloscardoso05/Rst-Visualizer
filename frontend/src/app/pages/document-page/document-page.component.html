@@ -28,12 +28,22 @@
           <div class="collapse bg-base-100 border-base-300 border">
             <input type="checkbox" />
             <div class="collapse-title font-semibold">
-              <p>
-                <span class="badge badge-primary mr-2">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="badge badge-primary">
                   {{relation.relation?.name}}
                 </span>
-                {{relation.text}}
-              </p>
+                <span>{{relation.text}}</span>
+                
+                @if (relation.signals.length > 0) {
+                <div class="flex flex-wrap gap-1 mt-1">
+                  @for (signal of relation.signals; track signal.text) {
+                  <span class="badge badge-outline badge-sm">
+                    {{signal.type}}{{signal.subtype ? ': ' + signal.subtype : ''}}
+                  </span>
+                  }
+                </div>
+                }
+              </div>
             </div>
             <div class="collapse-content text-sm space-y-5">
               <div class="grid grid-cols-2 gap-5">

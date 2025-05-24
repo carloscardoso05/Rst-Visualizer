@@ -1,10 +1,10 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { RelationsDataGQL } from '../../../generated/graphql';
-import { signal } from '@angular/core';
 
+// Define interfaces for our data structures
 interface RelationItem {
   documentId: number;
   documentName: string;
@@ -16,17 +16,9 @@ interface RelationItem {
   signalText: string;
 }
 
-interface RelationCount {
+interface RelationCountItem {
   relationName: string;
   count: number;
-  items: RelationItem[];
-}
-
-// Add this interface if it doesn't already exist
-interface RelationsData {
-  relations: RelationItem[];
-  relationsBySignal: Map<string, RelationItem[]>;
-  relationCountsBySignal: Map<string, RelationCount[]>;
 }
 
 @Component({
@@ -41,16 +33,10 @@ export class SidebarRelationsComponent implements OnInit {
 
   readonly loading = signal(false);
   readonly error = signal<Error | null>(null);
-  readonly search = signal('');
   readonly relations = signal<RelationItem[]>([]);
 
-  // Hierarchical structure for the UI
-  readonly signalTypes = signal<Map<string, Set<string>>>(new Map());
-  readonly relationsBySignal = signal<Map<string, RelationItem[]>>(new Map());
-  readonly relationCountsBySignal = signal<Map<string, RelationCount[]>>(new Map());
-
-  // Make relations data available as a static property so relations page can access it
-  static relationsData: RelationsData | null = null;
+  // Static property to share data with other components
+  static relationsData: { relations: RelationItem[] } | null = null;
 
   ngOnInit(): void {
     this.loadRelations();
@@ -58,96 +44,52 @@ export class SidebarRelationsComponent implements OnInit {
 
   loadRelations(): void {
     this.loading.set(true);
+    
+    // If data already loaded, use it
+    if (SidebarRelationsComponent.relationsData) {
+      this.relations.set(SidebarRelationsComponent.relationsData.relations);
+      this.loading.set(false);
+      return;
+    }
+    
     this.relationsQuery.fetch().subscribe({
-      next: (result) => {
-        const relationsData: RelationItem[] = [];
-        const types = new Map<string, Set<string>>();
-        const relationsBySignal = new Map<string, RelationItem[]>();
-        const relationCountsBySignal = new Map<string, RelationCount[]>();
-
-        // Process the data to build our hierarchical structure
-        result.data.documents.forEach(doc => {
+      next: ({ data }) => {
+        const relationsItems: RelationItem[] = [];
+        
+        data.documents.forEach(doc => {
           doc.intraSententialRelations.forEach(relation => {
             if (!relation.relation) return;
-
-            // If there are signals, organize by them
-            if (relation.signals.length > 0) {
+            
+            if (relation.signals && relation.signals.length > 0) {
               relation.signals.forEach(signal => {
-                // Create the item
-                const item: RelationItem = {
+                relationsItems.push({
                   documentId: doc.id,
                   documentName: doc.name,
                   relationId: relation.id,
                   relationName: relation.relation?.name || 'Unknown',
                   relationText: relation.text,
                   signalType: signal.type,
-                  signalSubtype: signal.subtype || 'None',
+                  signalSubtype: signal.subtype || 'Sem sinalizador',
                   signalText: signal.text
-                };
-
-                relationsData.push(item);
-
-                // Build the hierarchy
-                if (!types.has(signal.type)) {
-                  types.set(signal.type, new Set());
-                }
-                types.get(signal.type)?.add(signal.subtype || 'None');
-
-                const key = `${signal.type}:${signal.subtype || 'None'}`;
-                if (!relationsBySignal.has(key)) {
-                  relationsBySignal.set(key, []);
-                  relationCountsBySignal.set(key, []);
-                }
-                relationsBySignal.get(key)?.push(item);
-                
-                // Update relation counts
-                this.updateRelationCounts(relationCountsBySignal, key, item);
+                });
               });
             } else {
-              // No signals, add to a "No Signal" category
-              const item: RelationItem = {
+              relationsItems.push({
                 documentId: doc.id,
                 documentName: doc.name,
                 relationId: relation.id,
                 relationName: relation.relation?.name || 'Unknown',
                 relationText: relation.text,
-                signalType: 'No Signal',
-                signalSubtype: 'None',
+                signalType: 'Sem sinalizador',
+                signalSubtype: 'Sem sinalizador',
                 signalText: ''
-              };
-
-              relationsData.push(item);
-
-              if (!types.has('No Signal')) {
-                types.set('No Signal', new Set(['None']));
-              }
-
-              const key = 'No Signal:None';
-              if (!relationsBySignal.has(key)) {
-                relationsBySignal.set(key, []);
-                relationCountsBySignal.set(key, []);
-              }
-              relationsBySignal.get(key)?.push(item);
-              
-              // Update relation counts for no signal items
-              this.updateRelationCounts(relationCountsBySignal, key, item);
+              });
             }
           });
         });
-
-        this.relations.set(relationsData);
-        this.signalTypes.set(types);
-        this.relationsBySignal.set(relationsBySignal);
-        this.relationCountsBySignal.set(relationCountsBySignal);
-
-        // Store data statically for access by other components
-        SidebarRelationsComponent.relationsData = {
-          relations: relationsData,
-          relationsBySignal: relationsBySignal,
-          relationCountsBySignal: relationCountsBySignal
-        };
         
-        this.error.set(null);
+        this.relations.set(relationsItems);
+        SidebarRelationsComponent.relationsData = { relations: relationsItems };
       },
       error: (err) => {
         this.error.set(err);
@@ -159,52 +101,43 @@ export class SidebarRelationsComponent implements OnInit {
     });
   }
 
-  // Helper method to update relation counts
-  private updateRelationCounts(
-    countMap: Map<string, RelationCount[]>, 
-    key: string, 
-    item: RelationItem
-  ): void {
-    const counts = countMap.get(key) || [];
-    const existingCount = counts.find(c => c.relationName === item.relationName);
+  // Gets all the unique signal types from relations
+  getFilteredTypes(): string[] {
+    const types = new Set<string>();
+    this.relations().forEach(item => {
+      types.add(item.signalType);
+    });
+    return Array.from(types).sort().filter(type => type.toUpperCase() !== 'CDP');
+  }
+
+  // Gets all the unique subtypes for a specific signal type
+  getFilteredSubtypes(type: string): string[] {
+    const subtypes = new Set<string>();
+    this.relations().forEach(item => {
+      if (item.signalType === type) {
+        subtypes.add(item.signalSubtype);
+      }
+    });
+    return Array.from(subtypes).sort().filter(subtype => subtype.toUpperCase() !== 'CDP');
+  }
+
+  // Gets counts of relation names for a specific type and subtype
+  getRelationCounts(type: string, subtype: string): RelationCountItem[] {
+    const relationCounts = new Map<string, number>();
     
-    if (existingCount) {
-      existingCount.count++;
-      existingCount.items.push(item);
-    } else {
-      counts.push({
-        relationName: item.relationName,
-        count: 1,
-        items: [item]
-      });
-    }
+    this.relations().forEach(item => {
+      if (item.signalType === type && item.signalSubtype === subtype) {
+        const count = relationCounts.get(item.relationName) || 0;
+        relationCounts.set(item.relationName, count + 1);
+      }
+    });
     
-    countMap.set(key, counts);
+    return Array.from(relationCounts.entries())
+      .map(([relationName, count]) => ({ relationName, count }))
+      .sort((a, b) => b.count - a.count);
   }
 
   navigateToRelation(item: RelationItem): void {
     window.location.href = `/documents/${item.documentId}?relationId=${item.relationId}`;
-  }
-
-  getFilteredTypes(): string[] {
-    return Array.from(this.signalTypes().keys());
-  }
-
-  getFilteredSubtypes(type: string): string[] {
-    const subtypes = this.signalTypes().get(type) || new Set();
-    return Array.from(subtypes);
-  }
-
-  getFilteredRelations(type: string, subtype: string): RelationItem[] {
-    const key = `${type}:${subtype}`;
-    const relations = this.relationsBySignal().get(key) || [];
-    return relations;
-  }
-
-  // New method to get relation counts
-  getRelationCounts(type: string, subtype: string): RelationCount[] {
-    const key = `${type}:${subtype}`;
-    const counts = this.relationCountsBySignal().get(key) || [];
-    return counts;
   }
 }

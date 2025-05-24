@@ -183,7 +183,6 @@ export type Node = {
 export type Query = {
   __typename?: 'Query';
   documents: Array<Rs3Document>;
-  relation: Relation;
 };
 
 
@@ -222,6 +221,7 @@ export type Segment = {
   id: Scalars['Int']['output'];
   initialTokenId: Scalars['Int']['output'];
   innerText: Scalars['String']['output'];
+  innterTokensIds: Array<TokenId>;
   isMultinuclear: Scalars['Boolean']['output'];
   order: Scalars['Int']['output'];
   parent?: Maybe<Node>;

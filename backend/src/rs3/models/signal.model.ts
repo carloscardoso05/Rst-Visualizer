@@ -27,7 +27,7 @@ export class Signal {
     @Field(() => [String])
     get tokens(): string[] {
         const dict = this.parser.getTokensDict();
-        return this.tokensIds.map(i => dict.get(i)).filter((t): t is string => !!t);
+        return this.tokensIds.sort((a, b) => a - b).map(i => dict.get(i)).filter((t): t is string => !!t)
     }
 
     @Field()

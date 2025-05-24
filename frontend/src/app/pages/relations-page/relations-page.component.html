@@ -33,13 +33,29 @@
         @for (relation of filters(); track relation.relationId) {
         <div class="card bg-base-100 shadow-md cursor-pointer" (click)="navigateToDocument(relation)">
             <div class="card-body p-4">
-                <div class="card-title flex justify-between items-center">
-                    <span class="badge badge-soft badge-lg">{{ relation.relationName }}</span>
+                <div class="card-title flex flex-col items-start w-full mb-2">
+                    <div class="flex justify-between items-center w-full">
+                        <span class="badge badge-primary">{{ relation.relationName }}</span>
+                        <span class="text-xs text-gray-500">{{ relation.documentName }}</span>
+                    </div>
+                    
+                    <!-- Add signal badges here -->
+                    @if (relation.signalType !== 'Sem sinalizador') {
+                    <div class="flex flex-wrap gap-1 mt-2">
+                        <span class="badge badge-outline badge-sm">
+                            {{ relation.signalType }}{{ relation.signalSubtype !== 'Sem sinalizador' ? ': ' + relation.signalSubtype : '' }}
+                        </span>
+                    </div>
+                    }
                 </div>
 
                 <div>
-                    <p>{{ relation.relationText }}</p>
-                    <p class="my-2 text-xs">Documento: {{relation.documentName}}</p>
+                    <p class="text-sm">{{ relation.relationText }}</p>
+                    @if (relation.signalText) {
+                    <div class="mt-2 text-xs text-gray-600">
+                        <span class="font-medium">Sinal:</span> "{{ relation.signalText }}"
+                    </div>
+                    }
                 </div>
             </div>
         </div>

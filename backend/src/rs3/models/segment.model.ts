@@ -18,6 +18,16 @@ export class Segment extends Node {
     @Field()
     innerText: string;
 
+
+    @Field(() => [TokenId])
+    get innterTokensIds(): TokenId[] {
+        return this.innerText
+            .split(/\s/)
+            .map(
+                (token, index) => new TokenId(this.initialTokenId + index, token),
+            );
+    }
+
     _initialTokenId: number;
 
     @Field(() => Int)

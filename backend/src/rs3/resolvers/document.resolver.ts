@@ -70,7 +70,7 @@ export class DocumentResolver {
                 validEncoding = 'utf-8';
             }
             const fileContent = fs.readFileSync(filePath, validEncoding);
-            return fileContent;
+            return fileContent.replaceAll(/\n/g, '<br>');
         } catch (error) {
             this.logger.error(`Error reading file: ${error}`);
             throw new Error('Error while listing documents', error);

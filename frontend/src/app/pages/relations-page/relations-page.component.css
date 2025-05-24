@@ -1,3 +1,37 @@
 :host {
   display: block;
 }
+
+/* Styling for cards */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Badge styling */
+.badge-soft {
+  font-size: 0.75rem;
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.badge-outline {
+  font-size: 0.7rem;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  padding: 0.25rem 0.5rem;
+}
+
+.badge-primary {
+  font-weight: 500;
+}
+
+/* Make sure relation text has proper line height */
+.card-body p {
+  line-height: 1.5;
+}

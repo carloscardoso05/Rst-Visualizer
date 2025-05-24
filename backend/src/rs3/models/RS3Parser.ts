@@ -153,7 +153,7 @@ export class RS3Parser {
         for (const segment of this.getSortedSegments()) {
             segment.sentenceId = sentenceId;
             segment._initialTokenId = tokenCursor;
-            const tokens = segment.tokensIds.map(t => t.token);
+            const tokens = segment.innterTokensIds.map(t => t.token);
             if (/[.?!]['"]?\s*$/.test(tokens[tokens.length - 1] || '')) {
                 sentenceId++;
             }

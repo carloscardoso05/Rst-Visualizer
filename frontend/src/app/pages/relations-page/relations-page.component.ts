@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { ActivatedRoute, ParamMap, RouterModule } from '@angular/router';
+import { ActivatedRoute, ParamMap, Router, RouterModule } from '@angular/router';
 import { RelationsDataGQL } from '../../../generated/graphql';
 import { SidebarRelationsComponent } from '../../components/sidebar-relations/sidebar-relations.component';
 
@@ -25,6 +25,7 @@ interface RelationItem {
 })
 export class RelationsPageComponent implements OnInit {
   private readonly route = inject(ActivatedRoute);
+  private readonly router = inject(Router);
   private readonly relationsQuery = inject(RelationsDataGQL);
 
   readonly loading = signal(false);
@@ -72,7 +73,7 @@ export class RelationsPageComponent implements OnInit {
                     relationName: relation.relation?.name || 'Unknown',
                     relationText: relation.text,
                     signalType: signal.type,
-                    signalSubtype: signal.subtype || 'None',
+                    signalSubtype: signal.subtype || 'Sem sinalizador',
                     signalText: signal.text
                   });
                 });
@@ -83,8 +84,8 @@ export class RelationsPageComponent implements OnInit {
                   relationId: relation.id,
                   relationName: relation.relation?.name || 'Unknown',
                   relationText: relation.text,
-                  signalType: 'No Signal',
-                  signalSubtype: 'None',
+                  signalType: 'Sem sinalizador',
+                  signalSubtype: 'Sem sinalizador',
                   signalText: ''
                 });
               }
@@ -120,6 +121,9 @@ export class RelationsPageComponent implements OnInit {
   }
 
   navigateToDocument(item: RelationItem): void {
-    window.location.href = `/documents/${item.documentId}?relationId=${item.relationId}`;
+    // Use Angular Router instead of direct window.location
+    this.router.navigate(['/documents', item.documentId], {
+      queryParams: { relationId: item.relationId }
+    });
   }
 }

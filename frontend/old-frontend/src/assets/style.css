@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Custom styles for RST Visualizer */
+.highlighted-relation {
+  background-color: var(--accent);
+  color: var(--accent-content);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.highlighted-relation:hover {
+  background-color: var(--accent-focus);
+}

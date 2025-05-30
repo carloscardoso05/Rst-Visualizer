@@ -144,6 +144,100 @@ export const RelationsDataDocument = gql`
       super(apollo);
     }
   }
+export const DocumentTreeQueryDocument = gql`
+    query DocumentTreeQuery($id: Int!) {
+  documents(id: $id) {
+    id
+    name
+    root {
+      id
+      text
+      isMultinuclear
+      children {
+        id
+        text
+        isMultinuclear
+        relation {
+          name
+          type
+        }
+        signals {
+          text
+          type
+          subtype
+        }
+        children {
+          id
+          text
+          isMultinuclear
+          relation {
+            name
+            type
+          }
+          signals {
+            text
+            type
+            subtype
+          }
+          children {
+            id
+            text
+            isMultinuclear
+            relation {
+              name
+              type
+            }
+            signals {
+              text
+              type
+              subtype
+            }
+            children {
+              id
+              text
+              isMultinuclear
+              relation {
+                name
+                type
+              }
+              signals {
+                text
+                type
+                subtype
+              }
+              children {
+                id
+                text
+                isMultinuclear
+                relation {
+                  name
+                  type
+                }
+                signals {
+                  text
+                  type
+                  subtype
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+    `;
+
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class DocumentTreeQueryGQL extends Apollo.Query<DocumentTreeQueryQuery, DocumentTreeQueryQueryVariables> {
+    document = DocumentTreeQueryDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
   ID: { input: string; output: string; }
@@ -270,6 +364,13 @@ export type RelationsDataQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type RelationsDataQuery = { __typename?: 'Query', documents: Array<{ __typename?: 'RS3Document', id: number, name: string, intraSententialRelations: Array<{ __typename?: 'Node', id: number, text: string, tokensIds: Array<{ __typename?: 'TokenId', id: number, token: string }>, parent?: { __typename?: 'Node', id: number, text: string, tokensIds: Array<{ __typename?: 'TokenId', id: number, token: string }> } | null, relation?: { __typename?: 'Relation', name: string } | null, signals: Array<{ __typename?: 'Signal', text: string, type: string, subtype: string }> }> }> };
+
+export type DocumentTreeQueryQueryVariables = Exact<{
+  id: Scalars['Int']['input'];
+}>;
+
+
+export type DocumentTreeQueryQuery = { __typename?: 'Query', documents: Array<{ __typename?: 'RS3Document', id: number, name: string, root: { __typename?: 'Node', id: number, text: string, isMultinuclear: boolean, children: Array<{ __typename?: 'Node', id: number, text: string, isMultinuclear: boolean, relation?: { __typename?: 'Relation', name: string, type: string } | null, signals: Array<{ __typename?: 'Signal', text: string, type: string, subtype: string }>, children: Array<{ __typename?: 'Node', id: number, text: string, isMultinuclear: boolean, relation?: { __typename?: 'Relation', name: string, type: string } | null, signals: Array<{ __typename?: 'Signal', text: string, type: string, subtype: string }>, children: Array<{ __typename?: 'Node', id: number, text: string, isMultinuclear: boolean, relation?: { __typename?: 'Relation', name: string, type: string } | null, signals: Array<{ __typename?: 'Signal', text: string, type: string, subtype: string }>, children: Array<{ __typename?: 'Node', id: number, text: string, isMultinuclear: boolean, relation?: { __typename?: 'Relation', name: string, type: string } | null, signals: Array<{ __typename?: 'Signal', text: string, type: string, subtype: string }>, children: Array<{ __typename?: 'Node', id: number, text: string, isMultinuclear: boolean, relation?: { __typename?: 'Relation', name: string, type: string } | null, signals: Array<{ __typename?: 'Signal', text: string, type: string, subtype: string }> }> }> }> }> }> } }> };
 
 
       export interface PossibleTypesResultData {

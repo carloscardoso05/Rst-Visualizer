@@ -1,0 +1,81 @@
+<div class="tree-visualization-container">
+  @if (loading()) {
+    <div class="flex justify-center items-center h-64">
+      <span class="loading loading-spinner loading-lg"></span>
+      <span class="ml-2">Carregando árvore RST...</span>
+    </div>
+  } @else if (error()) {
+    <div class="alert alert-error">
+      <span>Erro ao carregar a árvore: {{ error()?.message }}</span>
+    </div>
+  } @else {
+    <div class="tree-controls mb-4 p-4 bg-gray-50 rounded-lg border">
+      <div class="flex flex-wrap gap-6 items-center text-sm">
+        <div class="flex items-center gap-2">
+          <span class="font-semibold text-gray-700">Legenda:</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-6 h-6 rounded-full bg-blue-500 border-2 border-white"></div>
+          <span>Relação Multinuclear</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-4 h-4 rounded-full bg-green-500 border-2 border-white"></div>
+          <span>Relação Mononuclear</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-3 h-0.5 bg-gray-400"></div>
+          <span>Conexões hierárquicas</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="tree-container" 
+         style="width: 100%; height: 1000px; border: 1px solid #e5e7eb; background: white; border-radius: 8px;"
+         role="application"
+         aria-label="Visualização em árvore da estrutura retórica do documento"
+         aria-describedby="tree-instructions">
+      <!-- D3.js tree will be rendered here -->
+    </div>
+    
+    <div id="tree-instructions" class="tree-info mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200 text-sm text-blue-800">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <div class="font-semibold mb-2">Controles do Mouse:</div>
+          <div class="space-y-1">
+            <p>• <strong>Arrastar:</strong> Mover a visualização</p>
+            <p>• <strong>Scroll/Zoom:</strong> Aumentar/diminuir</p>
+            <p>• <strong>Hover:</strong> Informações detalhadas</p>
+            <p>• <strong>Clique:</strong> Destacar relação</p>
+          </div>
+        </div>
+        <div>
+          <div class="font-semibold mb-2">Navegação por Teclado:</div>
+          <div class="space-y-1">
+            <p>• <strong>Setas:</strong> Navegar entre nós</p>
+            <p>• <strong>Enter/Espaço:</strong> Selecionar nó</p>
+            <p>• <strong>Home/End:</strong> Primeiro/último nó</p>
+            <p>• <strong>Esc:</strong> Limpar seleção</p>
+          </div>
+        </div>
+      </div>
+      @if (treeData()) {
+        <div class="mt-2 pt-2 border-t border-blue-200">
+          <span class="font-semibold">Estrutura:</span> 
+          {{ getNodeCount() }} nós total | 
+          Raiz: {{ treeData()!.text.substring(0, 80) }}...
+        </div>
+        @if (selectedNodeId() && highlightedRelation()) {
+          <div class="mt-2 pt-2 border-t border-blue-300 bg-blue-100 rounded px-2 py-1">
+            <span class="font-semibold text-blue-900">Relação Selecionada:</span> 
+            <span class="text-blue-700">{{ highlightedRelation() }}</span>
+            <button 
+              class="ml-2 text-xs bg-blue-200 hover:bg-blue-300 px-2 py-1 rounded"
+              (click)="clearSelection()">
+              Limpar
+            </button>
+          </div>
+        }
+      }
+    </div>
+  }
+</div>

@@ -1,0 +1,115 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.tree-visualization-container {
+  width: 100%;
+  height: 100%;
+}
+
+.tree-container {
+  width: 100%;
+  height: 1000px; /* Increased height for longer text */
+  position: relative;
+  overflow: visible;
+}
+
+/* Make sure SVG is visible */
+.tree-container svg {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Simple D3.js styles with high specificity */
+:host ::ng-deep svg .link {
+  fill: none !important;
+  stroke: #666 !important;
+  stroke-width: 2px !important;
+}
+
+:host ::ng-deep svg .node circle {
+  cursor: pointer !important;
+  stroke: #fff !important;
+  stroke-width: 3px !important;
+}
+
+:host ::ng-deep svg .node-text {
+  font-family: Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
+  fill: #333 !important;
+  max-width: 200px !important; /* Allow wider text */
+}
+
+/* Add text wrapping for longer text */
+:host ::ng-deep svg .node text {
+  font-family: Arial, sans-serif !important;
+  font-size: 12px !important;
+  fill: #333 !important;
+  dominant-baseline: central !important;
+  text-anchor: start !important;
+}
+
+:host ::ng-deep svg .node text.relation-text {
+  font-style: italic !important;
+  font-size: 10px !important;
+  fill: #666 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tree-container {
+    height: 400px;
+  }
+  
+  :host ::ng-deep .node-text {
+    font-size: 10px;
+  }
+  
+  :host ::ng-deep .relation-text {
+    font-size: 8px;
+  }
+}
+
+/* Loading and error states */
+.alert {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.alert-error {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+}
+
+/* Zoom controls could be added here if needed */
+.zoom-controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.zoom-btn {
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.zoom-btn:hover {
+  background: #f0f0f0;
+}

@@ -90,6 +90,12 @@
         [innerHTML]="document()!.formattedText ?? 'Text não encontrado' | safeHtml">
       </div>
     </div>
+    <input type="radio" name="document-tabs" class="tab" aria-label="Árvore" />
+    <div class="tab-content mx-10">
+      <app-rst-tree-visualization 
+        [document]="document()">
+      </app-rst-tree-visualization>
+    </div>
   </div>
 </div>
 } @else {

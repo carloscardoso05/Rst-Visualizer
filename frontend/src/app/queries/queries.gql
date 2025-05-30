@@ -55,7 +55,6 @@ query DocumentPageQuery($id: Int!) {
   }
 }
 
-
 query RelationsData {
   documents {
     id
@@ -82,6 +81,88 @@ query RelationsData {
         text
         type
         subtype
+      }
+    }
+  }
+}
+
+query DocumentTreeQuery($id: Int!) {
+  documents(id: $id) {
+    id
+    name
+    root {
+      id
+      text
+      isMultinuclear
+      children {
+        id
+        text
+        isMultinuclear
+        relation {
+          name
+          type
+        }
+        signals {
+          text
+          type
+          subtype
+        }
+        children {
+          id
+          text
+          isMultinuclear
+          relation {
+            name
+            type
+          }
+          signals {
+            text
+            type
+            subtype
+          }
+          children {
+            id
+            text
+            isMultinuclear
+            relation {
+              name
+              type
+            }
+            signals {
+              text
+              type
+              subtype
+            }
+            children {
+              id
+              text
+              isMultinuclear
+              relation {
+                name
+                type
+              }
+              signals {
+                text
+                type
+                subtype
+              }
+              children {
+                id
+                text
+                isMultinuclear
+                relation {
+                  name
+                  type
+                }
+                signals {
+                  text
+                  type
+                  subtype
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

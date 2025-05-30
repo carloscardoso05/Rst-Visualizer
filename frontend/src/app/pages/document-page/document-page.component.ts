@@ -5,12 +5,13 @@ import {
   DocumentPageQueryQuery,
 } from '../../../generated/graphql';
 import { SafeHtmlPipe } from '../../safe-html/safe-html.pipe';
+import { RstTreeVisualizationComponent } from '../../components/rst-tree-visualization/rst-tree-visualization.component';
 import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-document-page',
   standalone: true,
-  imports: [RouterModule, SafeHtmlPipe],
+  imports: [RouterModule, SafeHtmlPipe, RstTreeVisualizationComponent],
   templateUrl: './document-page.component.html',
   styleUrl: './document-page.component.css',
 })

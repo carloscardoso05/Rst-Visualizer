@@ -87,3 +87,14 @@ query RelationsData {
   }
 }
 
+query AllNodes($id: Int!) {
+  documents(id: $id) {
+    nodes {
+      id
+      text
+    	parent {
+        id
+      }
+    }
+  }
+}

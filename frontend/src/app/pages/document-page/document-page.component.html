@@ -33,7 +33,7 @@
                   {{relation.relation?.name}}
                 </span>
                 <span>{{relation.text}}</span>
-                
+
                 @if (relation.signals.length > 0) {
                 <div class="flex flex-wrap gap-1 mt-1">
                   @for (signal of relation.signals; track signal.text) {
@@ -88,6 +88,12 @@
     <div class="tab-content mx-10">
       <div [attr.data-document-id]="document()!.id"
         [innerHTML]="document()!.formattedText ?? 'Text não encontrado' | safeHtml">
+      </div>
+    </div>
+    <input type="radio" name="document-tabs" class="tab" aria-label="Árvore" />
+    <div class="tab-content mx-10">
+      <div [attr.data-document-id]="document()!.id">
+        <app-nodes-tree />
       </div>
     </div>
   </div>

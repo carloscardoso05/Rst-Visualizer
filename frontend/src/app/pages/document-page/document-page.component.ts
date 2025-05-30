@@ -1,16 +1,17 @@
-import { AfterRenderRef, AfterViewInit, Component, effect, ElementRef, inject, OnDestroy, OnInit, signal, viewChild, viewChildren } from '@angular/core';
+import { Component, inject, OnDestroy, OnInit, signal } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
+import { Subscription } from 'rxjs';
 import {
   DocumentPageQueryGQL,
   DocumentPageQueryQuery,
 } from '../../../generated/graphql';
 import { SafeHtmlPipe } from '../../safe-html/safe-html.pipe';
-import { Subscription } from 'rxjs';
+import { NodesTreeComponent } from '../../components/nodes-tree/nodes-tree.component';
 
 @Component({
   selector: 'app-document-page',
   standalone: true,
-  imports: [RouterModule, SafeHtmlPipe],
+  imports: [RouterModule, SafeHtmlPipe, NodesTreeComponent],
   templateUrl: './document-page.component.html',
   styleUrl: './document-page.component.css',
 })

@@ -144,6 +144,30 @@ export const RelationsDataDocument = gql`
       super(apollo);
     }
   }
+export const AllNodesDocument = gql`
+    query AllNodes($id: Int!) {
+  documents(id: $id) {
+    nodes {
+      id
+      text
+      parent {
+        id
+      }
+    }
+  }
+}
+    `;
+
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class AllNodesGQL extends Apollo.Query<AllNodesQuery, AllNodesQueryVariables> {
+    document = AllNodesDocument;
+    
+    constructor(apollo: Apollo.Apollo) {
+      super(apollo);
+    }
+  }
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
   ID: { input: string; output: string; }
@@ -270,6 +294,13 @@ export type RelationsDataQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type RelationsDataQuery = { __typename?: 'Query', documents: Array<{ __typename?: 'RS3Document', id: number, name: string, intraSententialRelations: Array<{ __typename?: 'Node', id: number, text: string, tokensIds: Array<{ __typename?: 'TokenId', id: number, token: string }>, parent?: { __typename?: 'Node', id: number, text: string, tokensIds: Array<{ __typename?: 'TokenId', id: number, token: string }> } | null, relation?: { __typename?: 'Relation', name: string } | null, signals: Array<{ __typename?: 'Signal', text: string, type: string, subtype: string }> }> }> };
+
+export type AllNodesQueryVariables = Exact<{
+  id: Scalars['Int']['input'];
+}>;
+
+
+export type AllNodesQuery = { __typename?: 'Query', documents: Array<{ __typename?: 'RS3Document', nodes: Array<{ __typename?: 'Node', id: number, text: string, parent?: { __typename?: 'Node', id: number } | null }> }> };
 
 
       export interface PossibleTypesResultData {

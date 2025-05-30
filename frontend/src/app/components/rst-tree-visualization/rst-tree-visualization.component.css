@@ -35,12 +35,19 @@
   stroke-width: 3px !important;
 }
 
-:host ::ng-deep svg .node-text {
+/* Node text styling with better support for longer text */
+:host ::ng-deep svg .node-text,
+:host ::ng-deep svg .node-text-line {
   font-family: Arial, sans-serif !important;
-  font-size: 13px !important;
-  font-weight: bold !important;
+  font-size: 12px !important;
+  font-weight: normal !important;
   fill: #333 !important;
-  max-width: 200px !important; /* Allow wider text */
+  max-width: 250px !important; /* Increased max width for longer text */
+  pointer-events: none !important;
+}
+
+:host ::ng-deep svg .node-text-line {
+  font-size: 11px !important; /* Slightly smaller for multi-line text */
 }
 
 /* Add text wrapping for longer text */

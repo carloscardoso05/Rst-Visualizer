@@ -205,13 +205,39 @@ export class RstTreeVisualizationComponent implements OnInit, AfterViewInit {
     console.log('Cleared previous tree content');
 
     try {
-      // Create VERTICAL tree layout (adapted for tree size)
+      // Create VERTICAL tree layout (adapted for tree size and text length)
       const nodeCount = this.getNodeCount();
       const isLargeTree = this.shouldOptimizeForLargeTree();
       const treeHeight = isLargeTree ? Math.max(this.height - 100, nodeCount * 15) : this.height - 100;
       
+      // Calculate dynamic spacing based on text length
+      const avgTextLength = this.calculateAverageTextLength(treeData);
+      console.log('Average text length for spacing calculation:', avgTextLength);
+      
+      // Calculate horizontal spacing based on text length
+      // Base spacing of 120px, plus additional space for longer text
+      const baseHorizontalSpacing = 120;
+      const textBasedSpacing = Math.max(20, avgTextLength * 2.5); // 2.5px per character
+      const horizontalSpacing = baseHorizontalSpacing + textBasedSpacing;
+      
+      // Vertical spacing remains consistent
+      const verticalSpacing = 90;
+      
+      // Calculate dynamic canvas width to accommodate spacing
+      const estimatedWidth = Math.max(this.width, nodeCount * horizontalSpacing * 0.5);
+      
+      console.log('Dynamic spacing calculated:', {
+        avgTextLength,
+        horizontalSpacing,
+        verticalSpacing,
+        estimatedWidth,
+        nodeCount: nodeCount,
+        treeOptimized: isLargeTree
+      });
+      
       const treeLayout = d3.tree<TreeNode>()
-        .size([this.width, treeHeight]); // Adaptive height for large trees
+        .size([estimatedWidth, treeHeight])
+        .nodeSize([horizontalSpacing, verticalSpacing]); // Dynamic node spacing
 
       // Create hierarchy from tree data
       const root = d3.hierarchy(treeData);
@@ -225,6 +251,9 @@ export class RstTreeVisualizationComponent implements OnInit, AfterViewInit {
       const nodes = treeWithPositions.descendants();
       this.allNodes = nodes; // Store for keyboard navigation
       console.log('Tree nodes:', nodes.map(n => ({ id: n.data.id, x: n.x, y: n.y })));
+
+      // Adjust canvas size based on actual tree dimensions
+      this.adjustCanvasSize(nodes);
 
       // Create links (connections between nodes) - VERTICAL orientation
       if (nodes.length > 1) {
@@ -273,14 +302,61 @@ export class RstTreeVisualizationComponent implements OnInit, AfterViewInit {
         .style('cursor', 'pointer');
 
       // Add text labels with PROPER TEXT (not just "Node ID")
-      nodeGroups.append('text')
-        .attr('dy', '0.35em')
-        .attr('x', d => d.children ? -15 : 15)
-        .style('text-anchor', d => d.children ? 'end' : 'start')
-        .text(d => this.truncateText(d.data.text, this.getOptimizedTextLength())) // Optimized text length
-        .style('font-size', '12px')
-        .style('fill', '#333')
-        .style('font-weight', 'normal');
+      const that = this; // Capture reference for use in nested functions
+      const textGroups = nodeGroups.append('g')
+        .attr('class', 'text-group');
+
+      // Handle text with potential wrapping
+      textGroups.each(function(d) {
+        const textElement = d3.select(this);
+        const fullText = d.data.text;
+        const optimizedLength = that.getOptimizedTextLength();
+        const truncatedText = that.truncateText(fullText, optimizedLength);
+        
+        // Decide whether to use multi-line text
+        const shouldWrap = truncatedText.length > 40 && that.getNodeCount() < 30; // Only wrap for smaller trees
+        
+        // Log text processing stats for the first few nodes
+        if (d.data.id <= 3) {
+          console.log(`Node ${d.data.id} text processing:`, {
+            originalLength: fullText.length,
+            truncatedLength: truncatedText.length,
+            optimizedLength,
+            shouldWrap,
+            isLargeTree: that.shouldOptimizeForLargeTree()
+          });
+        }
+        
+        if (shouldWrap) {
+          // Multi-line text
+          const wrappedLines = that.wrapText(truncatedText, 25);
+          const lineHeight = 14;
+          const startY = -(wrappedLines.length - 1) * lineHeight / 2;
+          
+          wrappedLines.forEach((line, index) => {
+            textElement.append('text')
+              .attr('dy', startY + (index * lineHeight))
+              .attr('x', d.children ? -20 : 20)
+              .style('text-anchor', d.children ? 'end' : 'start')
+              .text(line)
+              .style('font-size', '11px')
+              .style('fill', '#333')
+              .style('font-weight', 'normal')
+              .attr('class', 'node-text-line');
+          });
+        } else {
+          // Single line text
+          textElement.append('text')
+            .attr('dy', '0.35em')
+            .attr('x', d.children ? -15 : 15)
+            .style('text-anchor', d.children ? 'end' : 'start')
+            .text(truncatedText)
+            .style('font-size', '12px')
+            .style('fill', '#333')
+            .style('font-weight', 'normal')
+            .attr('class', 'node-text');
+        }
+      });
 
       // Add relation labels for nodes that have them
       nodeGroups.filter(d => !!d.data.relationName)
@@ -339,6 +415,9 @@ export class RstTreeVisualizationComponent implements OnInit, AfterViewInit {
 
       // Store all nodes for keyboard navigation
       this.allNodes = nodes;
+
+      // Adjust canvas size based on actual tree dimensions
+      this.adjustCanvasSize(nodes);
 
     } catch (error) {
       console.error('Error rendering tree:', error);
@@ -601,5 +680,96 @@ export class RstTreeVisualizationComponent implements OnInit, AfterViewInit {
     setTimeout(() => {
       document.body.removeChild(announcement);
     }, 1000);
+  }
+
+  private calculateAverageTextLength(node: TreeNode): number {
+    const textLengths: number[] = [];
+    
+    const collectTextLengths = (n: TreeNode) => {
+      if (n.text) {
+        const displayLength = Math.min(n.text.length, this.getOptimizedTextLength());
+        textLengths.push(displayLength);
+      }
+      if (n.children) {
+        n.children.forEach(child => collectTextLengths(child));
+      }
+    };
+    
+    collectTextLengths(node);
+    
+    if (textLengths.length === 0) return 50; // Default fallback
+    
+    const average = textLengths.reduce((sum, len) => sum + len, 0) / textLengths.length;
+    return Math.max(50, Math.min(150, average)); // Keep within reasonable bounds
+  }
+
+  private wrapText(text: string, maxCharsPerLine: number = 30): string[] {
+    if (text.length <= maxCharsPerLine) {
+      return [text];
+    }
+    
+    const words = text.split(' ');
+    const lines: string[] = [];
+    let currentLine = '';
+    
+    for (const word of words) {
+      if ((currentLine + ' ' + word).length <= maxCharsPerLine) {
+        currentLine = currentLine ? currentLine + ' ' + word : word;
+      } else {
+        if (currentLine) {
+          lines.push(currentLine);
+          currentLine = word;
+        } else {
+          // Word is too long, split it
+          lines.push(word.substring(0, maxCharsPerLine));
+          currentLine = word.substring(maxCharsPerLine);
+        }
+      }
+    }
+    
+    if (currentLine) {
+      lines.push(currentLine);
+    }
+    
+    return lines.slice(0, 3); // Limit to 3 lines maximum
+  }
+
+  private adjustCanvasSize(nodes: any[]): void {
+    if (nodes.length === 0) return;
+    
+    // Calculate actual bounds of the tree
+    const xValues = nodes.map(n => n.x || 0);
+    const yValues = nodes.map(n => n.y || 0);
+    
+    const minX = Math.min(...xValues);
+    const maxX = Math.max(...xValues);
+    const minY = Math.min(...yValues);
+    const maxY = Math.max(...yValues);
+    
+    const padding = 100; // Extra padding around content
+    const contentWidth = maxX - minX + (2 * padding);
+    const contentHeight = maxY - minY + (2 * padding);
+    
+    // Update canvas size if content is larger than current size
+    const currentWidth = this.width + this.margin.left + this.margin.right;
+    const currentHeight = this.height + this.margin.top + this.margin.bottom;
+    
+    if (contentWidth > currentWidth || contentHeight > currentHeight) {
+      const newWidth = Math.max(currentWidth, contentWidth);
+      const newHeight = Math.max(currentHeight, contentHeight);
+      
+      console.log('Adjusting canvas size:', {
+        current: { width: currentWidth, height: currentHeight },
+        content: { width: contentWidth, height: contentHeight },
+        new: { width: newWidth, height: newHeight }
+      });
+      
+      // Update SVG size
+      if (this.svg) {
+        this.svg
+          .attr('width', newWidth)
+          .attr('height', newHeight);
+      }
+    }
   }
 }

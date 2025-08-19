@@ -20,7 +20,7 @@ O **RST Visualizer** é uma aplicação web completa para análise e visualizaç
 
 Antes de começar, certifique-se de ter instalado:
 
-1. **Node.js 18 ou superior**
+1. **Node.js 20 ou superior**
 
    - Acesse [nodejs.org](https://nodejs.org/)
    - Baixe e instale a versão LTS recomendada

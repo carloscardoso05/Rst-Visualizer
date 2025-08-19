@@ -51,7 +51,7 @@ O projeto já vem configurado com vários arquivos `.rs3` dentro da pasta `backe
     Caso queria cloná-lo, execute:
 
    ```bash
-   git clone git@github.com:carloscardoso05/Rst-Visualizer.git
+   git clone https://github.com/carloscardoso05/Rst-Visualizer.git
    cd Rst-Visualizer
    ```
 

@@ -11,12 +11,10 @@ O **RST Visualizer** é uma aplicação web completa para análise e visualizaç
 
 ### Funcionalidades principais:
 
-- Visualizar documentos RST em uma interface web moderna
-- Navegar pela estrutura hierárquica dos documentos
-- Analisar relações retóricas intrasentenciais
-- Filtrar relações por tipo, subtipo e sinalizadores
+- Visualizar documentos RST em uma interface web
+- Visualizar relações intra-sentenciais em documentos anotados com a RST
 - Buscar documentos por nome
-- Visualizar estatísticas de uso das relações
+- Buscar relações por tipo e subtipo de sinalizadores e nome do documento
 
 ## Pré-requisitos
 
@@ -28,9 +26,9 @@ Antes de começar, certifique-se de ter instalado:
    - Baixe e instale a versão LTS recomendada
    - Durante a instalação, marque "Add to PATH" no Windows
 
-2. **npm ou yarn** (geralmente vem com o Node.js)
+2. **npm** (geralmente já vem com o Node.js)
 
-3. **Git** (opcional, para clonar o repositório)
+3. **Git** (opcional; necessário apenas se quiser clonar o repositório)
 
 ## Como usar este programa
 
@@ -57,69 +55,39 @@ O projeto já vem configurado com vários arquivos `.rs3` dentro da pasta `backe
    cd Rst-Visualizer
    ```
 
-2. **Instale as dependências do backend**
+2. **Instale as dependências**
 
    ```bash
-   cd backend
    npm install
-   ```
-
-3. **Instale as dependências do frontend**
-
-   ```bash
-   cd ../frontend
-   npm install
-   ```
-
-4. **Volte para a pasta raiz**
-   ```bash
-   cd ..
    ```
 
 ### Passo 3: Executar o programa
 
-1. **Abra dois terminais** (ou use abas diferentes)
-
-2. **No primeiro terminal, inicie o backend:**
+1. **Inicie o front-end e o back-end:**
 
    ```bash
-   cd backend
-   npm run start:dev
+   npm run start
    ```
 
-   Aguarde até aparecer a mensagem indicando que o servidor está rodando na porta 3000.
-
-3. **No segundo terminal, inicie o frontend:**
-
-   ```bash
-   cd frontend
-   npm start
-   ```
-
-   Aguarde até aparecer a mensagem indicando que o servidor está rodando na porta 4200.
-
-4. **Abra o navegador** e acesse: [http://localhost:4200](http://localhost:4200)
+2. **Abra o navegador** e acesse: [http://localhost:4200](http://localhost:4200)
 
 ### Passo 4: Usar a aplicação
 
 #### Página inicial
 
-- Visualize todos os documentos RST disponíveis
-- Use a barra de busca na lateral para encontrar documentos específicos
-- Clique em "Ver documento" para abrir a visualização detalhada
+- Visualize todos os documentos RST disponíveis.
+- Use a barra de busca na lateral para encontrar documentos específicos.
+- Clique em "Ver documento" no card ou no nome do documento na barra lateral para abrir a visualização detalhada.
 
-#### Visualização de documentos
+#### Barra lateral
+A barra lateral permite duas formas de pesquisa:
 
-- Veja a estrutura hierárquica do documento em formato de árvore
-- Navegue pelas relações retóricas
-- Visualize o texto completo com as divisões estruturais
+##### Pesquisa de documentos
+Você pode digitar na barra de pesquisa para filtrar os documentos por nome.
 
-#### Análise de relações
+##### Pesquisa de relações
+Você pode pesquisar todas as relações encontradas e filtrá-las por tipo e subtipo de sinalizadores, se desejar, e até por nome do arquivo.
 
-- Acesse a seção "Relações" na barra lateral
-- Filtre por tipo de relação (elaboration, contrast, attribution, etc.)
-- Filtre por tipo de sinalizador
-- Veja estatísticas de uso das relações
 
 ## Estrutura do projeto
 

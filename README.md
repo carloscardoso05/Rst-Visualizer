@@ -2,12 +2,7 @@
 
 ## O que o programa faz
 
-O **RST Visualizer** é uma aplicação web completa para análise e visualização de documentos RST (Rhetorical Structure Theory). O sistema possui duas partes principais:
-
-- **Interface web interativa** para navegar e visualizar documentos RST
-- **Análise de relações retóricas** com contagem e filtragem por tipos
-- **Visualização em árvore** das estruturas RST dos documentos
-- **Busca e filtragem** de documentos e relações
+O **RST Visualizer** é uma aplicação web completa para análise e visualização de documentos RST (Rhetorical Structure Theory).
 
 ### Funcionalidades principais:
 

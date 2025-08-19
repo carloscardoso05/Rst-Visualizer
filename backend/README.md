@@ -1,23 +1,137 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# RST Processing API
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+API NestJS em TypeScript para processar arquivos RST (Rhetorical Structure Theory) em formato .rs3.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
+## Descrição
+
+Esta aplicação converte o código Python original para TypeScript/NestJS, mantendo toda a funcionalidade de:
+- Processamento de arquivos .rs3 (XML)
+- Análise de relações intra-sentenciais em documentos RST
+- Geração de relatórios em Excel com contagens de relações
+- API REST para integração com outras aplicações
+
+## Funcionalidades
+
+- **Processamento em lote**: Processa todos os arquivos .rs3 em um diretório
+- **Análise RST**: Identifica e conta relações intra-sentenciais
+- **Geração de relatórios**: Cria arquivos Excel com resultados
+- **API REST**: Endpoints para processamento e download de resultados
+- **Validação de tipos**: TypeScript estrito sem uso de `any`
+
+## Instalação
+
+```bash
+$ npm install
+```
+
+## Executando a aplicação
+
+```bash
+# development
+$ npm run start
+
+# watch mode
+$ npm run start:dev
+
+# production mode
+$ npm run start:prod
+```
+
+## API Endpoints
+
+### `GET /rst/status`
+Verifica o status do serviço.
+
+### `POST /rst/process`
+Processa um diretório e retorna resultados em JSON.
+
+**Body:**
+```json
+{
+  "directoryPath": "/caminho/para/diretorio/com/arquivos/rs3"
+}
+```
+
+### `POST /rst/process-and-download`
+Processa um diretório e baixa o arquivo Excel gerado.
+
+**Body:**
+```json
+{
+  "directoryPath": "/caminho/para/diretorio/com/arquivos/rs3"
+}
+```
+
+### `GET /rst/sample-directory`
+Retorna documentação e exemplos de uso da API.
+
+## Estrutura do Projeto
+
+```
+src/
+├── controllers/          # Controllers da API REST
+│   └── rst.controller.ts
+├── models/              # Modelos de dados TypeScript
+│   ├── relation.model.ts
+│   ├── node.model.ts
+│   ├── signal.model.ts
+│   ├── rst.model.ts
+│   └── index.ts
+├── services/            # Lógica de negócio
+│   └── rst-processing.service.ts
+├── utils/               # Utilitários
+│   └── file-utils.ts
+├── app.module.ts        # Módulo principal
+└── main.ts             # Ponto de entrada
+```
+
+## Modelos de Dados
+
+- **Relation**: Tipos de relações RST
+- **Node**: Classe abstrata para nós da árvore RST
+- **Group**: Nós agrupadores na árvore
+- **Segment**: Nós folha com texto
+- **Signal**: Marcadores/sinalizadores RST
+- **Rst**: Documento RST completo
+
+## Testes
+
+```bash
+# unit tests
+$ npm run test
+
+# e2e tests
+$ npm run test:e2e
+
+# test coverage
+$ npm run test:cov
+```
+
+## Tecnologias Utilizadas
+
+- **NestJS**: Framework Node.js
+- **TypeScript**: Linguagem de programação
+- **xml2js**: Parser XML
+- **xlsx**: Geração de arquivos Excel
+- **class-validator**: Validação de dados
+- **class-transformer**: Transformação de objetos
+
+## Comparação com Python Original
+
+Esta implementação mantém toda a funcionalidade do código Python original:
+
+| Funcionalidade | Python | TypeScript/NestJS |
+|---|---|---|
+| Parsing XML | xmltodict | xml2js |
+| Geração Excel | pandas + openpyxl | xlsx |
+| Progresso | tqdm | console.log customizado |
+| Encoding | chardet | Detecção customizada |
+| Validação | Pydantic | class-validator |
+| API | - | NestJS REST API |
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 

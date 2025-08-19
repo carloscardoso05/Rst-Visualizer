@@ -1,0 +1,95 @@
+query DocumentsInfo($limitWords: Int) {
+  rst {
+    id
+    name
+    text(limitWords: $limitWords)
+  }
+}
+
+query DocumentDetails($documentId: Int) {
+  rst(id: $documentId) {
+    id
+    name
+    nodesIdsWithIntraSententialRelations
+    fontText
+    segments {
+      id
+      parentId
+      order
+      tokensById {
+        id
+        token
+      }
+      relation {
+        name
+        type
+      }
+      signals {
+        id
+        type
+        subtype
+        tokensIndexes
+      }
+    }
+    groups {
+      id
+      parentId
+      order
+      tokensById {
+        id
+        token
+      }
+      relation {
+        name
+        type
+      }
+      signals {
+        id
+        type
+        subtype
+        tokensIndexes
+      }
+    }
+  }
+}
+
+query RelationsBySignals{
+  rst {
+    id
+    name
+    segments(intraSententialRelation: true) {
+      id
+      tokensById {
+        id
+        token
+      }
+      relation {
+        name
+        type
+      }
+      signals {
+        id
+        type
+        subtype
+        tokensIndexes
+      }
+    }
+    groups(intraSententialRelation: true) {
+      id
+      tokensById {
+        id
+        token
+      }
+      relation {
+        name
+        type
+      }
+      signals {
+        id
+        type
+        subtype
+        tokensIndexes
+      }
+    }
+  }
+}

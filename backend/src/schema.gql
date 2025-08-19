@@ -5,29 +5,47 @@
 type Relation {
   name: String!
   type: String!
-  nodes: [Node!]!
-}
-
-type Node {
-  initialTokenId: Int!
-  tokensIds: [TokenId!]!
-  id: Int!
-  parent: Node
-  relation: Relation
-  signals: [Signal!]!
-  children: [Node!]!
-  isMultinuclear: Boolean!
-  text: String!
 }
 
 type Signal {
-  id: Int!
-  source: Node!
+  id: Float!
+  sourceNodeId: Float!
   type: String!
   subtype: String!
-  tokensIds: [Int!]!
-  tokens: [String!]!
-  text: String!
+  tokensIndexes: [Int!]!
+}
+
+type Segment {
+  id: Float!
+  relation: Relation
+  parentId: Int
+  signals: [Signal!]!
+  order: Int!
+  innerText: String!
+  sentenceId: Int!
+  initialTokenId: Int!
+  tokensById: [TokenId!]!
+}
+
+type Group {
+  id: Float!
+  relation: Relation
+  parentId: Int
+  signals: [Signal!]!
+  type: String!
+  order: Int!
+  tokensById: [TokenId!]!
+}
+
+type Rst {
+  id: Float!
+  name: String!
+  code: String!
+  segments(intraSententialRelation: Boolean! = false, type: String, subtype: String, id: Int): [Segment!]!
+  groups(intraSententialRelation: Boolean! = false, type: String, subtype: String, id: Int): [Group!]!
+  text(limitWords: Int): String!
+  nodesIdsWithIntraSententialRelations: [Int!]!
+  fontText: String!
 }
 
 type TokenId {
@@ -35,50 +53,6 @@ type TokenId {
   token: String!
 }
 
-type Group {
-  initialTokenId: Int!
-  tokensIds: [TokenId!]!
-  id: Int!
-  parent: Node
-  relation: Relation
-  signals: [Signal!]!
-  children: [Node!]!
-  isMultinuclear: Boolean!
-  text: String!
-  type: String!
-}
-
-type Segment {
-  initialTokenId: Int!
-  tokensIds: [TokenId!]!
-  id: Int!
-  parent: Node
-  relation: Relation
-  signals: [Signal!]!
-  children: [Node!]!
-  isMultinuclear: Boolean!
-  text: String!
-  order: Int!
-  innerText: String!
-  innterTokensIds: [TokenId!]!
-  sentenceId: Int!
-}
-
-type RS3Document {
-  id: Int!
-  code: String!
-  name: String!
-  path: String!
-  relations: [Relation!]!
-  segments: [Segment!]!
-  groups: [Group!]!
-  signals: [Signal!]!
-  nodes: [Node!]!
-  root: Node!
-  intraSententialRelations: [Node!]!
-  formattedText: String
-}
-
 type Query {
-  documents(code: String, name: String, id: Int): [RS3Document!]!
+  rst(id: Int, code: String): [Rst!]!
 }

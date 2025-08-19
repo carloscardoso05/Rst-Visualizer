@@ -5,7 +5,7 @@
   "compilerOptions": {
     "deleteOutDir": true,
     "assets": [
-      "documents/**/*"
+      "assets/**/*"
     ]
   }
 }

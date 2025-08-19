@@ -1,0 +1,121 @@
+<main class="flex flex-row">
+    <div id="sidebar" class="border-accent min-h-screen w-sm shrink-0 border-r">
+        <div class="tabs tabs-border p-2">
+            <input [(ngModel)]="showDocumentosTab" [value]="true" name="pesquisa" type="radio" class="tab"
+                aria-label="Pesquisar documentos" checked />
+            <div class="tab-content space-y-1">
+                <fieldset class="fieldset tab-content">
+                    <legend class="fieldset-legend">Pesquisar documento</legend>
+                    <input type="text" class="input" placeholder="Nome do documento" [(ngModel)]="search" />
+                </fieldset>
+                @if (documentsResult() === undefined) {
+                <span class="loading loading-spinner loading-xl"></span>
+                } @else if (searchedDocuments().length === 0) {
+                <p>Nenhum documento encontrado</p>
+                }
+                @for (document of searchedDocuments(); track $index) {
+                <a class="tooltip tooltip-right hover:bg-neutral/5 block cursor-pointer rounded p-1 duration-100 hover:shadow-sm"
+                    [routerLink]="['/documents', document.id]">
+                    <p class="tooltip-content">{{ document.name }}</p>
+                    <div class="truncate">{{ document.name }}</div>
+                </a>
+                }
+            </div>
+            <input [(ngModel)]="showDocumentosTab" [value]="false" name="pesquisa" type="radio" class="tab"
+                aria-label="Pesquisar relações" />
+            <div class="tab-content">
+                <fieldset class="fieldset tab-content">
+                    <legend class="fieldset-legend">Pesquisar documento</legend>
+                    <input type="text" class="input" placeholder="Nome do documento" [(ngModel)]="search" />
+                </fieldset>
+                <fieldset class="fieldset bg-base-200 border-base-300 rounded-box border p-3">
+                    <legend class="fieldset-legend">Pesquisa por sinalizadores</legend>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="join join-horizontal">
+                            <select [(ngModel)]="signalType" class="select join-item">
+                                @for (type of types(); track $index) {
+                                <option [value]="type">{{type}}</option>
+                                }
+                            </select>
+                            <button (click)="clearType()" type="button" class="join-item btn h-full w-2"><i-lucide
+                                    size="20" [img]="XIcon"></i-lucide></button>
+                        </div>
+
+                        <div class="join join-horizontal">
+                            <select [(ngModel)]="signalSubtype" [disabled]="signalType().length === 0"
+                                class="select join-item">
+                                @for (subtype of subtypes(); track $index) {
+                                <option [value]="subtype">{{subtype}}</option>
+                                }
+                            </select>
+                            <button (click)="clearSubtype()" [disabled]="signalType().length === 0" type="button"
+                                class="join-item btn h-full w-2"><i-lucide size="20" [img]="XIcon"></i-lucide></button>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <div class="flex grow flex-wrap justify-evenly">
+        @if(showDocumentosTab()) {
+        @if (documentsResult() === undefined) {
+        <span class="loading loading-spinner loading-xl"></span>
+        } @else if (searchedDocuments().length === 0) {
+        <p class="text-center">Nenhum documento encontrado</p>
+        }
+        @for (document of searchedDocuments(); track $index) {
+        <div class="card border-base-300 m-2 w-md shrink-0 border shadow">
+            <div class="card-body">
+                <h2 class="card-title wrap-anywhere">
+                    {{ document.name }}
+                </h2>
+                <p>
+                    {{ document.text }}
+                </p>
+                <div class="card-actions">
+                    <a [routerLink]="['/documents', document.id]" class="btn btn-primary">Ver documento</a>
+                </div>
+            </div>
+        </div>
+        }
+        } @else {
+        @if(relationsResult() === undefined) {
+        <span class="loading loading-spinner loading-xl"></span>
+        } @else {
+        <div class="flex flex-col items-center">
+            <div class="flex flex-row flex-wrap justify-evenly">
+                @for (relation of relations().slice(0, maxItems()); track $index) {
+                <div class="card border-base-300 m-2 w-md shrink-0 border shadow">
+                    <div class="card-body">
+                        <h2 class="card-title wrap-anywhere">{{ relation.document }}</h2>
+                        <p>{{ relation.text }}</p>
+                        <h3 class="font-semibold">Relação: <span class="badge badge-soft badge-primary">{{relation.relationName}}</span></h3>
+                        @if (relation.signals.length > 0) {
+                        <div>
+                            <h3 class="font-semibold">Sinalizadores:</h3>
+                            @for (signal of relation.signals; track $index) {
+                            <div class="flex">
+                                <span class="mr-2">{{ signal.type }}:{{ signal.subtype }}</span>
+                                <div class="space-x-1">
+                                    @for (token of signal.tokens; track $index) {
+                                    <span class="badge badge-soft">{{token}}</span>
+                                    }
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        }
+                        <div class="card-actions">
+                            <a [routerLink]="['documents', relation.documentId,'relations', relation.id]"
+                                class="btn btn-primary">Ver no documento</a>
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+            <button class="btn btn-primary m-4" (click)="loadMore()">Carregar mais</button>
+        </div>
+        }
+        }
+    </div>
+</main>

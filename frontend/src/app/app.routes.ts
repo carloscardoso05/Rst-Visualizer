@@ -1,20 +1,19 @@
 import { Routes } from '@angular/router';
-import { HomePageComponent } from './pages/home-page/home-page.component';
-import { DocumentPageComponent } from './pages/document-page/document-page.component';
-import { RelationsPageComponent } from './pages/relations-page/relations-page.component';
+import { DocumentsInfoComponent } from './components/documents-info/documents-info.component';
+import { DocumentDetailsComponent } from './components/document-details/document-details.component';
 
 export const routes: Routes = [
   {
-    component: HomePageComponent,
     path: '',
     pathMatch: 'full',
+    component: DocumentsInfoComponent,
   },
   {
-    component: DocumentPageComponent,
-    path: 'documents/:id',
+    path: 'documents/:documentId',
+    component: DocumentDetailsComponent,
   },
   {
-    component: RelationsPageComponent,
-    path: 'relations',
+    path: 'documents/:documentId/relations/:relationId',
+    component: DocumentDetailsComponent,
   },
 ];

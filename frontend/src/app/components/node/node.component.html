@@ -1,0 +1,16 @@
+<span
+  [id]="`node-${nodeData().id}`"
+  class="node"
+  [class]="styleClass()"
+>
+  <span class="tokens">
+    @for (token of tokensOrdered(); track $index) {
+      <span [id]="`token-${$index + 1}`" class="token">{{ token }} </span>
+    }
+  </span>
+  <span class="children">
+    @for (child of nodeData().children; track $index) {
+      <app-node [nodeData]="child" [selectedNode]="selectedNode()"/>
+    }
+  </span>
+</span>

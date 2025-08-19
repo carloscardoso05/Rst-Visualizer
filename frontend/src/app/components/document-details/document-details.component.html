@@ -1,0 +1,76 @@
+<main class="m-5 flex flex-col items-center space-y-3">
+    <a [routerLink]="['/']" class="btn btn-md self-start">Voltar</a>
+    @if (rstData() === undefined) {
+    <span class="loading loading-spinner loading-xl m-auto"></span>
+    } @else {
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-2xl font-bold">
+            {{ rstData()?.name ?? "" }}
+        </h2>
+        <div class="tabs tabs-border">
+            <input #tabTextoAnotado type="radio" name="textType" class="tab" aria-label="Texto anotado" checked>
+            <div class="tab-content">
+                <div>
+                    <app-node [nodeData]="root()!" [selectedNode]="selectedNode()" />
+                </div>
+            </div>
+            <input #tabTextoOriginal type="radio" name="textType" class="tab" aria-label="Texto original">
+            <div class="tab-content">
+                <div>
+                    @for (paragraph of rstData()?.fontText?.split('\n'); track $index) {
+                    @if (paragraph) {
+                    <p class="mb-2 indent-3">{{paragraph}}</p>
+                    }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @for (relation of relations(); track relation.nodeId) {
+    <div class="bg-base-100 border-base-300 collapse-arrow collapse border">
+        <input type="checkbox" name="relation" [id]="`relation-${relation.nodeId}`" />
+        <div class="collapse-title flex space-x-3">
+            <span class="badge badge-lg badge-primary badge-soft">{{
+                relation.name
+                }}</span>
+            <span class="truncate">{{ relation.text }}</span>
+            <div class="space-x-3">
+                @for (signal of relation.signals; track signal.id) {
+                <span class="badge badge-soft">{{ signal.type }}:{{ signal.subtype }}</span>
+                }
+            </div>
+        </div>
+        <div class="collapse-content space-y-4">
+            <div class="grid grid-cols-2">
+                <div>
+                    <h3 class="font-semibold">Texto:</h3>
+                    <p>{{ relation.text }}</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold">Texto do nó pai:</h3>
+                    <p>{{ relation.parentText }}</p>
+                </div>
+                @if (relation.signals.length > 0) {
+                <div>
+                    <h3 class="font-semibold">Sinalizadores:</h3>
+                    @for (signal of relation.signals; track signal.id) {
+                    <div class="flex">
+                        <span class="mr-2">{{ signal.type }}:{{ signal.subtype }}</span>
+                        <div class="space-x-1">
+                            @for (token of signal.tokens; track $index) {
+                            <span class="badge badge-soft">{{token}}</span>
+                            }
+                        </div>
+                    </div>
+                    }
+                </div>
+                }
+            </div>
+            <button type="button" class="btn btn-primary" (click)="selectRelationOnText(relation.nodeId)">Ver no
+                texto</button>
+        </div>
+    </div>
+    }
+    }
+</main>

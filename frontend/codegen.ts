@@ -1,14 +1,17 @@
 import type { CodegenConfig } from '@graphql-codegen/cli';
 
 const config: CodegenConfig = {
-  overwrite: true,
-  schema: 'src/schema.gql',
-  documents: 'src/**/*.gql',
+  schema: 'http://localhost:3000/graphql',
+  documents: './src/**/*.gql',
   generates: {
-    'src/generated/graphql.ts': {
-      plugins: ['typescript-apollo-angular', 'typescript', 'typescript-operations', 'fragment-matcher'],
+    './graphql/generated.ts': {
+      plugins: [
+        'typescript',
+        'typescript-operations',
+        'typescript-apollo-angular',
+        'fragment-matcher',
+      ],
     },
   },
 };
-
 export default config;
